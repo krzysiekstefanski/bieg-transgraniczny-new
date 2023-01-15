@@ -51,5 +51,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-svgr-svgo`,
+    `gatsby-plugin-styled-components`,
   ],
 }
