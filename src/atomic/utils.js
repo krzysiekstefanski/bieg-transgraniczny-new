@@ -11,8 +11,5 @@ export function getSize(size) {
 };
 
 export function getColor(color) {
-    if (color?.includes('grey')) {
-        color = color.replace('grey', 'gray');
-      }
     return colors[color] ? colors[color] : color;
 };

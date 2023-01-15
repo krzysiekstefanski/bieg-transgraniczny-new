@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { getColor } from "../../utils"
 
 const Box = styled.div`
   display: ${(props) => props.display ?? 'flex'};
@@ -22,7 +23,7 @@ const Box = styled.div`
   width: ${(props) => props.width};
   max-width: ${(props) => props.max};
   min-width: ${(props) => props.min};
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${(props) => getColor(props.backgroundColor)};
   border: ${(props) => props.border};
   border-bottom: ${(props) => props.borderBottom};
   border-left: ${(props) => props.borderLeft};
@@ -31,7 +32,7 @@ const Box = styled.div`
   border-width: ${(props) => props.borderWidth};
   border-style: ${(props) =>
     props.borderStyle ?? (props.borderWidth && 'solid')};
-  border-color: ${(props) => props.borderColor};
+  border-color: ${(props) => getColor(props.borderColor)};
   border-radius: ${(props) => props.radius};
   transition: ${(props) => props.transition};
   transform: ${(props) => props.transform};
@@ -55,6 +56,7 @@ const Box = styled.div`
   }
 
   @media (max-width: 374px) {
+    width: ${(props) => props.widthXS};
     padding: ${(props) => props.paddingXS};
     gap: ${(props) => props.gapXS};
   }
@@ -93,6 +95,8 @@ const Box = styled.div`
     gap: ${(props) => props.gapMD};
     order: ${(props) => props.orderMD};
     height: ${(props) => props.heightMD};
+    min-height: ${(props) => props.minHeightMD};
+		max-height: ${(props) => props.maxHeightMD};
     width: ${(props) => props.widthMD};
     min-width: ${(props) => props.minMD};
     max-width: ${(props) => props.maxMD};
@@ -121,6 +125,7 @@ const Box = styled.div`
 		width: ${(props) => props.widthLG};
 		max-width: ${(props) => props.maxLG};
 		background-color: ${(props) => props.backgroundColorLG};
+    border-width: ${(props) => props.borderWidthLG};
 		transform: ${(props) => props.transformLG};
 		padding: ${(props) => props.paddingLG};
 		margin: ${(props) => props.marginLG};
