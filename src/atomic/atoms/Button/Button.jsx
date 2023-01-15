@@ -23,6 +23,7 @@ const Button = styled.button`
   letter-spacing: ${(props) =>
         getSize(ButtonSizes[props.size]?.textSize).spacing};
   transition: ${(props) => props.variant ? ButtonVariants[props.variant].transition : ButtonVariants["red"].transition};
+  white-space: ${props => props.wrap ?? 'nowrap'};
   cursor: ${(props) => props.cursor ?? 'pointer'};
   margin: ${(props) => props.margin};
   :hover {

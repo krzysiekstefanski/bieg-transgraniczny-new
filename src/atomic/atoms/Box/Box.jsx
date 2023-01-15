@@ -51,11 +51,14 @@ const Box = styled.div`
 			content: "";
 			display: block;
 			padding-bottom: 100%;
-		}`}
+		}`
+  }
+
   @media (max-width: 374px) {
     padding: ${(props) => props.paddingXS};
     gap: ${(props) => props.gapXS};
   }
+
 	@media (min-width: 576px) {
 		display: ${(props) => props.displaySM};
 		flex-direction: ${(props) => props.directionSM};
@@ -81,6 +84,7 @@ const Box = styled.div`
 		bottom: ${(props) => props.bottomSM};
 		box-shadow: ${(props) => props.shadowSM};
 	}
+
   @media (min-width: 768px) {
     display: ${(props) => props.displayMD};
     flex-direction: ${(props) => props.directionMD};
@@ -103,6 +107,7 @@ const Box = styled.div`
     border-radius: ${(props) => props.radiusMD};
     box-shadow: ${(props) => props.shadowMD};
   }
+
 	@media (min-width: 1280px) {
 		display: ${(props) => props.displayLG};
 		flex-direction: ${(props) => props.directionLG};
@@ -132,15 +137,9 @@ const Box = styled.div`
   @media (min-width: 1440px) {
     padding: ${(props) => props.paddingXL};
   }
-  @media (min-height: 576px) {
-    padding: ${(props) => props.paddingSMH};
-  }
-  @media (min-height: 768px) {
-    padding: ${(props) => props.paddingMDH};
-    height: ${(props) => props.heightMDH};
-  }
-  @media (min-height: 847px) {
-    padding: ${(props) => props.paddingLGH};
+
+  @media (min-width: 1440px) {
+    padding: ${(props) => props.paddingXXL};
   }
 `;
 
