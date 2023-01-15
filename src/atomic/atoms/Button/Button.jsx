@@ -119,7 +119,7 @@ const ButtonVariants = {
         focusBackgroundColor: getColor("red40"),
         focusBorder: '1px solid transparent',
         focusOutline: 'none',
-        transition: '0.25s ease-in all',
+        transition: '0.25s ease-in background-color',
     },
     green: {
         color: getColor("white"),
@@ -133,7 +133,7 @@ const ButtonVariants = {
         focusBackgroundColor: getColor("green40"),
         focusBorder: '1px solid transparent',
         focusOutline: 'none',
-        transition: '0.25s ease-in all',
+        transition: '0.25s ease-in background-color',
     },
 };
 
