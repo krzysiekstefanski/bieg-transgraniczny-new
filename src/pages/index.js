@@ -18,11 +18,11 @@ const IndexPage = () => (
             <StaticImage src="../images/bieg-transgraniczny-logo.png"/>
           <Heading as="h2" size="h800" margin="0 0 0 25px">Bieg Transgraniczny</Heading>
         </Box>
-        <Box justify="center" width="100%" margin="auto 0" position="relative">
+        <Box justify="center" height="stretch" width="100%" margin="auto 0" position="relative">
           <Box max="514px" margin="auto 0">
             <StaticImage src="../images/bieg-transgraniczny-runner.png" />
           </Box>
-          <Box justify="center" height="100%" width="100%" position="absolute" zIndex="-1">
+          <Box justify="center" height="100%" maxHeight="612px" width="100%" position="absolute" top="47%" zIndex="-1" transform="translate(-21px,-49%)">
             <GreenBackgroundSVG />
           </Box>
         </Box>
@@ -41,11 +41,11 @@ const IndexPage = () => (
           <Heading as="h2" size="h800" align="right" margin="0 25px 0 0">Bieg Niepodleglości</Heading>
           <StaticImage src="../images/bieg-niepodleglosci-logo.png" />
         </Box>
-        <Box justify="center" width="100%" margin="auto 0" position="relative">
+        <Box justify="center" height="stretch" width="100%" margin="auto 0" position="relative">
           <Box max="514px" margin="auto 0">
             <StaticImage src="../images/bieg-niepodleglosci-runner.png" />
           </Box>
-          <Box justify="center" height="100%" width="100%" position="absolute" zIndex="-1">
+          <Box justify="center" height="100%" maxHeight="617px" width="100%" position="absolute" top="47%" zIndex="-1" transform="translate(-5px,-51%)">
               <RedBackgroundSVG />
           </Box>
         </Box>
