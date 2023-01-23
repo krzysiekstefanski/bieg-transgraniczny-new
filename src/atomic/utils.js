@@ -1,5 +1,6 @@
 import { typography } from "./typography"
 import { colors } from "./colors"
+import { shadows } from "./shadows"
 
 export function getSize(size) {
     return {
@@ -10,6 +11,10 @@ export function getSize(size) {
     };
 };
 
-export function getColor(color) {
+export function checkColor(color) {
     return colors[color] ? colors[color] : color;
 };
+
+export function checkShadow(shadow) {
+    return shadows[shadow] ? shadows[shadow] : shadow;
+}

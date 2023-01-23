@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getSize, getColor } from "../../utils"
+import { getSize, checkColor } from "../../utils"
 
 const Text = styled.p`
   display: ${(props) => props.display};
@@ -11,7 +11,7 @@ const Text = styled.p`
   line-height: ${(props) => props.size ? getSize(props.size).interline : props.interline ?? '24px'};
   font-weight: ${(props) => props.size ? getSize(props.size).weight : props.weight ?? '400'};
   letter-spacing: ${(props) => props.spacing};
-  color: ${(props) => props.color ? getColor(props.color) : getColor("black")};
+  color: ${(props) => props.color ? checkColor(props.color) : checkColor("black")};
   text-align: ${(props) => props.align ?? 'left'};
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
@@ -24,6 +24,7 @@ const Text = styled.p`
   :hover {
     background-color: ${(props) => props.hoverBackgroundColor};
   }
+
   @media (max-width: 374px) {
     font-size: ${(props) => props.fontSizeXS};
     line-height: ${(props) => props.interlineXS};
@@ -31,6 +32,7 @@ const Text = styled.p`
     letter-spacing: ${(props) => props.spacingXS};
     padding: ${(props) => props.paddingXS};
   }
+
   @media (min-width: 576px) {
     font-size: ${(props) => props.fontSizeSM};
     line-height: ${(props) => props.interlineSM};
@@ -38,6 +40,7 @@ const Text = styled.p`
     letter-spacing: ${(props) => props.spacingSM};
     padding: ${(props) => props.paddingSM};
   }
+
   @media (min-width: 768px) {
     font-size: ${(props) => props.fontSizeMD};
     line-height: ${(props) => props.interlineMD};
@@ -48,6 +51,7 @@ const Text = styled.p`
     padding: ${(props) => props.paddingMD};
     margin: ${(props) => props.marginMD};
   }
+  
   @media (min-width: 1280px) {
     display: ${(props) => props.displayLG};
   }

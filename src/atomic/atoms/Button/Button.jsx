@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getSize, getColor } from "../../utils"
+import { getSize, checkColor } from "../../utils"
 
 const Button = styled.button`
   font-family: Inter, sans-serif;
@@ -22,6 +22,7 @@ const Button = styled.button`
         props.size ? getSize(ButtonSizes[props.size].textSize).interline : getSize(ButtonSizes["medium"].textSize).interline};
   letter-spacing: ${(props) =>
         getSize(ButtonSizes[props.size]?.textSize).spacing};
+  text-decoration: none;
   transition: ${(props) => props.variant ? ButtonVariants[props.variant].transition : ButtonVariants["red"].transition};
   white-space: ${props => props.wrap ?? 'nowrap'};
   cursor: ${(props) => props.cursor ?? 'pointer'};
@@ -35,36 +36,17 @@ const Button = styled.button`
     border: ${(props) =>
         props.hoverBorder ?? props.variant ? ButtonVariants[props.variant].hoverBorder : ButtonVariants["red"].hoverBorder};
   }
-  :focus {
-    color: ${(props) =>
-        props.focusColor ?? props.variant ? ButtonVariants[props.variant].focusColor : ButtonVariants["red"].focusColor};
-    background-color: ${(props) =>
-        props.focusBackgroundColor ??
-            props.variant ? ButtonVariants[props.variant].focusBackgroundColor : ButtonVariants["red"].focusBackgroundColor};
-    border: ${(props) =>
-        props.focusBorder ?? props.variant ? ButtonVariants[props.variant].focusBorder : ButtonVariants["red"].focusBorder};
-    outline: ${(props) =>
-        props.focusOutline ?? props.variant ? ButtonVariants[props.variant].focusOutline : ButtonVariants["red"].focusOutline};
-  }
-  :focus-visible {
-    color: ${(props) =>
-        props.focusColor ?? props.variant ? ButtonVariants[props.variant].focusColor : ButtonVariants["red"].focusColor};
-    background-color: ${(props) =>
-        props.focusBackgroundColor ??
-            props.variant ? ButtonVariants[props.variant].focusBackgroundColor : ButtonVariants["red"].focusBackgroundColor};
-    border: ${(props) =>
-        props.focusBorder ?? props.variant ? ButtonVariants[props.variant].focusBorder : ButtonVariants["red"].focusBorder};
-    outline: ${(props) =>
-        props.focusOutline ?? props.variant ? ButtonVariants[props.variant].focusOutline : ButtonVariants["red"].focusOutline};
-  }
+
   @media (max-width: 374px) {
     width: ${(props) => props.widthXS};
     margin: ${(props) => props.marginXS};
   }
+
   @media (min-width: 576px) {
     display: ${(props) => props.displaySM};
     width: ${(props) => props.widthSM};
   }
+
   @media (min-width: 768px) {
     display: ${(props) => props.displayMD};
     max-width: ${(props) => props.maxMD};
@@ -76,30 +58,63 @@ const Button = styled.button`
     line-height: ${(props) =>
         getSize(ButtonSizes[props.sizeMD]?.textSize).interline};
   }
-  @media (min-width: 1280px) {
+
+  @media (min-width: 992px) {
     display: ${(props) => props.displayLG};
+    margin: ${(props) => props.marginLG};
   }
+
+  :focus {
+    color: ${(props) =>
+        props.focusColor ?? props.variant ? ButtonVariants[props.variant].focusColor : ButtonVariants["red"].focusColor};
+    background-color: ${(props) =>
+        props.focusBackgroundColor ??
+            props.variant ? ButtonVariants[props.variant].focusBackgroundColor : ButtonVariants["red"].focusBackgroundColor};
+    border: ${(props) =>
+        props.focusBorder ?? props.variant ? ButtonVariants[props.variant].focusBorder : ButtonVariants["red"].focusBorder};
+    outline: ${(props) =>
+        props.focusOutline ?? props.variant ? ButtonVariants[props.variant].focusOutline : ButtonVariants["red"].focusOutline};
+  }
+
+  :focus-visible {
+    color: ${(props) =>
+        props.focusColor ?? props.variant ? ButtonVariants[props.variant].focusColor : ButtonVariants["red"].focusColor};
+    background-color: ${(props) =>
+        props.focusBackgroundColor ??
+            props.variant ? ButtonVariants[props.variant].focusBackgroundColor : ButtonVariants["red"].focusBackgroundColor};
+    border: ${(props) =>
+        props.focusBorder ?? props.variant ? ButtonVariants[props.variant].focusBorder : ButtonVariants["red"].focusBorder};
+    outline: ${(props) =>
+        props.focusOutline ?? props.variant ? ButtonVariants[props.variant].focusOutline : ButtonVariants["red"].focusOutline};
+  }
+
   :disabled {
-    background-color: ${(props) => props.variant !== 'blank' && getColor("grey20")};
-    color: ${(props) => props.variant !== 'blank' && getColor("grey20")};
+    background-color: ${(props) => props.variant !== 'blank' && checkColor("grey20")};
+    color: ${(props) => props.variant !== 'blank' && checkColor("grey20")};
     border-color: ${(props) => props.variant !== 'blank' && 'transparent'};
     cursor: not-allowed;
   }
 `;
+
 const ButtonSizes = {
     medium: {
+        padding: `11px 39px`,
+        textSize: `button`,
+    },
+    big: {
         padding: `16px 24px`,
         textSize: `button`,
     },
 };
+
 const ButtonVariants = {
     blank: {
-        color: getColor("black"),
+        color: checkColor("black"),
         fontWeight: '500',
         backgroundColor: 'transparent',
-        hoverColor: getColor("black"),
+        hoverColor: checkColor("black"),
         hoverBackgroundColor: 'transparent',
-        focusColor: getColor("black"),
+        focusColor: checkColor("black"),
         focusBackgroundColor: 'transparent',
         focusBorder: '1px solid transparent',
         focusOutline: 'none',
@@ -108,29 +123,29 @@ const ButtonVariants = {
         focusBorder: '1px solid transparent',
     },
     red: {
-        color: getColor("white"),
+        color: checkColor("white"),
         fontWeight: '700',
-        backgroundColor: getColor("red20"),
+        backgroundColor: checkColor("red20"),
         border: '1px solid transparent',
-        hoverColor: getColor("white"),
-        hoverBackgroundColor: getColor("red40"),
+        hoverColor: checkColor("white"),
+        hoverBackgroundColor: checkColor("red40"),
         hoverBorder: '1px solid transparent',
-        focusColor: getColor("white"),
-        focusBackgroundColor: getColor("red40"),
+        focusColor: checkColor("white"),
+        focusBackgroundColor: checkColor("red40"),
         focusBorder: '1px solid transparent',
         focusOutline: 'none',
         transition: '0.25s ease-in background-color',
     },
     green: {
-        color: getColor("white"),
+        color: checkColor("white"),
         fontWeight: '700',
-        backgroundColor: getColor("green20"),
+        backgroundColor: checkColor("green20"),
         border: '1px solid transparent',
-        hoverColor: getColor("white"),
-        hoverBackgroundColor: getColor("green40"),
+        hoverColor: checkColor("white"),
+        hoverBackgroundColor: checkColor("green40"),
         hoverBorder: '1px solid transparent',
-        focusColor: getColor("white"),
-        focusBackgroundColor: getColor("green40"),
+        focusColor: checkColor("white"),
+        focusBackgroundColor: checkColor("green40"),
         focusBorder: '1px solid transparent',
         focusOutline: 'none',
         transition: '0.25s ease-in background-color',

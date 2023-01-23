@@ -31,7 +31,7 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box displayLG="none" justify="center" width="calc(100% - 32px)" position="absolute" bottom="8px" bottomSM="32px" zIndex="3">
-          <Button variant="green" width="100%" widthSM="60%" widthMD="auto">Bieg Transgraniczny</Button>
+          <Button size="big" variant="green" width="100%" widthSM="60%" widthMD="auto">Bieg Transgraniczny</Button>
         </Box>
       </Box>
       <Box column justify="center" align="center" order="1" orderLG="2">
@@ -44,8 +44,8 @@ const IndexPage = () => (
         <Heading size="h700" sizeMD="h800" sizeXXL="h900" margin="8px 0" marginMD="16px 0 32px" marginXL="32px 0 76px">Gryfinobiega.pl</Heading>
         <Heading as="h3" size="TextHeading" align="center" marginLG="0 0 66px">Wybierz rodzaj biegu, w którym chcesz wziąć udział.</Heading>
         <Box display="none" displayLG="flex" gap="24px">
-          <Button variant="green">Bieg Transgraniczny</Button>
-          <Button>Bieg Niepodległości</Button>
+          <Button as={Link} to="biegtransgraniczny" size="big" variant="green">Bieg Transgraniczny</Button>
+          <Button size="big">Bieg Niepodległości</Button>
         </Box>
       </Box>
       <Box column justify="flex-start" justifyLG="center" align="center" order="3" radius="8px" maxHeight="280px" maxHeightSM="400px" maxHeightMD="560px" maxHeightLG="none" backgroundColorLG="transparent" borderWidth="1px" borderWidthLG="0" borderColor="grey90" padding="16px 16px 0" paddingLG="0" overflow="hidden" overflowLG="visible" position="relative">
@@ -64,7 +64,7 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box displayLG="none" justify="center" width="calc(100% - 32px)" position="absolute" bottom="8px" bottomSM="32px" zIndex="3">
-          <Button width="100%" widthSM="60%" widthMD="auto">Bieg Niepodległości</Button>
+          <Button size="big" width="100%" widthSM="60%" widthMD="auto">Bieg Niepodległości</Button>
         </Box>
       </Box>
     </Box>

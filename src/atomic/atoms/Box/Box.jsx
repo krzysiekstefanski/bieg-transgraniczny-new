@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getColor } from "../../utils"
+import { checkColor, checkShadow } from "../../utils"
 
 const Box = styled.div`
   display: ${(props) => props.display ?? 'flex'};
@@ -23,7 +23,7 @@ const Box = styled.div`
   width: ${(props) => props.width};
   max-width: ${(props) => props.max};
   min-width: ${(props) => props.min};
-  background-color: ${(props) => getColor(props.backgroundColor)};
+  background-color: ${(props) => checkColor(props.backgroundColor)};
   border: ${(props) => props.border};
   border-bottom: ${(props) => props.borderBottom};
   border-left: ${(props) => props.borderLeft};
@@ -32,8 +32,9 @@ const Box = styled.div`
   border-width: ${(props) => props.borderWidth};
   border-style: ${(props) =>
     props.borderStyle ?? (props.borderWidth && 'solid')};
-  border-color: ${(props) => getColor(props.borderColor)};
+  border-color: ${(props) => checkColor(props.borderColor)};
   border-radius: ${(props) => props.radius};
+  text-decoration: none;
   transition: ${(props) => props.transition};
   transform: ${(props) => props.transform};
   padding: ${(props) => props.padding};
@@ -44,7 +45,7 @@ const Box = styled.div`
   right: ${(props) => props.right};
   bottom: ${(props) => props.bottom};
   overflow: ${(props) => props.overflow};
-  box-shadow: ${(props) => props.shadow};
+  box-shadow: ${(props) => checkShadow(props.shadow)};
   z-index: ${(props) => props.zIndex};
   ${(props) =>
     props.square &&
@@ -112,7 +113,7 @@ const Box = styled.div`
     box-shadow: ${(props) => props.shadowMD};
   }
 
-	@media (min-width: 1280px) {
+	@media (min-width: 992px) {
 		display: ${(props) => props.displayLG};
 		flex-direction: ${(props) => props.directionLG};
 		justify-content: ${(props) => props.justifyLG};
@@ -139,8 +140,9 @@ const Box = styled.div`
 		overflow: ${(props) => props.overflowLG};
 	}
  
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     padding: ${(props) => props.paddingXL};
+    margin: ${(props) => props.marginXL};
   }
 
   @media (min-width: 1440px) {

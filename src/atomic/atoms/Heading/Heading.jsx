@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getSize, getColor } from "../../utils"
+import { getSize, checkColor } from "../../utils"
 
 const Heading = styled.h1`
   display: ${(props) => props.display};
@@ -9,7 +9,7 @@ const Heading = styled.h1`
   line-height: ${(props) => props.size ? getSize(props.size).interline : props.interline ?? '24px'};
   font-weight: ${(props) => props.size ? getSize(props.size).weight : props.weight ?? '400'};
   letter-spacing: ${(props) => props.spacing};
-  color: ${(props) => props.color ? getColor(props.color) : getColor("black")};
+  color: ${(props) => props.color ? checkColor(props.color) : checkColor("black")};
   text-align: ${(props) => props.align};
   white-space: ${(props) => props.wrap};
   padding: ${(props) => props.padding};
