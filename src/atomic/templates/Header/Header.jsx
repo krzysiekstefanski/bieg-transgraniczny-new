@@ -1,6 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
+import Container from "../../molecules/Container/Container"
 import Logo from "../../molecules/Logo/Logo"
 import Menu from "../../molecules/Menu/Menu"
 
@@ -15,11 +16,11 @@ const Component = styled(Box)`
 `
 
 const Header = () => (
-    <Component width="100%" backgroundColor="white" shadow="md" padding="16px" margin="auto 0 0" position="relative" zIndex="100">
-        <Box justify="space-between" align="center" width="100%" max="1240px" margin="0 auto">
+    <Component width="100%" backgroundColor="white" shadow="md" padding="16px 0" margin="auto 0 0" position="relative" zIndex="100">
+        <Container>
             <Logo />
             <Menu />
-        </Box>
+        </Container>
     </Component>
 )
 

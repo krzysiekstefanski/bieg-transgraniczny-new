@@ -47,7 +47,7 @@ const Button = styled.button`
     width: ${(props) => props.widthSM};
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: ${(props) => props.displayMD};
     max-width: ${(props) => props.maxMD};
     margin: ${(props) => props.marginMD};
@@ -102,7 +102,7 @@ const ButtonSizes = {
         textSize: `button`,
     },
     big: {
-        padding: `16px 24px`,
+        padding: `15px 39px`,
         textSize: `button`,
     },
 };

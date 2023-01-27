@@ -42,7 +42,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Bai+Jamjuree:700', 'Urbanist:400'],
+          families: ['Bai+Jamjuree:500,700', 'Urbanist:400'],
         },
         active: () => {
           sessionStorage.fontsLoaded = true

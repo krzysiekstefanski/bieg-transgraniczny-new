@@ -6,7 +6,7 @@ const Text = styled.p`
   grid-column: ${(props) => props.column};
   width: ${(props) => props.width};
   max-width: ${(props) => props.max};
-  font-family: Urbanist, sans-serif;
+  font-family: ${(props) => props.family ? `${props.family}, sans-serif` : "Urbanist, sans-serif"};
   font-size: ${(props) => props.size ? getSize(props.size).size : props.fontSize ?? '16px'};
   line-height: ${(props) => props.size ? getSize(props.size).interline : props.interline ?? '24px'};
   font-weight: ${(props) => props.size ? getSize(props.size).weight : props.weight ?? '400'};
@@ -41,7 +41,7 @@ const Text = styled.p`
     padding: ${(props) => props.paddingSM};
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     font-size: ${(props) => props.fontSizeMD};
     line-height: ${(props) => props.interlineMD};
     font-weight: ${(props) => props.weightMD};
@@ -52,7 +52,7 @@ const Text = styled.p`
     margin: ${(props) => props.marginMD};
   }
   
-  @media (min-width: 1280px) {
+  @media (min-width: 992px) {
     display: ${(props) => props.displayLG};
   }
 `;

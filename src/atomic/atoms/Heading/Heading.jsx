@@ -38,7 +38,7 @@ const Heading = styled.h1`
     margin: ${(props) => props.marginSM};
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: ${(props) => props.displayMD};
     order: ${(props) => props.orderMD};
     max-width: ${(props) => props.maxMD};
@@ -51,7 +51,7 @@ const Heading = styled.h1`
     margin: ${(props) => props.marginMD};
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 992px) {
     display: ${(props) => props.displayLG};
     order: ${(props) => props.orderLG};
     max-width: ${(props) => props.maxLG};
@@ -64,7 +64,7 @@ const Heading = styled.h1`
     margin: ${(props) => props.marginLG};
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     display: ${(props) => props.displayXL};
     order: ${(props) => props.orderXL};
     max-width: ${(props) => props.maxXL};
@@ -77,7 +77,7 @@ const Heading = styled.h1`
     margin: ${(props) => props.marginXL};
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     display: ${(props) => props.displayXXL};
     order: ${(props) => props.orderXXL};
     max-width: ${(props) => props.maxXXL};
@@ -88,6 +88,19 @@ const Heading = styled.h1`
     text-align: ${(props) => props.alignXXL};
     padding: ${(props) => props.paddingXXL};
     margin: ${(props) => props.marginXXL};
+  }
+
+  @media (min-width: 1920px) {
+    display: ${(props) => props.displayHD};
+    order: ${(props) => props.orderHD};
+    max-width: ${(props) => props.maxHD};
+    font-size: ${(props) => props.size ? getSize(props.sizeHD).size : props.fontSizeHD};
+    line-height: ${(props) => props.size ? getSize(props.sizeHD).interline : props.interlineHD};
+    font-weight: ${(props) => props.size ? getSize(props.sizeHD).weight : props.weightHD};
+    letter-spacing: ${(props) => props.spacingHD};
+    text-align: ${(props) => props.alignHD};
+    padding: ${(props) => props.paddingHD};
+    margin: ${(props) => props.marginHD};
   }
 `;
 

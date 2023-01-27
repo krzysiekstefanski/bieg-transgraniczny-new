@@ -35,9 +35,7 @@ const Menu = () => {
     const [hamburgerIsActive, setHamburgerIsActive] = useState(false)
 
     const handleClick = () => {
-        console.log(hamburgerIsActive)
         setHamburgerIsActive(!hamburgerIsActive)
-        console.log(hamburgerIsActive)
     }
 
     return (

@@ -88,7 +88,7 @@ const Box = styled.div`
 		box-shadow: ${(props) => props.shadowSM};
 	}
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: ${(props) => props.displayMD};
     flex-direction: ${(props) => props.directionMD};
     justify-content: ${(props) => props.justifyMD};
