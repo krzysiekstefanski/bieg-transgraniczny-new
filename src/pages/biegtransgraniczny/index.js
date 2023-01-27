@@ -6,6 +6,8 @@ import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Header from "../../atomic/templates/Header/Header"
 import Top from "../../atomic/templates/Top/Top"
+import Banner from "../../atomic/templates/Banner/Banner"
+import Verification from "../../atomic/templates/Verification/Verification"
 import Box from "../../atomic/atoms/Box/Box"
 import Heading from "../../atomic/atoms/Heading/Heading"
 import Button from "../../atomic/atoms/Button/Button"
@@ -18,9 +20,8 @@ const TransgranicznyPage = () => (
   <Layout>
     <Header />
     <Top />
-    <Box column directionLG="row" justify="space-between" gap="16px" height="calc(100vh - 101px)" max="1920px" padding="16px" paddingLG="32px 48px 0" margin="0 auto">
-
-    </Box>
+    <Banner />
+    <Verification />
   </Layout>
 )
 
