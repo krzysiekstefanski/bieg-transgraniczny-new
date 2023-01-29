@@ -19,17 +19,17 @@ const Component = styled(Box)`
 `
 
 const Top = () => (
-    <Component position="relative">
+    <Component position="relative" padding="0 0 48px" paddingMD="0">
         <Container>
             <Box width="100%" gap="48px" gapLG="100px">
-                <Box column maxMD="42%" maxLG="540px" padding="88px 0 0">
-                    <Heading size="h600" sizeMD="h700" sizeLG="h800" sizeXL="h900" margin="0 0 32px">6. Gryfiński <Heading as="span" size="h600" sizeMD="h700" sizeLG="h800" sizeXL="h900" color="green20">Transgraniczny</Heading> Festiwal Biegowy</Heading>
-                    <Text size="contentL" color="grey20" margin="0 0 80px">Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
+                <Box column maxMD="42%" maxLG="540px" padding="24px 0 0" paddingMD="88px 0 0">
+                    <Heading size="h700" sizeLG="h800" sizeXL="h900" margin="0 0 24px" marginMD="0 0 32px">6. Gryfiński <Heading as="span" size="h700" sizeLG="h800" sizeXL="h900" color="green20">Transgraniczny</Heading> Festiwal Biegowy</Heading>
+                    <Text size="contentL" color="grey20" margin="0 0 24px" marginMD="0 0 80px">Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
                         6. edycji Gryfińskiego Transgranicznego Festiwalu Biegowego uczcić
                         rocznicę Konstytucji 3 Maja.</Text>
-                    <Button variant="green" size="big" margin="0 auto 0 0">Zobacz więcej</Button>
+                    <Button variant="green" size="big" margin="0 auto" marginMD="0 auto 0 0">Zobacz więcej</Button>
                 </Box>
-                <Box maxHeight="480px" maxHeightLG="none" width="100%" max="60%" position="relative">
+                <Box display="none" displayMD="flex" maxHeight="480px" maxHeightLG="none" width="100%" max="60%" position="relative">
                     <Box justify="center" width="100%">
                         <TopBgSvg />
                     </Box>

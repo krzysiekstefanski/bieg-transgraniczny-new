@@ -21,12 +21,12 @@ const Component = styled(Box)`
 `
 
 const Banner = () => (
-    <Component width="100%" backgroundColor="white" padding="0 16px" margin="auto 0 0">
+    <Component width="100%" padding="0 0 48px" paddingMD="0">
         <Container>
-            <Box width="100%" gap="24px" margin="120px 0 240px">
-                <Box column width="calc(50% - 12px)">
-                    <Heading size="h800" margin="0 0 24px">Weryfikacja uczestników</Heading>
-                    <Text size="contentL" margin="0 0 40px">
+            <Box column directionMD="row" width="100%" gap="24px" marginMD="120px 0 240px">
+                <Box column widthMD="calc(50% - 12px)">
+                    <Heading size="h600" sizeMD="h700" sizeLG="h800" align="center" alignMD="left" margin="0 0 24px">Weryfikacja uczestników</Heading>
+                    <Text size="contentL" margin="0 0 24px" marginMD="0 0 40px">
                         Przypominamy, że weryfikacja do biegu odbywać się będzie w Liceum Ogólnokształcącym ul. Niepodległości.
                     </Text>
                     <Text weight="700" margin="0 0 4px">
@@ -41,7 +41,7 @@ const Banner = () => (
                         <ListItem>Zawodnicy powyżej 18 roku życia podpisują oświadczenie o biegu na własną odpowiedzialność.”</ListItem>
                     </List>
                 </Box>
-                <Box width="calc(50% - 12px)">
+                <Box widthMD="calc(50% - 12px)">
                     <StaticImage src="../../../images/transgraniczny-mapa.png" />
                 </Box>
             </Box>
