@@ -1,14 +1,12 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
+import Container from "../../molecules/Container/Container"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
 import List from "../../atoms/List/List"
 import ListItem from "../../atoms/ListItem/ListItem"
-import Button from "../../atoms/Button/Button"
-import Container from "../../molecules/Container/Container"
 
 const Component = styled(Box)`
     .gatsby-image-wrapper {
@@ -20,10 +18,10 @@ const Component = styled(Box)`
     }
 `
 
-const Banner = () => (
-    <Component width="100%" padding="0 0 48px" paddingMD="0">
+const Verification = () => (
+    <Component width="100%" backgroundColor="grey95" padding="0 0 48px" paddingMD="0 0 120px">
         <Container>
-            <Box column directionMD="row" width="100%" gap="24px" marginMD="120px 0 240px">
+            <Box column directionMD="row" width="100%" gap="24px">
                 <Box column widthMD="calc(50% - 12px)">
                     <Heading size="h600" sizeMD="h700" sizeLG="h800" align="center" alignMD="left" margin="0 0 24px">Weryfikacja uczestników</Heading>
                     <Text size="contentL" margin="0 0 24px" marginMD="0 0 40px">
@@ -49,4 +47,4 @@ const Banner = () => (
     </Component>
 )
 
-export default Banner
+export default Verification

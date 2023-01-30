@@ -31,7 +31,7 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box displayLG="none" justify="center" width="calc(100% - 32px)" position="absolute" bottom="8px" bottomSM="32px" zIndex="3">
-          <Button size="big" variant="green" width="100%" widthSM="60%" widthMD="auto">Bieg Transgraniczny</Button>
+          <Button as={Link} to="biegtransgraniczny" size="big" variant="green" width="100%" widthSM="60%" widthMD="auto">Bieg Transgraniczny</Button>
         </Box>
       </Box>
       <Box column justify="center" align="center" order="1" orderLG="2">

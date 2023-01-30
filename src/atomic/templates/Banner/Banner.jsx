@@ -3,10 +3,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
+import Container from "../../molecules/Container/Container"
 import Text from "../../atoms/Text/Text"
 import LinkInternal from "../../atoms/Link/Link"
 import Button from "../../atoms/Button/Button"
-import Container from "../../molecules/Container/Container"
 
 const Component = styled(Box)`
     .gatsby-image-wrapper {
@@ -19,7 +19,7 @@ const Component = styled(Box)`
 `
 
 const Banner = () => (
-    <Component width="100%" padding="0 0 48px" paddingMD="0">
+    <Component width="100%" backgroundColor="grey95" padding="0 0 48px" paddingMD="0">
         <Container>
             <Box column align="center" width="100%" max="1030px" backgroundColor="white" shadowMD="md" paddingMD="40px" margin="0 auto" position="relative" zIndex="1">
                 <StaticImage src="../../../images/6-transgraniczny.png" />

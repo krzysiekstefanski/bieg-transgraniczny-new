@@ -2,10 +2,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
+import Container from "../../molecules/Container/Container"
 import Button from "../../atoms/Button/Button"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
-import Container from "../../molecules/Container/Container"
 import TopBgSvg from "../../../images/green-top.inline.svg"
 
 const Component = styled(Box)`
@@ -19,7 +19,7 @@ const Component = styled(Box)`
 `
 
 const Top = () => (
-    <Component position="relative" padding="0 0 48px" paddingMD="0">
+    <Component backgroundColor="grey95" position="relative" padding="0 0 48px" paddingMD="0">
         <Container>
             <Box width="100%" gap="48px" gapLG="100px">
                 <Box column maxMD="42%" maxLG="540px" padding="24px 0 0" paddingMD="88px 0 0">
