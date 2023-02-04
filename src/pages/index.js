@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import loadable from '@loadable/component'
-import Layout from "../components/layout"
+import Layout from "../components/layout-start"
 import Seo from "../components/seo"
 import Box from "../atomic/atoms/Box/Box"
 import Heading from "../atomic/atoms/Heading/Heading"

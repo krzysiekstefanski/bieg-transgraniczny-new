@@ -5,6 +5,8 @@ import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
+import BgGreenSVG from "../../../images/green-bg-2.inline.svg"
+import BgGreenSVG2 from "../../../images/green-bg-3.inline.svg"
 
 const Component = styled(Box)`
     .gatsby-image-wrapper {
@@ -17,8 +19,14 @@ const Component = styled(Box)`
 `
 
 const Rewards = () => (
-    <Component width="100%" padding="0 0 48px" paddingMD="120px 0">
-        <Container>
+    <Component width="100%" padding="0 0 48px" paddingMD="120px 0" position="relative">
+        <Box width="266px" position="absolute" top="0" right="0" zIndex="1">
+            <BgGreenSVG />
+        </Box>
+        <Box width="202px" position="absolute" bottom="0" left="0" zIndex="1">
+            <BgGreenSVG2 />
+        </Box>
+        <Container position="relative" zIndex="1">
             <Box column width="100%">
                 <Box column>
                     <Heading size="h600" sizeMD="h700" sizeLG="h800" align="center" alignMD="left" margin="0 0 24px">Medale i koszulki</Heading>

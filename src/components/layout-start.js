@@ -1,15 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-import Header from "./header"
-import SubFooter from "../atomic/templates/SubFooter/SubFooter"
 import Footer from "../atomic/templates/Footer/Footer"
 import Box from "../atomic/atoms/Box/Box"
 
@@ -91,28 +82,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <GlobalStyle />
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <Box column minHeight="100vh">
-        <main>{children}</main>
-        <SubFooter />
-        <Footer />
-      </Box>
-    </>
-  )
-}
+const Layout = ({ children }) => (
+  <>
+    <GlobalStyle />
+    <Box column minHeight="100vh">
+      <main>{children}</main>
+      <Footer />
+    </Box>
+  </>
+)
 
 export default Layout

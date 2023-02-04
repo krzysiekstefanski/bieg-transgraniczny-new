@@ -18,5 +18,6 @@ export const colors = {
 	grey80: '#7C7B93',
 	grey90: '#E9E9F1',
 	grey95: '#FBFBFE',
+	//grey95: 'red',
 	white: '#FFFFFF',
 }

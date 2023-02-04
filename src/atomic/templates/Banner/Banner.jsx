@@ -7,6 +7,8 @@ import Container from "../../molecules/Container/Container"
 import Text from "../../atoms/Text/Text"
 import LinkInternal from "../../atoms/Link/Link"
 import Button from "../../atoms/Button/Button"
+import BgSVG from "../../../images/background-stripes-2.inline.svg"
+import BgGreenSVG from "../../../images/green-bg-1.inline.svg"
 
 const Component = styled(Box)`
     .gatsby-image-wrapper {
@@ -19,8 +21,14 @@ const Component = styled(Box)`
 `
 
 const Banner = () => (
-    <Component width="100%" backgroundColor="grey95" padding="0 0 48px" paddingMD="0">
-        <Container>
+    <Component width="100%" backgroundColor="grey95" padding="0 0 48px" paddingMD="0 0 120px" position="relative">
+        <Box width="100%" widthXL="80%" position="absolute" top="0" left="-50px">
+            <BgSVG />
+        </Box>
+        <Box width="201px" position="absolute" bottom="-20px" left="0" zIndex="1">
+            <BgGreenSVG />
+        </Box>
+        <Container position="relative" zIndex="1">
             <Box column align="center" width="100%" max="1030px" backgroundColor="white" shadowMD="md" paddingMD="40px" margin="0 auto" position="relative" zIndex="1">
                 <StaticImage src="../../../images/6-transgraniczny.png" />
                 <Box column width="100%" max="664px" margin="32px 0 24px">

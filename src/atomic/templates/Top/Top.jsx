@@ -7,6 +7,7 @@ import Button from "../../atoms/Button/Button"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
 import TopBgSvg from "../../../images/green-top.inline.svg"
+import BgSVG from "../../../images/background-stripes-1.inline.svg"
 
 const Component = styled(Box)`
     .gatsby-image-wrapper {
@@ -20,7 +21,10 @@ const Component = styled(Box)`
 
 const Top = () => (
     <Component backgroundColor="grey95" position="relative" padding="0 0 48px" paddingMD="0">
-        <Container>
+        <Box justify="flex-end" width="100%" widthMD="80%" position="absolute" top="0" right="0" zIndex="1">
+            <BgSVG />
+        </Box>
+        <Container position="relative" zIndex="1">
             <Box width="100%" gap="48px" gapLG="100px">
                 <Box column maxMD="42%" maxLG="540px" padding="24px 0 0" paddingMD="88px 0 0">
                     <Heading size="h700" sizeLG="h800" sizeXL="h900" margin="0 0 24px" marginMD="0 0 32px">6. Gryfiński <Heading as="span" size="h700" sizeLG="h800" sizeXL="h900" color="green20">Transgraniczny</Heading> Festiwal Biegowy</Heading>

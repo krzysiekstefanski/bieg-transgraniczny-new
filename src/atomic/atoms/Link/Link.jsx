@@ -13,11 +13,16 @@ const Component = styled(Link)`
     line-height: ${(props) => (props.big ? "28" : "24")}px;
     text-decoration: none;
     padding: ${(props) => (props.padding)};
-    margin-bottom: ${(props) => props.margin};
+    margin: ${(props) => props.margin};
+    margin-bottom: ${(props) => props.mb};
     transition: color .3s ease;
 
     :hover {
         color: ${(props) => props.hover ? checkColor(props.hover) : checkColor("green40")};
+    }
+
+    @media (min-width: 576px) {
+        margin: ${(props) => props.marginSM}; 
     }
 `;
 

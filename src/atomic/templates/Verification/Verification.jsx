@@ -20,7 +20,7 @@ const Component = styled(Box)`
 
 const Verification = () => (
     <Component width="100%" backgroundColor="grey95" padding="0 0 48px" paddingMD="0 0 120px">
-        <Container>
+        <Container position="relative" zIndex="1">
             <Box column directionMD="row" width="100%" gap="24px">
                 <Box column widthMD="calc(50% - 12px)">
                     <Heading size="h600" sizeMD="h700" sizeLG="h800" align="center" alignMD="left" margin="0 0 24px">Weryfikacja uczestników</Heading>

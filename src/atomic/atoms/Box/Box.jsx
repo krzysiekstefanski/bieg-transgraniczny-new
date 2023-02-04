@@ -23,6 +23,7 @@ const Box = styled.div`
   width: ${(props) => props.width};
   max-width: ${(props) => props.max};
   min-width: ${(props) => props.min};
+  color: ${(props) => checkColor(props.color)};
   background-color: ${(props) => checkColor(props.backgroundColor)};
   border: ${(props) => props.border};
   border-bottom: ${(props) => props.borderBottom};
@@ -54,6 +55,10 @@ const Box = styled.div`
 			display: block;
 			padding-bottom: 100%;
 		}`
+  }
+
+  :hover {
+    color: ${(props) => checkColor(props.hover)};
   }
 
   @media (max-width: 374px) {
@@ -141,6 +146,7 @@ const Box = styled.div`
 	}
  
   @media (min-width: 1280px) {
+    width: ${(props) => props.widthXL};
     padding: ${(props) => props.paddingXL};
     margin: ${(props) => props.marginXL};
   }
