@@ -8,7 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-import Header from "./header"
+// import Header from "./header"
+import Header from "../atomic/templates/Header/Header"
 import SubFooter from "../atomic/templates/SubFooter/SubFooter"
 import Footer from "../atomic/templates/Footer/Footer"
 import Box from "../atomic/atoms/Box/Box"
@@ -107,6 +108,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Box column minHeight="100vh">
+        <Header />
         <main>{children}</main>
         <SubFooter />
         <Footer />

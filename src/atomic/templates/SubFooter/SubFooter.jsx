@@ -20,6 +20,8 @@ const Social = styled(Box)`
     
 `
 
+const bieg = "biegtransgraniczny"
+
 const Footer = () => (
     <Box width="100%" backgroundColor="green00" padding="24px 16px" margin="auto 0 0">
         <Container wrap="wrap" directionSM="column" directionLG="row" justify="space-between" gap="16px" position="relative" zIndex="1">
@@ -28,9 +30,9 @@ const Footer = () => (
                     <Link to="/" color="white" hover="grey95" margin="0 0 12px" marginSM="0">Home</Link>
                 </Box>
                 <Box column directionSM="row">
-                    <Link to="/lista-startowa" color="white" hover="grey95" margin="0 0 12px" marginSM="0 24px 0 0">Lista startowa</Link>
-                    <Link to="/regulamin" color="white" hover="grey95" margin="0 0 12px" marginSM="0 24px 0 0">Regulamin</Link>
-                    <Link to="/kontakt" color="white" hover="grey95">Kontakt</Link>
+                    <Link to={`/${bieg}/lista-startowa`} color="white" hover="grey95" margin="0 0 12px" marginSM="0 24px 0 0">Lista startowa</Link>
+                    <Link to={`/${bieg}/regulamin`} color="white" hover="grey95" margin="0 0 12px" marginSM="0 24px 0 0">Regulamin</Link>
+                    <Link to={`/${bieg}/kontakt`} color="white" hover="grey95">Kontakt</Link>
                 </Box>
             </Box>
             <Social column directionSM="row">

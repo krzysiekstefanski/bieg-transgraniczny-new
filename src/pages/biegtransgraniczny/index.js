@@ -10,7 +10,6 @@ import Gallery from "../../atomic/templates/Gallery/Gallery"
 
 const TransgranicznyPage = () => (
   <Layout>
-    <Header />
     <Top />
     <Banner />
     <Verification />
