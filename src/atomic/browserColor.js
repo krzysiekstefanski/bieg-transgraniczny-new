@@ -1,5 +1,5 @@
-const colors = {
+const browserColor = {
 	green: '#1FAD66',
 }
 
-module.exports = colors;
+module.exports = browserColor;

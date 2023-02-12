@@ -9,7 +9,7 @@ const Component = styled(Link)`
     font-size: ${(props) => props.size ? getSize(props.size).size : props.fontSize ?? 'inherit'};
     line-height: ${(props) => props.size ? getSize(props.size).interline : props.interline ?? 'inherit'};
     font-weight: ${(props) => props.size ? getSize(props.size).weight : props.weight ?? 'inherit'};
-    color: ${(props) => props.color ? checkColor(props.color) : checkColor("green20")};
+    color: ${(props) => props.color ? checkColor(props.color) : checkColor("transgraniczny20")};
     line-height: ${(props) => (props.big ? "28" : "24")}px;
     text-decoration: none;
     padding: ${(props) => (props.padding)};
@@ -18,7 +18,7 @@ const Component = styled(Link)`
     transition: color .3s ease;
 
     :hover {
-        color: ${(props) => props.hover ? checkColor(props.hover) : checkColor("green40")};
+        color: ${(props) => props.hover ? checkColor(props.hover) : checkColor("transgraniczny40")};
     }
 
     @media (min-width: 576px) {

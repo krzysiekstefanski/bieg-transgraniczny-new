@@ -27,7 +27,7 @@ const Top = () => (
         <Container position="relative" zIndex="1">
             <Box width="100%" gap="48px" gapLG="100px">
                 <Box column maxMD="42%" maxLG="540px" padding="24px 0 0" paddingMD="88px 0 0">
-                    <Heading size="h700" sizeLG="h800" sizeXL="h900" margin="0 0 24px" marginMD="0 0 32px">6. Gryfiński <Heading as="span" size="h700" sizeLG="h800" sizeXL="h900" color="green20">Transgraniczny</Heading> Festiwal Biegowy</Heading>
+                    <Heading size="h700" sizeLG="h800" sizeXL="h900" margin="0 0 24px" marginMD="0 0 32px">6. Gryfiński <Heading as="span" size="h700" sizeLG="h800" sizeXL="h900" color="transgraniczny20">Transgraniczny</Heading> Festiwal Biegowy</Heading>
                     <Text size="contentL" color="grey20" margin="0 0 24px" marginMD="0 0 80px">Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
                         6. edycji Gryfińskiego Transgranicznego Festiwalu Biegowego uczcić
                         rocznicę Konstytucji 3 Maja.</Text>

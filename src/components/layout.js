@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body.open-modal {
+    overflow: hidden;
+  }
+
   * {
     box-sizing: inherit;
     margin: 0;
@@ -107,11 +111,11 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <Box column minHeight="100vh">
+      <Box id="main-wrapper" column minHeight="100vh">
         <Header />
-        <main>{children}</main>
+        <main style={{display: "flex", flexGrow: "1"}}>{children}</main>
         <SubFooter />
-        <Footer />
+        <Footer margin="0"/>
       </Box>
     </>
   )

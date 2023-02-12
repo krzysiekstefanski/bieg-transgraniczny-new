@@ -34,7 +34,7 @@ const ListItem = styled.li`
     height: 0; 
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 6px solid ${checkColor("green00")};
+    border-left: 6px solid ${checkColor("transgraniczny00")};
     position: absolute;
     top: 50%;
     left: 0;

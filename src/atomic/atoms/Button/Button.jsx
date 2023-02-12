@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getSize, checkColor } from "../../utils"
+import { getSize, checkColor, getColor } from "../../utils"
 
 const Button = styled.button`
   font-family: Inter, sans-serif;
@@ -139,13 +139,13 @@ const ButtonVariants = {
     green: {
         color: checkColor("white"),
         fontWeight: '700',
-        backgroundColor: checkColor("green20"),
+        backgroundColor: checkColor("transgraniczny20"),
         border: '1px solid transparent',
         hoverColor: checkColor("white"),
-        hoverBackgroundColor: checkColor("green40"),
+        hoverBackgroundColor: checkColor("transgraniczny40"),
         hoverBorder: '1px solid transparent',
         focusColor: checkColor("white"),
-        focusBackgroundColor: checkColor("green40"),
+        focusBackgroundColor: checkColor("transgraniczny40"),
         focusBorder: '1px solid transparent',
         focusOutline: 'none',
         transition: '0.25s ease-in background-color',

@@ -29,7 +29,7 @@ const Component = styled.button`
     display: block;
     height: 6px;
     width: 35px;
-    background-color: ${props => props.color ? checkColor(props.color) : colors.green00};
+    background-color: ${props => props.color ? checkColor(props.color) : colors.transgraniczny00};
     border-radius: 2px;
     position: relative;
     transition: background-color 0.3s ease;

@@ -7,7 +7,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-const colors = require('./src/atomic/browserColor');
+const browserColor = require('./src/atomic/browserColor');
 
 module.exports = {
   siteMetadata: {
@@ -33,7 +33,7 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: colors.red00,
+        background_color: browserColor.red00,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -51,5 +51,6 @@ module.exports = {
     },
     `gatsby-plugin-svgr-svgo`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-portal`
   ],
 }

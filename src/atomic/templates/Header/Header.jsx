@@ -16,7 +16,7 @@ const Component = styled(Box)`
 `
 
 const Header = () => (
-    <Component width="100%" backgroundColor="white" shadow="md" padding="16px 0" margin="auto 0 0" position="relative" zIndex="100">
+    <Component width="100%" backgroundColor="white" shadow="md" padding="16px 0" position="relative" zIndex="100">
         <Container>
             <Logo />
             <Menu />

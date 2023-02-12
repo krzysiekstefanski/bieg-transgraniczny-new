@@ -1,4 +1,14 @@
+import { getColor } from './utils'
+
+const transgraniczny = '#1FAD66';
+
 export const colors = {
+	transgraniczny00: transgraniczny,
+	transgraniczny20: getColor(transgraniczny, 20),
+	transgraniczny40: getColor(transgraniczny, 40),
+	transgraniczny60: getColor(transgraniczny, 60),
+	transgraniczny80: getColor(transgraniczny, 80),
+	transgraniczny100: getColor(transgraniczny, 100),
 	red00: '#6C1322',
 	red20: '#C4233E',
 	red40: '#DC3C57',

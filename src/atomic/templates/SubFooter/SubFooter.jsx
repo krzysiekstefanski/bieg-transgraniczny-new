@@ -23,7 +23,7 @@ const Social = styled(Box)`
 const bieg = "biegtransgraniczny"
 
 const Footer = () => (
-    <Box width="100%" backgroundColor="green00" padding="24px 16px" margin="auto 0 0">
+    <Box width="100%" backgroundColor="transgraniczny00" padding="24px 16px" margin="auto 0 0">
         <Container wrap="wrap" directionSM="column" directionLG="row" justify="space-between" gap="16px" position="relative" zIndex="1">
             <Box column directionSM="row">
                 <Box margin="0 24px 0 0" marginLG="0 calc(15vw - 100px) 0 0" marginXL="0 190px 0 0">

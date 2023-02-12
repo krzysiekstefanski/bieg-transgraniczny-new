@@ -29,7 +29,7 @@ const Banner = () => (
             <BgGreenSVG />
         </Box>
         <Container position="relative" zIndex="1">
-            <Box column align="center" width="100%" max="1030px" backgroundColor="white" shadowMD="md" paddingMD="40px" margin="0 auto" position="relative" zIndex="1">
+            <Box column align="center" width="100%" max="1030px" backgroundColor="white" radius="8px" shadowMD="md" paddingMD="40px" margin="0 auto" position="relative" zIndex="1">
                 <StaticImage src="../../../images/6-transgraniczny.png" />
                 <Box column width="100%" max="664px" margin="32px 0 24px">
                     <Text size="contentM" align="center" margin="0 0 16px" marginMD="0 0 32px">

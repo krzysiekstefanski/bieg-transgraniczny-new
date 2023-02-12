@@ -87,7 +87,7 @@ const Layout = ({ children }) => (
     <GlobalStyle />
     <Box column minHeight="100vh">
       <main>{children}</main>
-      <Footer />
+      <Footer/>
     </Box>
   </>
 )
