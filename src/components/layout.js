@@ -113,7 +113,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Box id="main-wrapper" column minHeight="100vh">
         <Header />
-        <main style={{display: "flex", flexGrow: "1"}}>{children}</main>
+        <main style={{display:"flex", flexDirection: "column", flexGrow: "1"}}>{children}</main>
         <SubFooter />
         <Footer margin="0"/>
       </Box>
