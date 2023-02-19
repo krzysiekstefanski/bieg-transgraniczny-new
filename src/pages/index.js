@@ -118,7 +118,7 @@ const IndexPage = () => (
             as={Link}
             to="biegtransgraniczny"
             size="big"
-            variant="green"
+            variant="transgraniczny"
             width="100%"
             widthSM="60%"
             widthMD="auto"
@@ -151,10 +151,20 @@ const IndexPage = () => (
           Wybierz rodzaj biegu, w którym chcesz wziąć udział.
         </Heading>
         <Box display="none" displayLG="flex" gap="24px">
-          <Button as={Link} to="biegtransgraniczny" size="big" variant="green">
+          <Button
+            as={Link}
+            to="biegtransgraniczny"
+            size="big"
+            variant="transgraniczny"
+          >
             Bieg Transgraniczny
           </Button>
-          <Button as={Link} to="biegniepodleglosci" size="big">
+          <Button
+            as={Link}
+            to="biegniepodleglosci"
+            size="big"
+            variant="niepodleglosci"
+          >
             Bieg Niepodległości
           </Button>
         </Box>
@@ -261,6 +271,7 @@ const IndexPage = () => (
           <Button
             as={Link}
             to="biegniepodleglosci"
+            variant="niepodleglosci"
             size="big"
             width="100%"
             widthSM="60%"
