@@ -60,7 +60,7 @@ const TransgranicznyRegulaminPage = () => {
 
   return (
     <Layout theme={theme}>
-      <Component theme={theme} padding="32px 0 240px" position="relative">
+      <Component theme={theme} padding="32px 0 48px" position="relative">
         <Box
           width="266px"
           position="absolute"
@@ -85,7 +85,7 @@ const TransgranicznyRegulaminPage = () => {
           width="166px"
           position="absolute"
           top="50%"
-          right="calc((65vw - 1272px) * 0.25)"
+          right="calc((65vw - 1272px) * 0.35)"
           rightHD="0"
           zIndex="1"
         >
@@ -106,13 +106,14 @@ const TransgranicznyRegulaminPage = () => {
           widthSM="304px"
           position="absolute"
           bottom="0"
-          left="0"
+          left="calc((65vw - 1272px) * 0.65)"
+          leftHD="0"
           zIndex="-1"
         >
           {theme === "niepodleglosci" ? <BgRedSVG5 /> : <BgGreenSVG5 />}
         </Box>
         <Container>
-          <Box column width="100%">
+          <Box column width="100%" max="800px" margin="0 auto">
             <Box
               margin="0 0 16px"
               marginSM="24px"
@@ -129,7 +130,6 @@ const TransgranicznyRegulaminPage = () => {
               />
             </Box>
             <h2>ORGANIZATOR:</h2>
-
             <p>
               Urząd Miasta i Gminy Gryfino - Ośrodek Sportu i Rekreacji w
               Gryfinie
@@ -187,16 +187,14 @@ const TransgranicznyRegulaminPage = () => {
             <p>- 10 km z atestem</p>
             <p>- 10 km z atestem Nordic Walking</p>
             <p>Trasy po ścieżkach rowerowych w Polsce i w Niemczech.</p>
-
             <h3>BIEG 10 KM ORAZ NORDIC WALKING 10 KM</h3>
-
             <StaticImage
               src="../../images/trasa1a.png"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ margin: "0 auto 32px" }}
+              style={{ margin: "24px auto 32px" }}
             />
             <StaticImage
               src="../../images/trasa1c.png"
@@ -204,18 +202,16 @@ const TransgranicznyRegulaminPage = () => {
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ margin: "0 auto" }}
+              style={{ margin: "24px auto 0" }}
             />
-
             <h3>PÓŁMARATON:</h3>
-
             <StaticImage
               src="../../images/trasa2a.png"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ margin: "0 auto 32px" }}
+              style={{ margin: "24px auto 32px" }}
             />
             <StaticImage
               src="../../images/trasa2b.png"
@@ -223,9 +219,8 @@ const TransgranicznyRegulaminPage = () => {
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ margin: "0 auto" }}
+              style={{ margin: "24px auto 48px" }}
             />
-
             <p>
               <span>WARUNKI UCZESTNICTWA:</span>
             </p>
@@ -321,16 +316,14 @@ const TransgranicznyRegulaminPage = () => {
               Wysokość opłaty zależna jest od terminu jej dokonania (liczy się
               data zaksięgowania opłaty na koncie organizatora):
             </p>
-
             <StaticImage
-              src="../../images/wplatybieg.jpeg"
+              src="../../images/wplatybieg.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ margin: "0 auto" }}
+              style={{ margin: "24px auto 32px" }}
             />
-
             <p>
               - Z opłaty startowej są zwolnieni zawodnicy z kategorii K60, M70
               (rocznik K-1962 i starsze oraz M-1952 i starsi).
@@ -459,16 +452,14 @@ const TransgranicznyRegulaminPage = () => {
                 <br />
               </b>
             </p>
-
             <StaticImage
               src="../../images/weryfikacja.png"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ margin: "0 auto" }}
+              style={{ margin: "24px auto 32px" }}
             />
-
             <p>
               <span>WZÓR OŚWIADCZENIA (osoby niepełnoletnie)</span>
             </p>
@@ -627,7 +618,6 @@ const TransgranicznyRegulaminPage = () => {
                 <p>Dyrektor Biegu - Jan Podleśny</p>
               </p>
             </p>
-
             <a href={Rules}>Pobierz Regulamin w formie pliku PDF</a>
           </Box>
         </Container>

@@ -21,7 +21,7 @@ const IndexPage = () => (
       directionLG="row"
       justify="space-between"
       gap="16px"
-      height="calc(100vh - 101px)"
+      heightLG="calc(100vh - 101px)"
       max="1920px"
       padding="16px"
       paddingLG="32px 48px 0"
@@ -35,9 +35,9 @@ const IndexPage = () => (
         order="2"
         orderLG="1"
         radius="8px"
-        maxHeight="280px"
+        //maxHeight="280px"
         maxHeightSM="400px"
-        maxHeightMD="560px"
+        maxHeightMD="760px"
         maxHeightLG="none"
         backgroundColorLG="transparent"
         borderWidth="1px"
@@ -55,7 +55,13 @@ const IndexPage = () => (
           margin="0 0 6px"
           marginMD="0 0 26px"
         >
-          <Box width="66px" widthXS="40px" widthMD="96px" widthLG="146px">
+          <Box
+            width="66px"
+            widthXS="40px"
+            widthMD="56px"
+            widthXL="76px"
+            widthXXL="146px"
+          >
             <StaticImage
               src="../images/bieg-transgraniczny-logo.png"
               placeholder="none"
@@ -65,9 +71,9 @@ const IndexPage = () => (
             as="h2"
             size="h600"
             sizeXS="textHeading"
-            sizeXL="h700"
-            sizeXXL="h800"
-            wrap="nowrap"
+            sizeXXL="h700"
+            sizeHD="h800"
+            wrapLG="nowrap"
             margin="0 0 0 25px"
           >
             Bieg Transgraniczny
@@ -140,21 +146,29 @@ const IndexPage = () => (
         <Heading
           size="h700"
           sizeMD="h800"
-          sizeXXL="h900"
+          sizeHD="h900"
           margin="8px 0"
           marginMD="16px 0 32px"
-          marginXL="32px 0 76px"
+          marginXXL="32px 0 76px"
         >
           Gryfinobiega.pl
         </Heading>
         <Heading as="h3" size="TextHeading" align="center" marginLG="0 0 66px">
           Wybierz rodzaj biegu, w którym chcesz wziąć udział.
         </Heading>
-        <Box display="none" displayLG="flex" gap="24px">
+        <Box
+          display="none"
+          displayLG="flex"
+          gap="24px"
+          gapLG="16px"
+          gapXL="24px"
+        >
           <Button
             as={Link}
             to="biegtransgraniczny"
             size="big"
+            sizeLG="small"
+            sizeHD="big"
             variant="transgraniczny"
           >
             Bieg Transgraniczny
@@ -163,6 +177,8 @@ const IndexPage = () => (
             as={Link}
             to="biegniepodleglosci"
             size="big"
+            sizeLG="small"
+            sizeHD="big"
             variant="niepodleglosci"
           >
             Bieg Niepodległości
@@ -176,9 +192,9 @@ const IndexPage = () => (
         align="center"
         order="3"
         radius="8px"
-        maxHeight="280px"
+        //maxHeight="280px"
         maxHeightSM="400px"
-        maxHeightMD="560px"
+        maxHeightMD="760px"
         maxHeightLG="none"
         backgroundColorLG="transparent"
         borderWidth="1px"
@@ -200,12 +216,12 @@ const IndexPage = () => (
             as="h2"
             size="h600"
             sizeXS="textHeading"
-            sizeXL="h700"
-            sizeXXL="h800"
+            sizeXXL="h700"
+            sizeHD="h800"
             order="2"
             orderLG="1"
             align="right"
-            wrap="nowrap"
+            wrapLG="nowrap"
             margin="0 0 0 25px"
             marginLG="0 25px 0 0"
           >
@@ -216,8 +232,9 @@ const IndexPage = () => (
             orderLG="2"
             width="66px"
             widthXS="40px"
-            widthMD="96px"
-            widthLG="146px"
+            widthMD="56px"
+            widthXL="76px"
+            widthXXL="146px"
           >
             <StaticImage
               src="../images/bieg-niepodleglosci-logo.png"

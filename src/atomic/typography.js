@@ -49,6 +49,11 @@ export const typography = {
     interline: "24px",
     weight: "700",
   },
+  buttonS: {
+    size: "14px",
+    interline: "22px",
+    weight: "700",
+  },
   caption: {
     size: "12px",
     interline: "28px",
