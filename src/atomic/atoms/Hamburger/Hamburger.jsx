@@ -29,7 +29,8 @@ const Component = styled.button`
     display: block;
     height: 6px;
     width: 35px;
-    background-color: ${props => props.color ? checkColor(props.color) : colors.transgraniczny00};
+    background-color: ${props =>
+      props.color ? checkColor(props.color) : checkColor(props.theme + "00")};
     border-radius: 2px;
     position: relative;
     transition: background-color 0.3s ease;
@@ -62,10 +63,11 @@ const Component = styled.button`
   }
 `
 
-const Hamburger = ({ hamburgerClick, active }) => (
+const Hamburger = ({ theme, hamburgerClick, active }) => (
   <Component
     className={"hamburger" + (active && " active")}
     onClick={hamburgerClick}
+    theme={theme}
   >
     <span />
     <span />
@@ -73,4 +75,4 @@ const Hamburger = ({ hamburgerClick, active }) => (
   </Component>
 )
 
-export default Hamburger;
+export default Hamburger

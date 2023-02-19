@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { checkColor } from "../../utils";
+import { checkColor } from "../../utils"
 import Box from "../../atoms/Box/Box"
 import Input from "../../atoms/Input/Input"
 import Textarea from "../../atoms/Textarea/Textarea"
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
-    
+
     @media (min-width: 769px) {
       align-items: flex-end;
     }
@@ -69,53 +69,41 @@ const Flexbox = styled.div`
   }
 `
 
-const Form = () => {
-    return (
-        <Wrapper>
-            <form
-                name="Contact"
-                method="post"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-            >
-                <input type="hidden" name="bot-field" />
-                <Flexbox>
-                    <label
-                        className={
-                            "form-label"
-                        }
-                        htmlFor="fname"
-                    >
-                        <p style={{ display: "none" }}>Imię i nazwisko</p>
-                        <Input placeholder="Imię i nazwisko" />
-                    </label>
-                    <label
-                        className={
-                            "form-label"
-                        }
-                        htmlFor="lname"
-                    >
-                        <p style={{ display: "none" }}>Adres email</p>
-                        <Input placeholder="Adres email" />
-                    </label>
-                </Flexbox>
-                <label
-                    className={
-                        "form-label"
-                    }
-                    htmlFor="message"
-                    style={{ position: "relative" }}
-                >
-                    <p style={{ display: "none" }}>Treść wiadomości</p>
-                    <Textarea rows="7" placeholder="Treść wiadomości" />
-                </label>
-                <Box>
-                    <FormAcceptance />
-                    <Button variant="green">Wyślij</Button>
-                </Box>
-            </form>
-        </Wrapper>
-    )
+const Form = ({ theme }) => {
+  return (
+    <Wrapper>
+      <form
+        name="Contact"
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <input type="hidden" name="bot-field" />
+        <Flexbox>
+          <label className={"form-label"} htmlFor="fname">
+            <p style={{ display: "none" }}>Imię i nazwisko</p>
+            <Input placeholder="Imię i nazwisko" />
+          </label>
+          <label className={"form-label"} htmlFor="lname">
+            <p style={{ display: "none" }}>Adres email</p>
+            <Input placeholder="Adres email" />
+          </label>
+        </Flexbox>
+        <label
+          className={"form-label"}
+          htmlFor="message"
+          style={{ position: "relative" }}
+        >
+          <p style={{ display: "none" }}>Treść wiadomości</p>
+          <Textarea rows="7" placeholder="Treść wiadomości" />
+        </label>
+        <Box>
+          <FormAcceptance theme={theme} />
+          <Button variant={theme}>Wyślij</Button>
+        </Box>
+      </form>
+    </Wrapper>
+  )
 }
 
 export default Form

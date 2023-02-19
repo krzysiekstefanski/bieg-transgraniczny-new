@@ -4,7 +4,7 @@ import Seo from "../../components/seo"
 import Kontakt from "../../atomic/templates/Kontakt/Kontakt"
 
 const TransgranicznyKontaktPage = () => {
-  const theme = "transgraniczny"
+  const theme = "niepodleglosci"
 
   return (
     <Layout theme={theme}>

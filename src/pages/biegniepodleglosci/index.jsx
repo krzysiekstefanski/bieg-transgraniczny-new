@@ -7,9 +7,10 @@ import Banner from "../../atomic/templates/Banner/Banner"
 import Verification from "../../atomic/templates/Verification/Verification"
 import Rewards from "../../atomic/templates/Rewards/Rewards"
 import Gallery from "../../atomic/templates/Gallery/Gallery"
+import { colors } from "../../atomic/colors"
 
 const TransgranicznyPage = () => {
-  const theme = "transgraniczny"
+  const theme = "niepodleglosci"
 
   return (
     <Layout theme={theme}>

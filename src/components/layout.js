@@ -96,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ theme, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -112,10 +112,14 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Box id="main-wrapper" column minHeight="100vh">
-        <Header />
-        <main style={{display:"flex", flexDirection: "column", flexGrow: "1"}}>{children}</main>
-        <SubFooter />
-        <Footer margin="0"/>
+        <Header theme={theme} />
+        <main
+          style={{ display: "flex", flexDirection: "column", flexGrow: "1" }}
+        >
+          {children}
+        </main>
+        <SubFooter theme={theme} />
+        <Footer margin="0" />
       </Box>
     </>
   )

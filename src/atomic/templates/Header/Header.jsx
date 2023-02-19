@@ -6,22 +6,29 @@ import Logo from "../../molecules/Logo/Logo"
 import Menu from "../../molecules/Menu/Menu"
 
 const Component = styled(Box)`
-    .gatsby-image-wrapper {
-        margin: 0 auto;
+  .gatsby-image-wrapper {
+    margin: 0 auto;
 
-        img {
-            object-fit: contain !important;
-        }
+    img {
+      object-fit: contain !important;
     }
+  }
 `
 
-const Header = () => (
-    <Component width="100%" backgroundColor="white" shadow="md" padding="16px 0" position="relative" zIndex="100">
-        <Container>
-            <Logo />
-            <Menu />
-        </Container>
-    </Component>
+const Header = ({ theme }) => (
+  <Component
+    width="100%"
+    backgroundColor="white"
+    shadow="md"
+    padding="16px 0"
+    position="relative"
+    zIndex="100"
+  >
+    <Container>
+      <Logo theme={theme} />
+      <Menu theme={theme} />
+    </Container>
+  </Component>
 )
 
 export default Header
