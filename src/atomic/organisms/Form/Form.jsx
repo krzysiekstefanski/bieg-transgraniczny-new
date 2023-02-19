@@ -97,9 +97,11 @@ const Form = ({ theme }) => {
           <p style={{ display: "none" }}>Treść wiadomości</p>
           <Textarea rows="7" placeholder="Treść wiadomości" />
         </label>
-        <Box>
+        <Box column directionSM="row">
           <FormAcceptance theme={theme} />
-          <Button variant={theme}>Wyślij</Button>
+          <Button variant={theme} margin="24px 0 0" marginSM="0">
+            Wyślij
+          </Button>
         </Box>
       </form>
     </Wrapper>

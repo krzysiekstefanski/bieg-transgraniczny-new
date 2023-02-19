@@ -44,7 +44,7 @@ const Top = ({ theme }) => (
           column
           maxMD="42%"
           maxLG="540px"
-          padding="24px 0 0"
+          padding="32px 0 0"
           paddingMD="88px 0 0"
         >
           {theme === "niepodleglosci" ? (

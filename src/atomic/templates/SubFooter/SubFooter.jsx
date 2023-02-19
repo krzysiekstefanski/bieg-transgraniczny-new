@@ -36,22 +36,16 @@ const SubFooter = ({ theme }) => (
       zIndex="1"
     >
       <Box column directionSM="row">
-        <Box
-          margin="0 24px 0 0"
-          marginLG="0 calc(15vw - 100px) 0 0"
-          marginXL="0 190px 0 0"
-        >
+        <Box column directionSM="row">
           <Link
             to={`/bieg${theme}`}
             color="white"
             hover="grey95"
             margin="0 0 12px"
-            marginSM="0"
+            marginSM="0 24px 0 0"
           >
             Home
           </Link>
-        </Box>
-        <Box column directionSM="row">
           <Link
             to={`/bieg${theme}/lista-startowa`}
             color="white"

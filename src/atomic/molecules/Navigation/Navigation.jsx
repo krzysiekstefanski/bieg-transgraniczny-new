@@ -23,12 +23,25 @@ const Navigation = ({ theme, items, active }) => (
     padding="20px"
     paddingLG="0"
   >
-    <Box column directionLG="row" min="320px">
+    <Box
+      column
+      directionLG="row"
+      min="320px"
+      marginLG="0 16px 0 0"
+      marginXL="0"
+    >
       {items.map(item => (
         <NavItem theme={theme} item={item} />
       ))}
     </Box>
-    <Button as={Link} variant={theme} margin="24px 0 0" marginLG="0">
+    <Button
+      as={Link}
+      variant={theme}
+      size="small"
+      sizeXL="medium"
+      margin="24px 0 0"
+      marginLG="0"
+    >
       Zapisz się
     </Button>
   </Box>

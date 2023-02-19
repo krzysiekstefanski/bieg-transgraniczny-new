@@ -9,7 +9,7 @@ import Rewards from "../../atomic/templates/Rewards/Rewards"
 import Gallery from "../../atomic/templates/Gallery/Gallery"
 import { colors } from "../../atomic/colors"
 
-const TransgranicznyPage = () => {
+const NiepodleglosciPage = () => {
   const theme = "niepodleglosci"
 
   return (
@@ -23,6 +23,6 @@ const TransgranicznyPage = () => {
   )
 }
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Bieg Niepodległości Gryfino" />
 
-export default TransgranicznyPage
+export default NiepodleglosciPage

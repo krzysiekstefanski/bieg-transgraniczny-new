@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
@@ -27,19 +26,40 @@ const Kontakt = ({ theme }) => (
     grow="1"
     width="100%"
     backgroundColor="grey95"
-    padding="0 0 48px"
+    padding="32px 0 48px"
     paddingMD="84px 0 120px"
     position="relative"
   >
-    <Box width="266px" position="absolute" top="0" right="0" zIndex="1">
+    <Box
+      width="100px"
+      widthSM="200px"
+      widthMD="266px"
+      position="absolute"
+      top="0"
+      right="0"
+      zIndex="1"
+    >
       {theme === "niepodleglosci" ? <BgRedSVG /> : <BgGreenSVG />}
     </Box>
-    <Box width="280px" widthSM="304px" position="absolute" bottom="0" left="0">
+    <Box
+      width="80px"
+      widthMD="160px"
+      widthLG="304px"
+      position="absolute"
+      bottom="0"
+      left="0"
+    >
       {theme === "niepodleglosci" ? <BgRedSVG2 /> : <BgGreenSVG2 />}
     </Box>
     <Container position="relative" zIndex="1" margin="0 auto auto">
-      <Box width="100%">
-        <Box column width="100%" max="527px" padding="0 130px 0 0">
+      <Box column directionLG="row" width="100%">
+        <Box
+          column
+          width="100%"
+          max="527px"
+          padding="0 0 24px"
+          paddingLG="0 130px 0 0"
+        >
           <Heading
             size="h600"
             sizeMD="h700"
@@ -51,8 +71,8 @@ const Kontakt = ({ theme }) => (
             Kontakt
           </Heading>
           <Box column gap="24px">
-            <Box>
-              <Box column width="50%">
+            <Box column directionSM="row">
+              <Box column width="100%" widthSM="50%">
                 <Text size="contentL">Strony internetowe:</Text>
                 <Link
                   variant={theme}
@@ -81,10 +101,16 @@ const Kontakt = ({ theme }) => (
                 </Link>
               </Box>
             </Box>
-            <Box>
-              <Box column width="50%">
+            <Box column directionSM="row">
+              <Box column width="100%" widthSM="50%">
                 <Text size="contentL">Telefon / Fax:</Text>
-                <Link variant={theme} href="tel:48914163011" target="_blank">
+                <Link
+                  variant={theme}
+                  href="tel:48914163011"
+                  target="_blank"
+                  margin="0 0 24px"
+                  marginSM="0"
+                >
                   91 416 30 11
                 </Link>
               </Box>

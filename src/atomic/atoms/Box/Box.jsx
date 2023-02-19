@@ -60,6 +60,7 @@ const Box = styled.div`
   }
 
   @media (max-width: 374px) {
+    height: ${props => props.heightXS};
     width: ${props => props.widthXS};
     padding: ${props => props.paddingXS};
     gap: ${props => props.gapXS};
@@ -147,10 +148,22 @@ const Box = styled.div`
     width: ${props => props.widthXL};
     padding: ${props => props.paddingXL};
     margin: ${props => props.marginXL};
+    left: ${props => props.leftXL};
+    top: ${props => props.topXL};
+    bottom: ${props => props.bottomXL};
+    right: ${props => props.rightXL};
   }
 
   @media (min-width: 1440px) {
     padding: ${props => props.paddingXXL};
+  }
+
+  @media (min-width: 1920px) {
+    padding: ${props => props.paddingHD};
+    left: ${props => props.leftHD};
+    top: ${props => props.topHD};
+    bottom: ${props => props.bottomHD};
+    right: ${props => props.rightHD};
   }
 `
 

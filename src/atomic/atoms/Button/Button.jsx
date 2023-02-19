@@ -87,6 +87,18 @@ const Button = styled.button`
   @media (min-width: 992px) {
     display: ${props => props.displayLG};
     margin: ${props => props.marginLG};
+    padding: ${props => props.paddingLG ?? ButtonSizes[props.sizeLG]?.padding};
+    font-size: ${props => getSize(ButtonSizes[props.sizeLG]?.textSize).size};
+    line-height: ${props =>
+      getSize(ButtonSizes[props.sizeLG]?.textSize).interline};
+  }
+
+  @media (min-width: 1280px) {
+    margin: ${props => props.marginXL};
+    padding: ${props => props.paddingXL ?? ButtonSizes[props.sizeXL]?.padding};
+    font-size: ${props => getSize(ButtonSizes[props.sizeXL]?.textSize).size};
+    line-height: ${props =>
+      getSize(ButtonSizes[props.sizeXL]?.textSize).interline};
   }
 
   :focus {
@@ -137,6 +149,10 @@ const Button = styled.button`
 `
 
 const ButtonSizes = {
+  small: {
+    padding: `9px 27px`,
+    textSize: `button`,
+  },
   medium: {
     padding: `11px 39px`,
     textSize: `button`,
