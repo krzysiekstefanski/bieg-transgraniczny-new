@@ -33,7 +33,15 @@ const Banner = ({ theme }) => (
     <Box width="100%" widthXL="80%" position="absolute" top="0" left="-50px">
       <BgSVG />
     </Box>
-    <Box width="201px" position="absolute" bottom="-20px" left="0" zIndex="1">
+    <Box
+      width="201px"
+      position="absolute"
+      bottom="-20px"
+      left="0"
+      zIndex="1"
+      opacity="0.2"
+      opacityMD="1"
+    >
       {theme === "niepodleglosci" ? <BgRedSVG /> : <BgGreenSVG />}
     </Box>
     <Container position="relative" zIndex="1">

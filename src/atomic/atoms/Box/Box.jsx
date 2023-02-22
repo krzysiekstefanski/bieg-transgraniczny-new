@@ -46,6 +46,7 @@ const Box = styled.div`
   bottom: ${props => props.bottom};
   overflow: ${props => props.overflow};
   box-shadow: ${props => checkShadow(props.shadow)};
+  opacity: ${props => props.opacity};
   z-index: ${props => props.zIndex};
   ${props =>
     props.square &&
@@ -115,6 +116,7 @@ const Box = styled.div`
     left: ${props => props.leftMD};
     border-radius: ${props => props.radiusMD};
     box-shadow: ${props => props.shadowMD};
+    opacity: ${props => props.opacityMD};
   }
 
   @media (min-width: 992px) {

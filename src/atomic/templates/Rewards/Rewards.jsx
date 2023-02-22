@@ -52,10 +52,26 @@ const Rewards = ({ theme }) => {
       paddingMD="120px 0"
       position="relative"
     >
-      <Box width="266px" position="absolute" top="0" right="0" zIndex="1">
+      <Box
+        width="266px"
+        position="absolute"
+        top="0"
+        right="0"
+        zIndex="1"
+        opacity="0.2"
+        opacityMD="1"
+      >
         {theme === "niepodleglosci" ? <BgRedSVG /> : <BgGreenSVG />}
       </Box>
-      <Box width="202px" position="absolute" bottom="0" left="0" zIndex="1">
+      <Box
+        width="202px"
+        position="absolute"
+        bottom="0"
+        left="0"
+        zIndex="1"
+        opacity="0.2"
+        opacityMD="1"
+      >
         {theme === "niepodleglosci" ? <BgRedSVG2 /> : <BgGreenSVG2 />}
       </Box>
       <Container position="relative" zIndex="1">
