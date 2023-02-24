@@ -147,6 +147,7 @@ const Box = styled.div`
   }
 
   @media (min-width: 1280px) {
+    height: ${props => props.heightXL};
     width: ${props => props.widthXL};
     padding: ${props => props.paddingXL};
     margin: ${props => props.marginXL};

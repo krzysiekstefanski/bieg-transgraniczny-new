@@ -82,11 +82,13 @@ const IndexPage = () => (
         <Box
           justify="center"
           height="stretch"
+          heightXL="calc(100vh - 305px)"
           width="100%"
           margin="auto 0"
           position="relative"
         >
           <Box
+            heightXL="100%"
             max="230px"
             maxSM="400px"
             maxMD="514px"
@@ -94,6 +96,7 @@ const IndexPage = () => (
             zIndex="1"
           >
             <StaticImage
+              objectFit="contain"
               src="../images/bieg-transgraniczny-runner.png"
               placeholder="none"
             />
@@ -112,7 +115,8 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box
-          displayLG="none"
+          display="none"
+          //displayLG="none"
           justify="center"
           width="calc(100% - 32px)"
           position="absolute"
@@ -153,12 +157,15 @@ const IndexPage = () => (
         >
           Gryfinobiega.pl
         </Heading>
-        <Heading as="h3" size="TextHeading" align="center" marginLG="0 0 66px">
+        {/* <Heading as="h3" size="TextHeading" align="center" marginLG="0 0 66px">
           Wybierz rodzaj biegu, w którym chcesz wziąć udział.
+        </Heading> */}
+        <Heading as="h3" size="TextHeading" align="center" marginLG="0 0 66px">
+          Strona dostępna od 1 marca 2023
         </Heading>
         <Box
           display="none"
-          displayLG="flex"
+          //displayLG="flex"
           gap="24px"
           gapLG="16px"
           gapXL="24px"
@@ -245,11 +252,13 @@ const IndexPage = () => (
         <Box
           justify="center"
           height="stretch"
+          heightXL="calc(100vh - 305px)"
           width="100%"
           margin="auto 0"
           position="relative"
         >
           <Box
+            heightXL="100%"
             max="230px"
             maxSM="400px"
             maxMD="514px"
@@ -259,6 +268,7 @@ const IndexPage = () => (
             zIndex="1"
           >
             <StaticImage
+              objectFit="contain"
               src="../images/bieg-niepodleglosci-runner.png"
               placeholder="none"
             />
@@ -277,7 +287,8 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box
-          displayLG="none"
+          display="none"
+          //displayLG="none"
           justify="center"
           width="calc(100% - 32px)"
           position="absolute"
