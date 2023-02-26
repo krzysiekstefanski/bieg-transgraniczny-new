@@ -24,7 +24,7 @@ const SubFooter = ({ theme }) => (
     width="100%"
     backgroundColor={theme + "00"}
     padding="24px 16px"
-    margin="auto 0 0"
+    margin="auto 0 8px"
   >
     <Container
       wrap="wrap"
@@ -72,7 +72,7 @@ const SubFooter = ({ theme }) => (
       <Social column directionSM="row">
         <Box
           as="a"
-          href="mailto:sport@osir.gryfino.pl"
+          href="mailto:sport@csir.gryfino.pl"
           align="center"
           color="white"
           hover="grey95"
@@ -80,7 +80,7 @@ const SubFooter = ({ theme }) => (
           marginSM="0 24px 0 0"
         >
           <MailSVG />
-          sport@osir.gryfino.pl
+          sport@csir.gryfino.pl
         </Box>
         <Box
           as="a"

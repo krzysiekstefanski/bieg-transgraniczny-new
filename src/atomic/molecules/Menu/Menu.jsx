@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Box from "../../atoms/Box/Box"
 import Hamburger from "../../atoms/Hamburger/Hamburger"
 import Navigation from "../../molecules/Navigation/Navigation"
+import { colors } from "../../colors"
 
 const menu = [
   {
@@ -37,6 +38,13 @@ const Menu = ({ theme }) => {
   const handleClick = () => {
     setHamburgerIsActive(!hamburgerIsActive)
   }
+
+  console.log(colors.transgraniczny00)
+  console.log(colors.transgraniczny20)
+  console.log(colors.transgraniczny40)
+  console.log(colors.transgraniczny60)
+  console.log(colors.transgraniczny80)
+  console.log(colors.transgraniczny100)
 
   return (
     <Box>

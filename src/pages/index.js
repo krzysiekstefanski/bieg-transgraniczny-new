@@ -10,7 +10,7 @@ import Button from "../atomic/atoms/Button/Button"
 // import GreenBackgroundSVG from "../images/green-bg.inline.svg"
 // import RedBackgroundSVG from "../images/red-bg.inline.svg"
 const GreenBackgroundSVG = loadable(() =>
-  import("../images/green-bg.inline.svg")
+  import("../images/teal-bg.inline.svg")
 )
 const RedBackgroundSVG = loadable(() => import("../images/red-bg.inline.svg"))
 
@@ -50,24 +50,27 @@ const IndexPage = () => (
         position="relative"
       >
         <Box
-          align="center"
+          width="100%"
+          justify="center"
+          justifyLG="flex-start"
           minHeightLG="120px"
           margin="0 0 6px"
           marginMD="0 0 26px"
         >
           <Box
-            width="66px"
-            widthXS="40px"
-            widthMD="56px"
-            widthXL="76px"
-            widthXXL="146px"
+            //width="66px"
+            //widthXS="40px"
+            //widthMD="56px"
+            //widthXL="336px"
+            max="350px"
           >
             <StaticImage
-              src="../images/bieg-transgraniczny-logo.png"
+              src="../images/7-gtfb-logo.jpg"
               placeholder="none"
+              objectFit="contain"
             />
           </Box>
-          <Heading
+          {/* <Heading
             as="h2"
             size="h600"
             sizeXS="textHeading"
@@ -77,7 +80,7 @@ const IndexPage = () => (
             margin="0 0 0 25px"
           >
             Bieg Transgraniczny
-          </Heading>
+          </Heading> */}
         </Box>
         <Box
           justify="center"
@@ -97,7 +100,7 @@ const IndexPage = () => (
           >
             <StaticImage
               objectFit="contain"
-              src="../images/bieg-transgraniczny-runner.png"
+              src="../images/bieg-transgraniczny-runner-p.png"
               placeholder="none"
             />
           </Box>

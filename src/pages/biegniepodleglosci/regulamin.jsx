@@ -5,11 +5,11 @@ import Layout from "../../components/layout"
 import Box from "../../atomic/atoms/Box/Box"
 import Container from "../../atomic/molecules/Container/Container"
 import { checkColor } from "../../atomic/utils"
-import BgGreenSVG from "../../images/green-bg-2.inline.svg"
-import BgGreenSVG2 from "../../images/green-bg-1.inline.svg"
-import BgGreenSVG3 from "../../images/green-bg-4.inline.svg"
-import BgGreenSVG4 from "../../images/green-bg-3.inline.svg"
-import BgGreenSVG5 from "../../images/green-bg-5.inline.svg"
+import BgGreenSVG from "../../images/teal-bg-2.inline.svg"
+import BgGreenSVG2 from "../../images/teal-bg-1.inline.svg"
+import BgGreenSVG3 from "../../images/teal-bg-4.inline.svg"
+import BgGreenSVG4 from "../../images/teal-bg-3.inline.svg"
+import BgGreenSVG5 from "../../images/teal-bg-5.inline.svg"
 import BgRedSVG from "../../images/red-bg-2.inline.svg"
 import BgRedSVG2 from "../../images/red-bg-1.inline.svg"
 import BgRedSVG3 from "../../images/red-bg-4.inline.svg"
@@ -171,9 +171,9 @@ const NiepodleglosciRegulaminPage = () => {
               Ośrodek Sportu i Rekreacji w Gryfinie, ul. Sportowa 3, 74-100
               Gryfino,
             </p>
-            <p>tel/fax 91 416 30 11 e-mail: sport@osir.gryfino.pl,</p>
+            <p>tel/fax 91 416 30 11 e-mail: sport@csir.gryfino.pl,</p>
             <p>
-              strona internetowa: www.osir.gryfino.pl Oficjalna strona
+              strona internetowa: www.csir.gryfino.pl Oficjalna strona
               internetowa biegu: www.gryfinobiega.pl/biegtransgraniczny
             </p>
             <p>Dyrektor biegu – Jan Podleśny, tel 601 205 951</p>
@@ -349,7 +349,7 @@ const NiepodleglosciRegulaminPage = () => {
               - Zgłoszony zawodnik, który chce otrzymać fakturę za opłatę
               startową powinien o tym poinformawać organizatora najpóźniej w
               dniu dokonania płatności. Należy przesłać e-maila na adres
-              sport@osir.gryfino.pl z danymi potrzebnymi do wystawienia faktury.
+              sport@csir.gryfino.pl z danymi potrzebnymi do wystawienia faktury.
             </p>
             <br />
             <p>
@@ -503,11 +503,11 @@ const NiepodleglosciRegulaminPage = () => {
               piersiowej zawodnika,
             </p>
             <p>
-              - Komunikat końcowy będzie dostępny na stronach osir.gryfino.pl,
+              - Komunikat końcowy będzie dostępny na stronach csir.gryfino.pl,
               maratonypolskie.pl, domtel.pl, biegtransgraniczny.pl,
             </p>
             <p>
-              - Galeria zdjęć będzie dostępna na stronach osir.gryfino.pl,
+              - Galeria zdjęć będzie dostępna na stronach csir.gryfino.pl,
               maratonypolskie.pl, biegtransgraniczny.pl,
             </p>
             <p>
@@ -559,7 +559,7 @@ const NiepodleglosciRegulaminPage = () => {
               sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
               osobowych i w sprawie swobodnego przepływu takich danych oraz
               uchylenia dyrektywy 95/46/WE (RODO) (Dz.U.UE. z 2016 r., L 119,
-              poz. 1) informujemy, że: OSiR Gryfino, jest administratorami
+              poz. 1) informujemy, że: csir Gryfino, jest administratorami
               danych osobowych zbieranych w celu organizacji i przeprowadzenia
               6. Gryfińskiego Transgranicznego Festiwalu Biegowego. Państwa dane
               osobowe przetwarzane będą zgodnie z obowiązującymi przepisami
@@ -576,8 +576,8 @@ const NiepodleglosciRegulaminPage = () => {
               osobowych, sprostowania, blokowania czy kasowania danych oraz w
               celu odwołania udzielonych zgód lub wyrażenia sprzeciwu wobec
               wykorzystywania określonych danych, prosimy o kontakt z
-              administratorem danych: OSiR w Gryfinie, ul. Sportowa 3, 74-100,
-              Gryfino, sport@osir.gryfino.pl Ponadto przysługuje Państwu prawo
+              administratorem danych: csir w Gryfinie, ul. Sportowa 3, 74-100,
+              Gryfino, sport@csir.gryfino.pl Ponadto przysługuje Państwu prawo
               do złożenia skargi do właściwego organu nadzorczego.
             </p>
             <br />
@@ -594,7 +594,7 @@ const NiepodleglosciRegulaminPage = () => {
                   jednakże stanowi warunek uczestnictwa w 6. Gryfińskim
                   Transgranicznym Festiwalu Biegowym. Wyrażam zgodę na
                   przetwarzanie moich danych osobowych, w tym do ich
-                  udostępnienia przez OSiR Gryfino, w celu zamieszczania wyników
+                  udostępnienia przez csir Gryfino, w celu zamieszczania wyników
                   z biegu oraz na nieodpłatną publikację wizerunku utrwalonego w
                   przekazach telewizyjnych, internetowych, radiu, gazetach,
                   magazynach i umieszczania wizerunku w materiałach promocyjno-

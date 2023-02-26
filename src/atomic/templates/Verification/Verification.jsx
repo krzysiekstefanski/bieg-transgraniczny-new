@@ -23,7 +23,8 @@ const Verification = ({ theme }) => (
     width="100%"
     backgroundColor="grey95"
     padding="0 0 48px"
-    paddingMD="0 0 120px"
+    //paddingMD="0 0 120px"
+    paddingMD="0"
   >
     <Container position="relative" zIndex="1">
       <Box column directionMD="row" width="100%" gap="24px">
@@ -65,7 +66,7 @@ const Verification = ({ theme }) => (
           </List>
         </Box>
         <Box widthMD="calc(50% - 12px)">
-          <StaticImage src="../../../images/transgraniczny-mapa.png" />
+          <StaticImage src="../../../images/transgraniczny-mapa-p.png" />
         </Box>
       </Box>
     </Container>

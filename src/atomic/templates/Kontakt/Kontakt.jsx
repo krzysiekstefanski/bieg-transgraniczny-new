@@ -4,8 +4,8 @@ import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
-import BgGreenSVG from "../../../images/green-bg-2.inline.svg"
-import BgGreenSVG2 from "../../../images/green-bg-5.inline.svg"
+import BgGreenSVG from "../../../images/teal-bg-2.inline.svg"
+import BgGreenSVG2 from "../../../images/teal-bg-5.inline.svg"
 import BgRedSVG from "../../../images/red-bg-2.inline.svg"
 import BgRedSVG2 from "../../../images/red-bg-5.inline.svg"
 import Link from "../../atoms/Link/Link"
@@ -76,10 +76,10 @@ const Kontakt = ({ theme }) => (
                 <Text size="contentL">Strony internetowe:</Text>
                 <Link
                   variant={theme}
-                  href="https://www.osir.gryfino.pl"
+                  href="https://www.csir.gryfino.pl"
                   target="_blank"
                 >
-                  www.osir.gryfino.pl
+                  www.csir.gryfino.pl
                 </Link>
                 <Link
                   variant={theme}
@@ -94,10 +94,10 @@ const Kontakt = ({ theme }) => (
                 <Text size="contentL">Adres e-mail:</Text>
                 <Link
                   variant={theme}
-                  href="mailto:sport.osir.gryfino.pl"
+                  href="mailto:sport.csir.gryfino.pl"
                   target="_blank"
                 >
-                  sport.osir.gryfino.pl
+                  sport.csir.gryfino.pl
                 </Link>
               </Box>
             </Box>

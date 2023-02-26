@@ -16,12 +16,12 @@ const Logo = ({ theme }) => (
       </>
     ) : (
       <>
-        <Box height="72px" width="64px" margin="0 16px 0 0">
-          <StaticImage src="../../../images/bieg-transgraniczny-logo.png" />
+        <Box height="72px" width="270px" margin="0 16px 0 0">
+          <StaticImage src="../../../images/7-gtfb-logo.jpg" />
         </Box>
-        <Heading size="h500" sizeXL="h600" wrap="nowrap">
+        {/* <Heading size="h500" sizeXL="h600" wrap="nowrap">
           Bieg Transgraniczny
-        </Heading>
+        </Heading> */}
       </>
     )}
   </Box>

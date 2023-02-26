@@ -8,7 +8,7 @@ import Text from "../../atoms/Text/Text"
 import LinkInternal from "../../atoms/Link/Link"
 import Button from "../../atoms/Button/Button"
 import BgSVG from "../../../images/background-stripes-2.inline.svg"
-import BgGreenSVG from "../../../images/green-bg-1.inline.svg"
+import BgGreenSVG from "../../../images/teal-bg-1.inline.svg"
 import BgRedSVG from "../../../images/red-bg-1.inline.svg"
 
 const Component = styled(Box)`
@@ -61,7 +61,7 @@ const Banner = ({ theme }) => (
         {theme === "niepodleglosci" ? (
           <StaticImage src="../../../images/bieg-niepodleglosci.jpg" />
         ) : (
-          <StaticImage src="../../../images/6-transgraniczny.png" />
+          <StaticImage src="../../../images/logobaner_transgr.2023.jpg" />
         )}
         <Box column width="100%" max="664px" margin="32px 0 24px">
           <Text
@@ -80,9 +80,8 @@ const Banner = ({ theme }) => (
             margin="0 0 16px"
             marginMD="0 0 32px"
           >
-            Zapisy rozpoczynamy w poniedziałek 14 lutego i tradycyjnie im
-            szybciej tym taniej. Zgłaszając się do końca marca zapłacicie 90 zł.
-            za półmaraton i 80 zł. z 10 km. Potem cena rośnie.
+            Zapisy rozpoczynamy w środę 1 marca i do końca marca startowe 90 zł
+            a potem opłata rośnie.
           </Text>
           <Text size="contentM" align="center">
             Zanim się zapiszecie koniecznie przeczytajcie{" "}

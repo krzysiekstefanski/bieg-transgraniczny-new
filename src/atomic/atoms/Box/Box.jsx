@@ -95,6 +95,7 @@ const Box = styled.div`
 
   @media (min-width: 769px) {
     display: ${props => props.displayMD};
+    grid-template-columns: ${props => props.columnsMD};
     flex-direction: ${props => props.directionMD};
     justify-content: ${props => props.justifyMD};
     align-items: ${props => props.alignMD};

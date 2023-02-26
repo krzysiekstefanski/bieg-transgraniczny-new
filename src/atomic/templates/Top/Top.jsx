@@ -6,7 +6,7 @@ import Container from "../../molecules/Container/Container"
 import Button from "../../atoms/Button/Button"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
-import TopBgSvg from "../../../images/green-top.inline.svg"
+import TopBgSvg from "../../../images/teal-top.inline.svg"
 import TopBgRedSvg from "../../../images/red-top.inline.svg"
 import BgSVG from "../../../images/background-stripes-1.inline.svg"
 
@@ -89,7 +89,7 @@ const Top = ({ theme }) => (
                 margin="0 0 24px"
                 marginMD="0 0 32px"
               >
-                6. Gryfiński{" "}
+                7. Gryfiński{" "}
                 <Heading
                   as="span"
                   size="h700"
@@ -107,9 +107,9 @@ const Top = ({ theme }) => (
                 margin="0 0 24px"
                 marginMD="0 0 80px"
               >
-                Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
-                6. edycji Gryfińskiego Transgranicznego Festiwalu Biegowego
-                uczcić rocznicę Konstytucji 3 Maja.
+                7. Gryfiński Transgraniczny Festiwal Biegowy – W kolejną
+                rocznicę Konstytucji 3 Maja organizujemy nasz Festiwal, aby
+                uczcić to jakże znamienne wydarzenie w historii naszego kraju.
               </Text>
             </>
           )}
@@ -146,7 +146,7 @@ const Top = ({ theme }) => (
             {theme === "niepodleglosci" ? (
               <StaticImage src="../../../images/bieg-niepodleglosci-runner-2x.png" />
             ) : (
-              <StaticImage src="../../../images/bieg-transgraniczny-runner-2.png" />
+              <StaticImage src="../../../images/bieg-transgraniczny-runner-2p.png" />
             )}
           </Box>
         </Box>
