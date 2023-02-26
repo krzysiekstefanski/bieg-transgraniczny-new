@@ -16,6 +16,7 @@ const Component = styled(Box)`
 
 const Footer = ({ margin }) => (
   <Component
+    height="101px"
     width="100%"
     backgroundColor="white"
     padding="0 16px"
@@ -24,33 +25,53 @@ const Footer = ({ margin }) => (
     <Container
       display="grid"
       columns="1fr 1fr 1fr"
-      columnsMD="1fr 1fr 1fr 1fr 1fr 1fr"
+      columnsMD="auto auto auto auto auto auto"
       justify="space-between"
       gap="16px"
       position="relative"
       zIndex="1"
     >
-      <StaticImage
-        src="../../../images/logobaner_transgr_m 1.jpg"
-        placeholder="none"
-      />
-      <StaticImage
-        src="../../../images/logobaner_transgr_m 4.jpg"
-        placeholder="none"
-      />
-      <StaticImage
-        src="../../../images/logobaner_transgr_m-3.jpg"
-        placeholder="none"
-      />
-      <StaticImage src="../../../images/fliegel_logo.png" placeholder="none" />
-      <StaticImage
-        src="../../../images/logobaner_transgr_m 7.jpg"
-        placeholder="none"
-      />
-      <StaticImage
-        src="../../../images/logobaner_transgr_m 6.jpg"
-        placeholder="none"
-      />
+      <Box justify="center" align="center">
+        <StaticImage
+          src="../../../images/logobaner_transgr_m 1.jpg"
+          height="90"
+          placeholder="none"
+        />
+      </Box>
+      <Box justify="center" align="center">
+        <StaticImage
+          src="../../../images/logobaner_transgr_m 4.jpg"
+          height="90"
+          placeholder="none"
+        />
+      </Box>
+      <Box justify="center" align="center">
+        <StaticImage
+          src="../../../images/logobaner_transgr_m-3.jpg"
+          height="90"
+          placeholder="none"
+        />
+      </Box>
+      <Box justify="center" align="center">
+        <StaticImage
+          src="../../../images/fliegel_logo.png"
+          height="90"
+          placeholder="none"
+        />
+      </Box>
+      <Box justify="center" align="center">
+        <StaticImage
+          src="../../../images/logobaner_transgr_m 7.jpg"
+          height="90"
+          placeholder="none"
+        />
+      </Box>
+      <Box justify="center" align="center">
+        <StaticImage
+          src="../../../images/logobaner_transgr_m 6.jpg"
+          placeholder="none"
+        />
+      </Box>
     </Container>
   </Component>
 )
