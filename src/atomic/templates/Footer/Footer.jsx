@@ -35,20 +35,20 @@ const Footer = ({ margin }) => (
         placeholder="none"
       />
       <StaticImage
-        src="../../../images/logobaner_transgr_m-3.jpg"
+        src="../../../images/logobaner_transgr_m 4.jpg"
         placeholder="none"
       />
       <StaticImage
-        src="../../../images/logobaner_transgr_m 4.jpg"
+        src="../../../images/logobaner_transgr_m-3.jpg"
         placeholder="none"
       />
       <StaticImage src="../../../images/fliegel_logo.png" placeholder="none" />
       <StaticImage
-        src="../../../images/logobaner_transgr_m 6.jpg"
+        src="../../../images/logobaner_transgr_m 7.jpg"
         placeholder="none"
       />
       <StaticImage
-        src="../../../images/logobaner_transgr_m 7.jpg"
+        src="../../../images/logobaner_transgr_m 6.jpg"
         placeholder="none"
       />
     </Container>
