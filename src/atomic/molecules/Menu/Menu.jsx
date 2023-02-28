@@ -8,12 +8,12 @@ const menu = [
   {
     icon: "home",
     text: "Home",
-    link: "",
+    link: "./",
   },
   {
     icon: "zapisy",
-    text: "Zapisy",
-    link: "zapisy",
+    text: "Wyniki",
+    link: null,
   },
   {
     icon: "lista-startowa",
@@ -38,13 +38,6 @@ const Menu = ({ theme }) => {
   const handleClick = () => {
     setHamburgerIsActive(!hamburgerIsActive)
   }
-
-  console.log(colors.transgraniczny00)
-  console.log(colors.transgraniczny20)
-  console.log(colors.transgraniczny40)
-  console.log(colors.transgraniczny60)
-  console.log(colors.transgraniczny80)
-  console.log(colors.transgraniczny100)
 
   return (
     <Box>

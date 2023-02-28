@@ -52,7 +52,7 @@ export function getColor(hexColor, level) {
     g = "0x" + hexColor[3] + hexColor[4]
     b = "0x" + hexColor[5] + hexColor[6]
   }
-  console.log(r, g, b)
+
   // Convert to number variation of color
   let redValue = +r,
     greenValue = +g,
@@ -116,7 +116,6 @@ export function getColor(hexColor, level) {
   }
 
   // Return HSL object
-  console.log(h, s, l)
   //   return {
   //     h: h,
   //     s: s,

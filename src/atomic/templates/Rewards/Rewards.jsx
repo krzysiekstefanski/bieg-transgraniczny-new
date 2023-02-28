@@ -30,13 +30,9 @@ const Rewards = ({ theme }) => {
     typeof document !== `undefined` ? document.querySelector("body") : null
 
   const handleClick = (item, index) => {
-    console.log(isOpenModal)
     setCurrentIndex(index)
     setClickedImage(item)
     setIsOpenModal(true)
-    console.log(clickedImage)
-    console.log(currentIndex)
-    console.log(isOpenModal)
     body.classList.add("open-modal")
   }
 

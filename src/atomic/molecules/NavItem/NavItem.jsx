@@ -7,7 +7,7 @@ import Icon from "../../atoms/Icon/Icon"
 const NavItem = ({ theme, item }) => (
   <Box
     as={Link}
-    to={"/bieg" + theme + "/" + item.link}
+    to={item.link ? "/bieg" + theme + "/" + item.link : null}
     align="center"
     padding="8px 0"
     paddingLG="4px 0"
