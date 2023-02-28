@@ -7,14 +7,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-const browserColor = require('./src/atomic/browserColor');
+const browserColor = require("./src/atomic/browserColor")
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `GryfinoBiega.pl`,
+    description: `Festiwal biegowy 3 maja i Bieg Niepodległości 11 listopada w Gryfinie`,
+    author: `krzysztofstefanski`,
+    siteUrl: `https://gryfinobiega.pl/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -42,7 +42,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Bai+Jamjuree:500,700', 'Urbanist:400'],
+          families: ["Bai+Jamjuree:500,700", "Urbanist:400"],
         },
         active: () => {
           sessionStorage.fontsLoaded = true
@@ -51,6 +51,6 @@ module.exports = {
     },
     `gatsby-plugin-svgr-svgo`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-portal`
+    `gatsby-plugin-portal`,
   ],
 }
