@@ -192,7 +192,7 @@ const ImagesGallery = ({ theme, images }) => {
           handleCloseModal={handleCloseModal}
         >
           <Box
-            maxHeight="80%"
+            maxHeight="100%"
             width="80%"
             position="absolute"
             top="50%"
