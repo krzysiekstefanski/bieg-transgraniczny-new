@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getSize, checkColor, getColor } from "../../utils"
+import { getSize, checkColor } from "../../utils"
 
 const Button = styled.button`
   font-family: Inter, sans-serif;
@@ -23,7 +23,9 @@ const Button = styled.button`
       ? ButtonVariants[props.variant].border
       : ButtonVariants["red"].border};
   background-color: ${props =>
-    props.backgroundColor ?? props.variant
+    props.backgroundColor
+      ? checkColor(props.backgroundColor)
+      : props.variant
       ? ButtonVariants[props.variant].backgroundColor
       : ButtonVariants["red"].backgroundColor};
   border-radius: ${props => props.borderRadius ?? "8px"};

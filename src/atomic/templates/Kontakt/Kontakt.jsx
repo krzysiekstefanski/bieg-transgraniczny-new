@@ -76,14 +76,14 @@ const Kontakt = ({ theme }) => (
                 <Text size="contentL">Strony internetowe:</Text>
                 <Link
                   variant={theme}
-                  href="https://www.csir.gryfino.pl"
+                  to="https://www.csir.gryfino.pl"
                   target="_blank"
                 >
                   www.csir.gryfino.pl
                 </Link>
                 <Link
                   variant={theme}
-                  href="https://www.gryfinobiega.pl"
+                  to="https://www.gryfinobiega.pl"
                   target="_blank"
                   margin="0 0 24px"
                 >
@@ -94,7 +94,7 @@ const Kontakt = ({ theme }) => (
                 <Text size="contentL">Adres e-mail:</Text>
                 <Link
                   variant={theme}
-                  href="mailto:sport.csir.gryfino.pl"
+                  to="mailto:sport.csir.gryfino.pl"
                   target="_blank"
                 >
                   sport.csir.gryfino.pl
@@ -106,7 +106,7 @@ const Kontakt = ({ theme }) => (
                 <Text size="contentL">Telefon / Fax:</Text>
                 <Link
                   variant={theme}
-                  href="tel:48914163011"
+                  to="tel:48914163011"
                   target="_blank"
                   margin="0 0 24px"
                   marginSM="0"
@@ -117,7 +117,7 @@ const Kontakt = ({ theme }) => (
               <Box column width="50%">
                 <Text size="contentL">Dyrektor biegu:</Text>
                 <Text size="contentM">Jan Podleśny</Text>
-                <Link variant={theme} href="tel:601205951" target="_blank">
+                <Link variant={theme} to="tel:601205951" target="_blank">
                   601 205 951
                 </Link>
               </Box>

@@ -118,8 +118,7 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box
-          display="none"
-          //displayLG="none"
+          displayLG="none"
           justify="center"
           width="calc(100% - 32px)"
           position="absolute"
@@ -164,11 +163,11 @@ const IndexPage = () => (
           Wybierz rodzaj biegu, w którym chcesz wziąć udział.
         </Heading> */}
         <Heading as="h3" size="TextHeading" align="center" marginLG="0 0 66px">
-          Strona dostępna od 1 marca 2023
+          Wybierz rodzaj biegu, w którym chcesz wziąć udział.
         </Heading>
         <Box
           display="none"
-          //displayLG="flex"
+          displayLG="flex"
           gap="24px"
           gapLG="16px"
           gapXL="24px"
@@ -184,12 +183,12 @@ const IndexPage = () => (
             Bieg Transgraniczny
           </Button>
           <Button
-            as={Link}
             to="biegniepodleglosci"
             size="big"
             sizeLG="small"
             sizeHD="big"
-            variant="niepodleglosci"
+            //variant="niepodleglosci"
+            backgroundColor="grey80"
           >
             Bieg Niepodległości
           </Button>
@@ -290,8 +289,7 @@ const IndexPage = () => (
           </Box>
         </Box>
         <Box
-          display="none"
-          //displayLG="none"
+          displayLG="none"
           justify="center"
           width="calc(100% - 32px)"
           position="absolute"
@@ -302,7 +300,8 @@ const IndexPage = () => (
           <Button
             as={Link}
             to="biegniepodleglosci"
-            variant="niepodleglosci"
+            //variant="niepodleglosci"
+            backgroundColor="grey80"
             size="big"
             width="100%"
             widthSM="60%"

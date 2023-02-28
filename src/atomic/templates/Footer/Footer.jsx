@@ -45,17 +45,17 @@ const Footer = ({ margin }) => (
           placeholder="none"
         />
       </Box>
-      <Box justify="center" align="center">
+      <Box justify="center" align="center" padding="8px">
         <StaticImage
           src="../../../images/logobaner_transgr_m-3.jpg"
-          height="90"
+          height="70"
           placeholder="none"
         />
       </Box>
-      <Box justify="center" align="center">
+      <Box justify="center" align="center" padding="8px">
         <StaticImage
           src="../../../images/fliegel_logo.png"
-          height="90"
+          height="70"
           placeholder="none"
         />
       </Box>

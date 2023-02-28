@@ -237,7 +237,7 @@ const TransgranicznyRegulaminPage = () => {
               <span>- 10 km z atestem</span>
             </p>
             <p>
-              <span>- 10 km z atestem Nordic Walking</span>
+              <span>- 10 km z atestem - Nordic Walking</span>
             </p>
             <p>
               <span>Trasy po ścieżkach rowerowych w Polsce i w Niemczech.</span>
@@ -537,14 +537,8 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - w klasyfikacji generalnej kobiet i mężczyzn w poszczególnych
-                biegach – po 3 puchary (nie ma osobnej klasyfikacji dla nordic
-                walking),
-              </span>
-            </p>
-            <p>
-              <span>
-                - zwycięzcy w poszczególnych kategoriach otrzymają statuetki,
+                - zwycięzcy w poszczególnych kategoriach otrzymają statuetki -
+                nie dotyczy Nordic Walking,
               </span>
             </p>
             <p>
