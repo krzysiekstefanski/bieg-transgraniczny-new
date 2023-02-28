@@ -29,6 +29,8 @@ const Modal = ({ children, isOpenFromParent, handleCloseModal }) => {
   return isOpen ? (
     <Box
       ref={modalRef}
+      display="none"
+      displayMD="flex"
       justify="center"
       align="center"
       height="100vh"

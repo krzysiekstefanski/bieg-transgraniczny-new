@@ -24,10 +24,10 @@ const Component = styled(Box)`
 
 const Banner = ({ theme }) => (
   <Component
+    id="bieg"
     width="100%"
     backgroundColor="grey95"
-    padding="0 0 48px"
-    paddingMD="0 0 120px"
+    padding="0"
     position="relative"
   >
     <Box width="100%" widthXL="80%" position="absolute" top="0" left="-50px">
@@ -85,13 +85,13 @@ const Banner = ({ theme }) => (
           </Text>
           <Text size="contentM" align="center">
             Zanim się zapiszecie koniecznie przeczytajcie{" "}
-            <LinkInternal variant={theme} to="/regulamin">
+            <LinkInternal variant={theme} to={`/bieg${theme}/regulamin`}>
               regulamin
             </LinkInternal>
             .
           </Text>
         </Box>
-        <Button as={Link} to="/zapisz-sie" variant={theme}>
+        <Button as={Link} to={`/bieg${theme}/zapisy`} variant={theme}>
           Zapisz się
         </Button>
       </Box>

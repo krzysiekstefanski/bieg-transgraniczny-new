@@ -12,6 +12,16 @@ import BgRedSVG from "../../../images/red-bg-4.inline.svg"
 import BgRedSVG2 from "../../../images/red-bg-5.inline.svg"
 import { Link } from "gatsby"
 
+import gallery1 from "../../../images/gallery/gallery-1.jpg"
+import gallery2 from "../../../images/gallery/gallery-2.jpg"
+import gallery3 from "../../../images/gallery/gallery-3.jpg"
+import gallery4 from "../../../images/gallery/gallery-4.jpg"
+import gallery5 from "../../../images/gallery/gallery-5.jpg"
+import gallery6 from "../../../images/gallery/gallery-6.jpg"
+import gallery7 from "../../../images/gallery/gallery-7.jpg"
+import gallery8 from "../../../images/gallery/gallery-8.jpg"
+import gallery9 from "../../../images/gallery/gallery-9.jpg"
+
 const Component = styled(Box)`
   .gatsby-image-wrapper {
     margin: 0 auto;
@@ -23,15 +33,15 @@ const Component = styled(Box)`
 `
 
 const images = [
-  "gallery-1",
-  "gallery-2",
-  "gallery-3",
-  "gallery-4",
-  "gallery-5",
-  "gallery-6",
-  "gallery-7",
-  "gallery-8",
-  "gallery-9",
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
 ]
 
 const Gallery = ({ theme }) => (
@@ -76,18 +86,31 @@ const Gallery = ({ theme }) => (
     </Box>
     <Container position="relative" zIndex="1">
       <Box column width="100%">
-        <Box justify="space-between" align="center" gap="32px" width="100%">
+        <Box
+          justify="space-between"
+          align="center"
+          gap="32px"
+          width="100%"
+          margin="0 0 24px"
+        >
           <Heading
             size="h600"
             sizeMD="h700"
             sizeLG="h800"
             align="center"
             alignMD="left"
-            margin="0 0 24px"
           >
             Galeria
           </Heading>
-          <Button variant={theme + "Outline"} as={Link} to="./kontakt">
+          <Button
+            display="none"
+            displayMD="flex"
+            variant={theme + "Outline"}
+            as={Link}
+            to="https://photos.google.com/share/AF1QipM_jT8XNGzhKcYSYGZvk3dfc83i00YO0XsAySHD2Vx0cEO0h4Fp2Q710oVhiXN2HA?key=ekxncGF4UG1BWU8ydG80X0xXN0VCUXhraHZnYUV3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Zobacz wszystkie
           </Button>
         </Box>
@@ -95,6 +118,17 @@ const Gallery = ({ theme }) => (
         <Box column margin="0 0 40px" marginMD="0 0 80px">
           <ImagesGallery theme={theme} images={images} />
         </Box>
+        <Button
+          displayMD="none"
+          variant={theme + "Outline"}
+          as={Link}
+          to="https://photos.google.com/share/AF1QipM_jT8XNGzhKcYSYGZvk3dfc83i00YO0XsAySHD2Vx0cEO0h4Fp2Q710oVhiXN2HA?key=ekxncGF4UG1BWU8ydG80X0xXN0VCUXhraHZnYUV3"
+          target="_blank"
+          rel="noopener noreferrer"
+          margin="0 auto"
+        >
+          Zobacz wszystkie
+        </Button>
       </Box>
     </Container>
   </Component>

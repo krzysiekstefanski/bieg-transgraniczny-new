@@ -100,19 +100,19 @@ const ImagesGallery = ({ theme, images }) => {
   const [clickedImage, setClickedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
   const [isOpenModal, setIsOpenModal] = useState(false)
-  const body =
-    typeof document !== `undefined` ? document.querySelector("body") : null
+  //const body =
+  //typeof document !== `undefined` ? document.querySelector("body") : null
 
   const handleClick = (item, index) => {
     setCurrentIndex(index)
     setClickedImage(item)
     setIsOpenModal(true)
-    body.classList.add("open-modal")
+    //body.classList.add("open-modal")
   }
 
   const handleCloseModal = () => {
     setIsOpenModal(false)
-    body.classList.remove("open-modal")
+    //body.classList.remove("open-modal")
   }
 
   const handleRightArrowClick = () => {
@@ -156,7 +156,7 @@ const ImagesGallery = ({ theme, images }) => {
 
   return (
     <Component theme={theme}>
-      <Box grow="1" gap="24px" wrap="wrap">
+      <Box width="100%" grow="1" gap="24px" wrap="wrap">
         {images.map((image, index) => (
           <Box
             key={index}
@@ -165,37 +165,11 @@ const ImagesGallery = ({ theme, images }) => {
             widthSM="calc(50% - 12px)"
             widthMD="calc(33% - 14px)"
             widthXL="calc(33% - 12px)"
+            style={{ aspectRatio: "16/10" }}
           >
-            <img src={`https://picsum.photos/id/${index}/400/200`} />
+            <img src={image} />
           </Box>
         ))}
-        {/* <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-1.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-2.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-3.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-4.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-5.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-6.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-7.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-8.jpg" />
-                </Box>
-                <Box width="100%" widthSM="calc(50% - 12px)" widthMD="calc(33% - 16px)" radius="8px" overflow="hidden">
-                    <StaticImage src="../../../images/gallery/gallery-9.jpg" />
-                </Box> */}
       </Box>
       <Portal>
         <Modal
@@ -204,7 +178,7 @@ const ImagesGallery = ({ theme, images }) => {
         >
           <Box
             maxHeight="80%"
-            max="80%"
+            width="80%"
             position="absolute"
             top="50%"
             left="50%"
@@ -217,7 +191,7 @@ const ImagesGallery = ({ theme, images }) => {
               overflow="hidden"
             >
               <img
-                src={`https://picsum.photos/id/${currentIndex}/1600/800`}
+                src={images[currentIndex]}
                 alt={clickedImage}
                 style={{
                   width: "100%",

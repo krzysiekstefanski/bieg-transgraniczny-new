@@ -37,6 +37,7 @@ const Navigation = ({ theme, items, active }) => (
     <Button
       as={Link}
       variant={theme}
+      to="/zapisy"
       size="small"
       sizeXL="medium"
       margin="24px 0 0"

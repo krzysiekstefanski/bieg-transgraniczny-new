@@ -20,11 +20,12 @@ const Component = styled(Box)`
 
 const Verification = ({ theme }) => (
   <Component
+    id="weryfikacja"
     width="100%"
     backgroundColor="grey95"
-    padding="0 0 48px"
+    padding="48px 0"
     //paddingMD="0 0 120px"
-    paddingMD="0"
+    paddingMD="120px 0 0"
   >
     <Container position="relative" zIndex="1">
       <Box column directionMD="row" width="100%" gap="24px">
@@ -54,10 +55,10 @@ const Verification = ({ theme }) => (
           </Text>
           <List>
             <ListItem variant={theme}>
-              W przeddzień zawodów - 2.05.2022 r. w godz. 16:30 – 19:00
+              W przeddzień zawodów - 2.05.2023 r. w godz. 16:30 – 19:00
             </ListItem>
             <ListItem variant={theme}>
-              W dniu zawodów - 3.05.2022 r. od godz. 8:30 – 11:00
+              W dniu zawodów - 3.05.2023 r. od godz. 8:30 – 11:00
             </ListItem>
             <ListItem variant={theme}>
               Zawodnicy powyżej 18 roku życia podpisują oświadczenie o biegu na

@@ -56,9 +56,9 @@ const Kontakt = ({ theme }) => (
         <Box
           column
           width="100%"
-          max="527px"
-          padding="0 0 24px"
-          paddingLG="0 130px 0 0"
+          max="600px"
+          //padding="0 0 24px"
+          //paddingLG="0 130px 0 0"
         >
           <Heading
             size="h600"
@@ -124,9 +124,9 @@ const Kontakt = ({ theme }) => (
             </Box>
           </Box>
         </Box>
-        <Box grow="1">
+        {/* <Box grow="1">
           <Form theme={theme} />
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   </Component>

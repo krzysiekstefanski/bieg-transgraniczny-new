@@ -1,5 +1,6 @@
-import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
@@ -115,6 +116,8 @@ const Top = ({ theme }) => (
           )}
           <Button
             variant={theme}
+            as={Link}
+            to="#bieg"
             size="big"
             margin="0 auto"
             marginMD="0 auto 0 0"
