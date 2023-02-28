@@ -20,6 +20,12 @@ const Component = styled(Box)`
 
     ::before {
       content: "";
+      width: 100%;
+      padding-top: 60%;
+    }
+
+    &::after {
+      content: "";
       background-color: transparent;
       background-position: bottom center;
       position: absolute;
@@ -31,8 +37,18 @@ const Component = styled(Box)`
       transition: background-color 0.3s ease, background-position 0.3s ease;
     }
 
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
     &:hover {
-      ::before {
+      ::after {
         background-color: rgba(
           ${props =>
             props.theme
@@ -165,7 +181,6 @@ const ImagesGallery = ({ theme, images }) => {
             widthSM="calc(50% - 12px)"
             widthMD="calc(33% - 14px)"
             widthXL="calc(33% - 12px)"
-            style={{ aspectRatio: "16/10" }}
           >
             <img src={image} style={{ objectFit: "contain" }} />
           </Box>
