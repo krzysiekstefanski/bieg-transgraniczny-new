@@ -167,7 +167,7 @@ const ImagesGallery = ({ theme, images }) => {
             widthXL="calc(33% - 12px)"
             style={{ aspectRatio: "16/10" }}
           >
-            <img src={image} style={{ objectFit: "cover" }} />
+            <img src={image} style={{ objectFit: "contain" }} />
           </Box>
         ))}
       </Box>
