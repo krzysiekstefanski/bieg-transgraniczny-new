@@ -304,8 +304,8 @@ const NiepodleglosciRegulaminPage = () => {
             </p>
             <br />
             <p>
-              - startowa – płatna przelewem na konto Ośrodka Sportu i Rekreacji
-              Gryfino nr konta: PL 91124038551111000044721167 SWIFT PKOPPLPW
+              - startowa – płatna przelewem na konto Centrum Sportu i Rekreacji
+              Gryfino nr konta: PL 32124038551111001023555728 SWIFT PKOPPLPW
               Bank PEKAO S.A. I O/Gryfino. Opłata powinna być wpłacona w
               terminie 7 dni od daty zgłoszenia, nie później jednak jak do
               27.04.2022r. (dla osób, które zgłosiły się po 20.04.2022 r.). W
