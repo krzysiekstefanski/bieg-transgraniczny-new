@@ -16,7 +16,7 @@ import BgRedSVG3 from "../../images/red-bg-4.inline.svg"
 import BgRedSVG4 from "../../images/red-bg-3.inline.svg"
 import BgRedSVG5 from "../../images/red-bg-5.inline.svg"
 
-import Rules from "../../assets/regulamin-maj-2023.pdf"
+import Rules from "../../assets/regulamin_7gtfb_maj.2023r_a.pdf"
 import Heading from "../../atomic/atoms/Heading/Heading"
 
 const Component = styled(Box)`
@@ -491,7 +491,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>
                 * klasyfikacja w kategoriach wiekowych (osobno kobiet i osobno
-                mężczyzn) - nie dotyczy Nordic Walking
+                mężczyzn)
               </span>
             </p>
             <br />
@@ -537,8 +537,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - zwycięzcy w poszczególnych kategoriach otrzymają statuetki -
-                nie dotyczy Nordic Walking,
+                - zwycięzcy w poszczególnych kategoriach otrzymają statuetki,
               </span>
             </p>
             <p>
