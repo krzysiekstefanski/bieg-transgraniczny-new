@@ -234,7 +234,7 @@ const IndexPage = () => (
             margin="0 0 0 25px"
             marginLG="0 25px 0 0"
           >
-            Bieg Niepodleglości
+            Bieg Niepodległości
           </Heading>
           <Box
             order="1"

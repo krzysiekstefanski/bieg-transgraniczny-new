@@ -495,7 +495,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <br />
             <p>
-              <span>K16, M16, 16 - 29 lat (2007 - 94) - polmaraton (2005 -94)</span>
+              <span>K16, M16, 16 - 29 lat (2007 - 94) - półmaraton (2005 -94)</span>
             </p>
             <p>
               <span>K30, M30, 30 - 39 lat (1993 - 84)</span>
