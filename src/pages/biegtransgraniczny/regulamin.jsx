@@ -16,7 +16,7 @@ import BgRedSVG3 from "../../images/red-bg-4.inline.svg"
 import BgRedSVG4 from "../../images/red-bg-3.inline.svg"
 import BgRedSVG5 from "../../images/red-bg-5.inline.svg"
 
-import Rules from "../../assets/regulamin_7gtfb_maj.2023r_a.pdf"
+import Rules from "../../assets/regulamin_7gtfb_maj.2023_4.pdf"
 import Heading from "../../atomic/atoms/Heading/Heading"
 
 const Component = styled(Box)`
@@ -246,7 +246,7 @@ const TransgranicznyRegulaminPage = () => {
               <span>BIEG 10 KM ORAZ NORDIC WALKING 10 KM</span>
             </h3>
             <StaticImage
-              src="../../images/trasa1a.png"
+              src="../../images/trasa1a.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
@@ -263,7 +263,7 @@ const TransgranicznyRegulaminPage = () => {
             />
             <h3>PÓŁMARATON:</h3>
             <StaticImage
-              src="../../images/trasa2a.png"
+              src="../../images/trasa2a.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
@@ -427,9 +427,9 @@ const TransgranicznyRegulaminPage = () => {
                 PL 32124038551111001023555728 SWIFT PKOPPLPW Bank PEKAO S.A. I
                 O/Gryfino. Opłata powinna być wpłacona w terminie 7 dni od daty
                 zgłoszenia, nie później jednak jak do 27.04.2023r. (dla osób,
-                które zgłosiły się po 20.04.2023 r.). W tytule przelewu proszę
-                wpisać imię i nazwisko uczestnika, którego opłata startowa
-                dotyczy i może być wnoszona także zbiorowo.
+                które zgłosiły się po 20.04.2023 r.). W tytule przelewu proszę wpisać imię 
+                i nazwisko uczestnika oraz dopisek „Bieg Transgraniczny”. 
+                Opłata może być wnoszona także zbiorowo.
               </span>
             </p>
             <p>
@@ -457,8 +457,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - Dokonanie opłaty startowej będzie widoczne, w ciągu 24 godz.
-                (dni robocze), na liście zgłoszeniowej
+                - Dokonanie opłaty startowej będzie widoczne w ciągu 3 dni roboczych na liście zgłoszeniowej 
                 www.gryfinobiega.pl/lista-startowa/.
               </span>
             </p>
@@ -496,7 +495,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <br />
             <p>
-              <span>K20, M20, 20 - 29 lat (2003 - 94)</span>
+              <span>K16, M16, 16 - 29 lat (2007 - 94) - polmaraton (2005 -94)</span>
             </p>
             <p>
               <span>K30, M30, 30 - 39 lat (1993 - 84)</span>
@@ -634,7 +633,7 @@ const TransgranicznyRegulaminPage = () => {
               </span>
             </p>
             <StaticImage
-              src="../../images/weryfikacja.png"
+              src="../../images/weryfikacja.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
