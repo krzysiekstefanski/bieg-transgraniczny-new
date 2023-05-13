@@ -11,6 +11,7 @@ import BgGreenSVG2 from "../../../images/teal-bg-5.inline.svg"
 import BgRedSVG from "../../../images/red-bg-4.inline.svg"
 import BgRedSVG2 from "../../../images/red-bg-5.inline.svg"
 import { Link } from "gatsby"
+import { colors } from "../../colors"
 
 import gallery1 from "../../../images/gallery/gallery-1.jpg"
 import gallery2 from "../../../images/gallery/gallery-2.jpg"
@@ -22,6 +23,7 @@ import gallery7 from "../../../images/gallery/gallery-7.jpg"
 import gallery8 from "../../../images/gallery/gallery-8.jpg"
 import gallery9 from "../../../images/gallery/gallery-9.jpg"
 
+
 const Component = styled(Box)`
   .gatsby-image-wrapper {
     margin: 0 auto;
@@ -31,6 +33,59 @@ const Component = styled(Box)`
     }
   }
 `
+
+const TopSVGBox = styled(Box)`
+  svg {
+    path {
+      &:nth-child(1) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny40 : colors.niepodleglosci20};
+      }
+      &:nth-child(2) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny80 : colors.niepodleglosci40};
+      }
+      &:nth-child(3) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci00};
+      }
+      &:nth-child(4) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci60};
+      }
+      &:nth-child(5) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci40};
+      }
+      &:nth-child(6) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci60};
+      }
+    }
+  }
+`;
+
+const BottomSVGBox = styled(Box)`
+  svg {
+    path {
+      &:nth-child(1) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci80};
+      }
+      &:nth-child(2) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci40};
+      }
+      &:nth-child(3) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci60};
+      }
+      &:nth-child(4) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny80 : colors.niepodleglosci60};
+      }
+      &:nth-child(5) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci20};
+      }
+      &:nth-child(6) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci40};
+      }
+      &:nth-child(7) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci40};
+      }
+    }
+  }
+`;
 
 const images = [
   gallery1,
@@ -62,7 +117,8 @@ const Gallery = ({ theme }) => (
     >
       <BgSVG />
     </Box>
-    <Box
+    <TopSVGBox
+      theme={theme}
       width="280px"
       widthSM="168px"
       position="absolute"
@@ -72,8 +128,9 @@ const Gallery = ({ theme }) => (
       opacityMD="1"
     >
       {theme === "niepodleglosci" ? <BgRedSVG /> : <BgGreenSVG />}
-    </Box>
-    <Box
+    </TopSVGBox>
+    <BottomSVGBox
+      theme={theme}
       width="280px"
       widthSM="304px"
       position="absolute"
@@ -83,7 +140,7 @@ const Gallery = ({ theme }) => (
       opacityMD="1"
     >
       {theme === "niepodleglosci" ? <BgRedSVG2 /> : <BgGreenSVG2 />}
-    </Box>
+    </BottomSVGBox>
     <Container position="relative" zIndex="1">
       <Box column width="100%">
         <Box

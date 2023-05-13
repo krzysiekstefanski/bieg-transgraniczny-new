@@ -10,6 +10,7 @@ import Button from "../../atoms/Button/Button"
 import BgSVG from "../../../images/background-stripes-2.inline.svg"
 import BgGreenSVG from "../../../images/teal-bg-1.inline.svg"
 import BgRedSVG from "../../../images/red-bg-1.inline.svg"
+import { colors } from "../../colors"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -22,6 +23,31 @@ const Component = styled(Box)`
   }
 `
 
+const BoxSVG = styled(Box)`
+  svg {
+    path {
+      &:nth-child(1) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny40 : colors.niepodleglosci80};
+      }
+      &:nth-child(2) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci60};
+      }
+      &:nth-child(3) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci60};
+      }
+      &:nth-child(4) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci60};
+      }
+      &:nth-child(5) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci20};
+      }
+      &:nth-child(6) {
+        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci00};
+      }
+    }
+  }
+`;
+
 const Banner = ({ theme }) => (
   <Component
     id="bieg"
@@ -33,7 +59,8 @@ const Banner = ({ theme }) => (
     <Box width="100%" widthXL="80%" position="absolute" top="0" left="-50px">
       <BgSVG />
     </Box>
-    <Box
+    <BoxSVG
+      theme={theme}
       width="201px"
       position="absolute"
       bottom="-20px"
@@ -43,7 +70,7 @@ const Banner = ({ theme }) => (
       opacityMD="1"
     >
       {theme === "niepodleglosci" ? <BgRedSVG /> : <BgGreenSVG />}
-    </Box>
+    </BoxSVG>
     <Container position="relative" zIndex="1">
       <Box
         column
