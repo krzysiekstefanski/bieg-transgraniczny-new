@@ -49,7 +49,7 @@ const CustomLink = ({
   onClick,
   ...rest
 }) => (
-  <Component className={className} to={to} {...rest}>
+  <Component className={className} to={to} href={href} {...rest}>
     {text ?? children}
   </Component>
 )

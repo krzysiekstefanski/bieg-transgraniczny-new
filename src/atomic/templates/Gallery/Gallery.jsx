@@ -101,6 +101,7 @@ const images = [
 
 const Gallery = ({ theme }) => (
   <Component
+    id="galeria"
     width="100%"
     backgroundColor="grey95"
     padding="0 0 48px"
@@ -164,7 +165,7 @@ const Gallery = ({ theme }) => (
             displayMD="flex"
             variant={theme + "Outline"}
             as={Link}
-            to="https://photos.google.com/share/AF1QipM_jT8XNGzhKcYSYGZvk3dfc83i00YO0XsAySHD2Vx0cEO0h4Fp2Q710oVhiXN2HA?key=ekxncGF4UG1BWU8ydG80X0xXN0VCUXhraHZnYUV3"
+            to="https://photos.app.goo.gl/AHHLVs1w1et6e83M9"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -179,7 +180,7 @@ const Gallery = ({ theme }) => (
           displayMD="none"
           variant={theme + "Outline"}
           as={Link}
-          to="https://photos.google.com/share/AF1QipM_jT8XNGzhKcYSYGZvk3dfc83i00YO0XsAySHD2Vx0cEO0h4Fp2Q710oVhiXN2HA?key=ekxncGF4UG1BWU8ydG80X0xXN0VCUXhraHZnYUV3"
+          to="https://photos.app.goo.gl/AHHLVs1w1et6e83M9"
           target="_blank"
           rel="noopener noreferrer"
           margin="0 auto"

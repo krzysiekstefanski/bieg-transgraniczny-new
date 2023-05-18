@@ -1,7 +1,7 @@
 import { getColor } from "./utils"
 
-const transgraniczny = "#1FAD66"
-//const transgraniczny = "#208e9c"
+// const transgraniczny = "#1FAD66"
+const transgraniczny = "#208e9c"
 //const niepodleglosci = "#AD1f37"
 const niepodleglosci = "#ad1f32"
 //const niepodleglosci = "#ad9c1f"
