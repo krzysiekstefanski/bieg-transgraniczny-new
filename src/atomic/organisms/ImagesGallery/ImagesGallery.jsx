@@ -132,7 +132,7 @@ const ImagesGallery = ({ theme, images }) => {
   }
 
   const handleRightArrowClick = () => {
-    if (currentIndex !== images.length) {
+    if (currentIndex !== images.length - 1) {
       setCurrentIndex(currentIndex + 1)
     } else {
       setCurrentIndex(0)
@@ -143,7 +143,7 @@ const ImagesGallery = ({ theme, images }) => {
     if (currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1)
     } else {
-      setCurrentIndex(images.length)
+      setCurrentIndex(images.length - 1)
     }
   }
 
