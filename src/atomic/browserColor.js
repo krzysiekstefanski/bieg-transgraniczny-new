@@ -1,5 +1,5 @@
 const browserColor = {
-	green: '#1FAD66',
+	transgraniczny: '#208e9c',
 }
 
 module.exports = browserColor;
