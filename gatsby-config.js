@@ -17,6 +17,12 @@ module.exports = {
     siteUrl: `https://gryfinobiega.pl/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: `https://kstefanski.pl/gryfinobiega/graphql`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

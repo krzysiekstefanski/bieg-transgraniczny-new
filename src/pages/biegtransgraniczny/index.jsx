@@ -16,7 +16,7 @@ const TransgranicznyPage = () => {
       <Top theme={theme} />
       <Banner theme={theme} />
       <Verification theme={theme} />
-      {/* <Rewards theme={theme} /> */}
+      {/* <Rewards data={pageQuery.allWpPost.edges[0].node} theme={theme} /> */}
       <Gallery theme={theme} />
     </Layout>
   )

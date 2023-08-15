@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { useWordPressPosts } from '../hooks/useWordpressData';
+import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import loadable from "@loadable/component"
 import Layout from "../components/layout-start"
@@ -14,7 +15,11 @@ const GreenBackgroundSVG = loadable(() =>
 )
 const RedBackgroundSVG = loadable(() => import("../images/red-bg.inline.svg"))
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const posts = useWordPressPosts();
+  // const post = data.allWpPost.edges[0].node
+  console.log(posts);
+  return (
   <Layout>
     <Box
       column
@@ -314,7 +319,23 @@ const IndexPage = () => (
     </Box>
   </Layout>
 )
+      }
 
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
+
+// export const pageQuery = graphql`
+// query WordpressPages {
+//   allWpPost(sort: { fields: [date], order: DESC }) {
+//     edges {
+//       node {
+//         title
+//         excerpt
+//         slug
+//         date(formatString: "DD-MM-YYYY")
+//       }
+//     }
+//   }
+// }
+// `

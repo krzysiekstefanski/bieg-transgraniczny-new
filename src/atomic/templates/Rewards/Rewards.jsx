@@ -22,7 +22,7 @@ const Component = styled(Box)`
   }
 `
 
-const Rewards = ({ theme }) => {
+const Rewards = ({ data, theme }) => {
   const [clickedImage, setClickedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
   const [isOpenModal, setIsOpenModal] = useState(false)
@@ -40,6 +40,7 @@ const Rewards = ({ theme }) => {
     setIsOpenModal(false)
     body.classList.remove("open-modal")
   }
+  console.log(data);
 
   return (
     <Component
