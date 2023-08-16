@@ -1,36 +1,18 @@
-const path = require(`path`)
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
+ */
 
-exports.createPages = ({ graphql, actions }) => {
+/**
+ * @type {import('gatsby').GatsbyNode['createPages']}
+ */
+exports.createPages = async ({ actions }) => {
   const { createPage } = actions
-
-  const posts = graphql(`
-    {
-      allWpPost(sort: {fields: [date]}) {
-        edges {
-          node {
-            title
-            excerpt
-            slug
-            date(formatString: "DD-MM-YYYY")
-          }
-        }
-      }
-    }
-
-  `).then(result => {
-    result.data.allWpPost.edges.forEach(({ node }) => {
-      createPage({
-        // Decide URL structure
-        path: node.slug,
-        // path to template
-        component: path.resolve(`./src/templates/post.js`),
-        context: {
-          // This is the $slug variable
-          // passed to blog-post.js
-          slug: node.slug,
-        },
-      })
-    })
+  createPage({
+    path: "/using-dsg",
+    component: require.resolve("./src/templates/using-dsg.js"),
+    context: {},
+    defer: true,
   })
-  return Promise.all([posts])
 }
