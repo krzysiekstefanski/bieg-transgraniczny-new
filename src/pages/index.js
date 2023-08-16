@@ -183,12 +183,12 @@ const IndexPage = () => (
             Bieg Transgraniczny
           </Button>
           <Button
-            //to="biegniepodleglosci"
+            as={Link}
+            to="biegniepodleglosci"
             size="big"
             sizeLG="small"
             sizeHD="big"
-            //variant="niepodleglosci"
-            backgroundColor="grey80"
+            variant="niepodleglosci"
           >
             Bieg Niepodległości
           </Button>
@@ -299,9 +299,8 @@ const IndexPage = () => (
         >
           <Button
             as={Link}
-            //to="biegniepodleglosci"
-            //variant="niepodleglosci"
-            backgroundColor="grey80"
+            to="biegniepodleglosci"
+            variant="niepodleglosci"
             size="big"
             width="100%"
             widthSM="60%"

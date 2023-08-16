@@ -16,7 +16,7 @@ import BgRedSVG3 from "../../images/red-bg-4.inline.svg"
 import BgRedSVG4 from "../../images/red-bg-3.inline.svg"
 import BgRedSVG5 from "../../images/red-bg-5.inline.svg"
 
-import Rules from "../../assets/regulamin-maj-2022.pdf"
+import Rules from "../../assets/regulamin-niepodległosci-2023.pdf"
 import Heading from "../../atomic/atoms/Heading/Heading"
 
 const Component = styled(Box)`
@@ -115,21 +115,42 @@ const NiepodleglosciRegulaminPage = () => {
         <Container>
           <Box column width="100%" max="800px" margin="0 auto">
             <Box
+              direction="column"
               margin="0 0 16px"
               marginSM="24px"
               marginMD="32px"
               marginLG="0 0 48px"
             >
-              <StaticImage
+              {/* <StaticImage
                 src="../../images/bieg-transgraniczny-regulamin-naglowek.png"
                 width={800}
                 quality={85}
                 formats={["auto", "webp", "avif"]}
                 alt="A Gatsby astronaut"
                 style={{ margin: "0 auto" }}
-              />
+              /> */}
+              <Heading size="h700" sizeLG="h800" sizeXL="h900">
+                Bieg Niepodległości
+              </Heading>
+              <Heading
+                as="span"
+                size="h700"
+                sizeLG="h800"
+                sizeXL="h900"
+                color={theme + "20"}
+              >
+                11.11.2023
+              </Heading>
+              <Heading
+                size="h600"
+                sizeXL="h700"
+                margin="0 0 24px"
+                marginMD="0 0 32px"
+              >
+                Regulamin biegu
+              </Heading>
             </Box>
-            <h2>ORGANIZATOR:</h2>
+            {/* <h2>ORGANIZATOR:</h2>
             <p>
               Urząd Miasta i Gminy Gryfino - Ośrodek Sportu i Rekreacji w
               Gryfinie
@@ -617,7 +638,7 @@ const NiepodleglosciRegulaminPage = () => {
                 <br />
                 <p>Dyrektor Biegu - Jan Podleśny</p>
               </p>
-            </p>
+            </p> */}
             <a href={Rules}>Pobierz Regulamin w formie pliku PDF</a>
           </Box>
         </Container>

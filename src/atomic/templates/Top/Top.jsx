@@ -45,6 +45,7 @@ const Top = ({ theme }) => (
           column
           maxMD="42%"
           maxLG="540px"
+          width="100%"
           padding="32px 0 0"
           paddingMD="88px 0 0"
         >
@@ -70,7 +71,7 @@ const Top = ({ theme }) => (
               >
                 Dzień odzyskania niepodległości
               </Heading>
-              <Text
+              {/* <Text
                 size="contentL"
                 color="grey20"
                 margin="0 0 24px"
@@ -79,7 +80,7 @@ const Top = ({ theme }) => (
                 Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
                 6. edycji Gryfińskiego Transgranicznego Festiwalu Biegowego
                 uczcić rocznicę Konstytucji 3 Maja.
-              </Text>
+              </Text> */}
             </>
           ) : (
             <>
@@ -116,8 +117,8 @@ const Top = ({ theme }) => (
           )}
           <Button
             variant={theme}
-            as={Link}
-            to="#bieg"
+            as={"a"}
+            href="#bieg"
             size="big"
             margin="0 auto"
             marginMD="0 auto 0 0"

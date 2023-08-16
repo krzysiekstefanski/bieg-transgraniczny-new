@@ -43,7 +43,7 @@ const NiepodleglosciZapisyPage = () => {
           title="Zapisy na bieg"
           width="100%"
           height="100%"
-          src="https://zapisy.domtel-sport.pl/v-gryfinski-bieg-niepodleglosci-v7893"
+          src="https://zapisy.domtel-sport.pl/vi-gryfinski-bieg-niepodleg-osci-v9661"
           style={{ border: "none" }}
         ></iframe>
       </Wrapper>
