@@ -16,7 +16,7 @@ import BgRedSVG3 from "../../images/red-bg-4.inline.svg"
 import BgRedSVG4 from "../../images/red-bg-3.inline.svg"
 import BgRedSVG5 from "../../images/red-bg-5.inline.svg"
 
-import Rules from "../../assets/regulamin-niepodległosci-2023.pdf"
+import Rules from "../../assets/reg.b.niep_2023_4.pdf"
 import Heading from "../../atomic/atoms/Heading/Heading"
 
 const Component = styled(Box)`
