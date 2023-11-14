@@ -15,8 +15,8 @@ const Menu = ({ theme }) => {
     },
     {
       icon: "zapisy",
-      text: theme === "niepodleglosci" ? "Zapisy" : "Wyniki",
-      link: theme === "niepodleglosci" ? "zapisy" : null,
+      text: "Wyniki",
+      link: "wyniki",
     },
     {
       icon: "lista-startowa",
