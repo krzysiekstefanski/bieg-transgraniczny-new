@@ -122,8 +122,9 @@ const Banner = ({ theme }) => (
           </Text> */}
           {theme === "niepodleglosci" ? (
             <Box column gap="16px">
-              <Button as={Link} to={`/bieg${theme}/zapisy`} variant={theme}>Zapisy</Button>
               <Button as={Link} to={`/bieg${theme}/lista-startowa`} variant={theme}>Lista Startowa</Button>
+              <Button as={Link} to={`/bieg${theme}/wyniki`} variant={theme}>Wyniki</Button>
+              <Button as={Link} to={`https://photos.google.com/share/AF1QipPQQJTcSPJ4vxZxL3ILmgmSPSSFC0JKNcVVoc-byitoS_pDI8SYEJiRqBBzq7l8ig?key=U2V1anhDTGNpV280NHEwU2otNnh3Ym9EdldHNU1n`} variant={theme}>Zdjęcia</Button>
               <Button as={Link} to={`/bieg${theme}/regulamin`} variant={theme}>Regulamin</Button>
             </Box>
           ) : (
