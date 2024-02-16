@@ -295,25 +295,22 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - półmaraton - do dnia 3.05.2023 r. ukończą 18 rok życia,
+                - półmaraton - do dnia 3.05.2024 r. ukończą 18 rok życia,
               </span>
             </p>
             <p>
               <span>
-                - bieg na 10 km i nordic walking 10 km - rocznik 2007 i starsi,
+                - bieg na 10 km , nordic walking 10 km - rocznik 2008 i starsi,
               </span>
             </p>
             <p>
               <span>
-                - dokonają zgłoszenia za pośrednictwem elektronicznego
-                formularza dostępnego na stronie internetowej w terminie zgodnym
-                z regulaminem,
+                - dokonają zgłoszenia za pośrednictwem elektronicznego formularza dostępnego na stronie internetowej w terminie zgodnym z regulaminem,
               </span>
             </p>
             <p>
               <span>
-                - uiszczą opłatę startową w wysokości i w terminie zgodnym z
-                regulaminem,
+                - uiszczą opłatę startową w wysokości i w terminie zgodnym z regulaminem,
               </span>
             </p>
             <p>
@@ -329,7 +326,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>
                 Pomiaru czasu i ustalenia kolejności na mecie będzie dokonywać
-                firma DomTel-Sport Polska (www.domtel-sport.pl) za pomocą
+                firma DomTel-Sport Polska (<a herf="www.domtel-sport.pl" target="_blank">www.domtel-sport.pl</a>) za pomocą
                 elektronicznych chipów umieszczonych w numerze startowym.
               </span>
             </p>
@@ -357,7 +354,7 @@ const TransgranicznyRegulaminPage = () => {
             <br />
             <p>
               <span style={{ textDecoration: "underline" }}>
-                <span>2.05.2023 r. (wtorek)</span>
+                <span>2.05.2024 r. (czwartek)</span>
               </span>
             </p>
             <p>
@@ -365,7 +362,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span style={{ textDecoration: "underline" }}>
-                <span>3.05.2023 r. (środa)</span>
+                <span>3.05.2024 r. (piątek)</span>
               </span>
             </p>
             <p>
@@ -391,29 +388,24 @@ const TransgranicznyRegulaminPage = () => {
             <br />
             <p>
               <span>
-                poprzez wypełnienie i wysłanie elektronicznego formularza
-                poprzez stronę internetową www.gryfinobiega.pl
-                <span style={{ textDecoration: "underline" }}>/zapisy/</span> i
-                w Biurze Zawodów w dniach 2.05.2023 oraz 3.05.2023 r. (pod
-                warunkiem niewyczerpania limitu zawodników).
+              poprzez wypełnienie i wysłanie elektronicznego formularza poprzez stronę internetową
+              <a herf="www.gryfinobiega.pl/biegtransgraniczny/zapisy/">www.gryfinobiega.pl/biegtransgraniczny/zapisy/</a> i w Biurze Zawodów w dniach 2.05.2024 oraz 3.05.2024 r.
+              (pod warunkiem niewyczerpania limitu zawodników).
               </span>
             </p>
             <p>
               <span>
-                Formularz zgłoszeniowy będzie dostępny od 01.03.2023 r.
+                Formularz zgłoszeniowy będzie dostępny od 20.02.2024 r.
               </span>
             </p>
             <p>
               <span>
-                Limit przyjęć do biegu wynosi: - półmaraton, nordic walking 10
-                km – łącznie 500 zawodników dla obu kategorii - bieg na 10 km –
-                500 zawodników.
+                Limit przyjęć do Festiwalu wynosi 300 zawodników
               </span>
             </p>
             <p>
               <span>
-                Organizator zastrzega możliwość zmiany limitów przyjęć do
-                biegów.
+                Organizator zastrzega możliwość zmiany limitu zawodników w zależności od zainteresowania naszymi zawodami.
               </span>
             </p>
             <br />
@@ -427,22 +419,25 @@ const TransgranicznyRegulaminPage = () => {
               <span>
                 - startowa – płatna przelewem na konto Centrum Sportu i
                 Rekreacji Gryfino nr konta: <br />
-                PL 32124038551111001023555728 SWIFT PKOPPLPW Bank PEKAO S.A. I
-                O/Gryfino. Opłata powinna być wpłacona w terminie 7 dni od daty
-                zgłoszenia, nie później jednak jak do 27.04.2023r. (dla osób,
-                które zgłosiły się po 20.04.2023 r.). W tytule przelewu proszę wpisać imię 
-                i nazwisko uczestnika oraz dopisek „Bieg Transgraniczny”. 
-                Opłata może być wnoszona także zbiorowo.
-              </span>
-            </p>
-            <p>
-              <span>
-                Wysokość opłaty zależna jest od terminu jej dokonania (liczy się
-                data zaksięgowania opłaty na koncie organizatora):
+                PL 63124062921111001128488541 SWIFT PKOPPLPW Bank PEKAO S.A. I
+                O/Gryfino. Opłata powinna być wpłacona <span style="text-decoration: underline">w terminie 7 dni od daty
+                zgłoszenia</span>, nie później jednak jak do
+                29.04.2024 r. (dla osób, które zgłosiły się po 22.04.2024 r.). W tytule przelewu proszę wpisać imię
+                i nazwisko uczestnika oraz dopisek „Bieg Transgraniczny”. Opłata może być wnoszona także zbiorowo.
+                Wysokość opłaty zależna jest od terminu jej dokonania (<span style="font-weight: bold">liczy się data zaksięgowania opłaty na
+                koncie</span>)
               </span>
             </p>
             <StaticImage
-              src="../../images/wplatybieg-p.jpg"
+              src="../../images/wplatybieg-p1.png"
+              width={800}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A Gatsby astronaut"
+              style={{ margin: "24px auto 32px" }}
+            />
+            <StaticImage
+              src="../../images/wplatybieg-p2.png"
               width={800}
               quality={100}
               formats={["auto", "webp", "avif"]}
@@ -451,33 +446,27 @@ const TransgranicznyRegulaminPage = () => {
             />
             <p>
               <span>
-                - Za osobę zgłoszoną uważa się osobę, która wypełniła i
-                przesłała formularz zgłoszeniowy oraz dokonała opłaty startowej.
-                Osoby zgłoszone, które nie dokonają opłaty startowej w terminie
-                7 dni od daty zgłoszenia, zostaną usunięci z listy startowej
-                Biegu Transgranicznego.
+                - Za osobę zgłoszoną uważa się osobę, która wypełniła i przesłała formularz zgłoszeniowy oraz
+                  dokonała opłaty startowej. Osoby zgłoszone, które nie dokonają opłaty startowej w terminie 7 dni od
+                  daty zgłoszenia, mogą zostać usunięci z listy startowej Biegu Transgranicznego.
               </span>
             </p>
             <p>
               <span>
                 - Dokonanie opłaty startowej będzie widoczne w ciągu 3 dni roboczych na liście zgłoszeniowej 
-                www.gryfinobiega.pl/lista-startowa/.
+                <a herf="www.gryfinobiega.pl/biegtransgraniczny/lista-startowa/">www.gryfinobiega.pl/biegtransgraniczny/lista-startowa/</a>.
               </span>
             </p>
             <p>
               <span>
-                - W przypadku rezygnacji z uczestnictwa w biegu opłata startowa
-                nie podlega zwrotowi a pakiet startowy nie przysługuje. Istnieje
-                możliwość scedowania dokonanej opłaty startowej na inną osobę.
+                - W przypadku rezygnacji z uczestnictwa w biegu opłata startowa nie podlega zwrotowi a pakiet startowy nie przysługuje. Istnieje możliwość scedowania dokonanej opłaty startowej na inną osobę.
               </span>
             </p>
             <p>
               <span>
-                - Zgłoszony zawodnik, który chce otrzymać fakturę za opłatę
-                startową powinien o tym poinformować organizatora nie później,
-                jak na 2 tygodnie po dokonaniu płatności. Należy przesłać
-                e-maila na adres sport@csir.gryfino.pl z danymi potrzebnymi do
-                wystawienia faktury.
+                - Zgłoszony zawodnik, który chce otrzymać fakturę za opłatę startową powinien o tym poinformować
+                  organizatora nie później, jak na 2 tygodnie po dokonaniu płatności. Należy przesłać e-maila na adres
+                  <a mailto="sport@csir.gryfino.pl">sport@csir.gryfino.pl</a> z danymi potrzebnymi do wystawienia faktury.
               </span>
             </p>
             <br />
@@ -488,35 +477,73 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <br />
             <p>
-              <span>* klasyfikacja generalna kobiet i mężczyzn</span>
-            </p>
-            <p>
-              <span>
-                * klasyfikacja w kategoriach wiekowych (osobno kobiet i osobno
-                mężczyzn)
-              </span>
+              <strong>
+                <span>Bieg na 10 km i półmaraton</span>
+              </strong>
             </p>
             <br />
             <p>
-              <span>K16, M16, 16 - 29 lat (2007 - 94) - półmaraton (2005 -94)</span>
+              <span>* klasyfikacja generalna kobiet i mężczyzn – po 3 puchary</span>
             </p>
             <p>
-              <span>K30, M30, 30 - 39 lat (1993 - 84)</span>
+              <span>* puchar dla najlepszych (kobieta i mężczyzna), mieszkańców Gminy Gryfino</span>
             </p>
             <p>
-              <span>K40, M40, 40 - 49 lat (1983 - 74)</span>
+              <span>* klasyfikacja w kategoriach wiekowych - statuetka dla zwycięzcy (z pominięciem zawodników nagradzanych w klasyfikacji generalnej)</span>
+            </p>
+            <br />
+            <p>
+              <span>K16, M16, 16 - 29 lat (2008 - 1993)</span>
             </p>
             <p>
-              <span>K50, M50, 50 - 59 lat (1973 - 64)</span>
+              <span>K30, M30, 30 - 39 lat (1994- 1983)</span>
             </p>
             <p>
-              <span>M60, 60 - 69 lat (1963 - 54)</span>
+              <span>K40, M40, 40 - 49 lat (1984 - 1973)</span>
             </p>
             <p>
-              <span>K60, 60 lat i więcej (1963 i starsze)</span>
+              <span>K50, M50, 50 - 59 lat (1974 - 1963)</span>
             </p>
             <p>
-              <span>M70, 70 lat i więcej (1953 i starsi)</span>
+              <span>K60, 60 lat i więcej (1964 i starsze)</span>
+            </p>
+            <p>
+              <span>M60, 60 - 69 lat (1964 - 1953)</span>
+            </p>
+            <p>
+              <span>M70, 70 lat i więcej (1954 i starsi)</span>
+            </p>
+            <br />
+            <p>
+              <strong>
+                <span>Nordic Walking</span>
+              </strong>
+            </p>
+            <br />
+            <p>
+              <span>* klasyfikacja generalna kobiet i mężczyzn – po 3 puchary</span>
+            </p>
+            <p>
+              <span>* puchar dla najlepszych (kobieta i mężczyzna), mieszkańców Gminy Gryfino</span>
+            </p>
+            <p>
+              <span>* klasyfikacja w kategoriach wiekowych - statuetka dla zwycięzcy (z pominięciem zawodników nagradzanych w klasyfikacji generalnej)</span>
+            </p>
+            <br />
+            <p>
+              <span>K16, M16, 16 - 39 lat (2008 - 1983)</span>
+            </p>
+            <p>
+              <span>K40, M40, 40 - 49 lat (1984 - 1973)</span>
+            </p>
+            <p>
+              <span>K50, M50, 50 - 59 lat (1974 - 1963)</span>
+            </p>
+            <p>
+              <span>K60, 60 lat i więcej (1964 i starsze)</span>
+            </p>
+            <p>
+              <span>M60, 60 lat i więcej (1964 i starsi)</span>
             </p>
             <br />
             <p>
@@ -527,24 +554,48 @@ const TransgranicznyRegulaminPage = () => {
             <br />
             <p>
               <span>
-                - wszyscy, zweryfikowani zawodnicy otrzymają pakiet startowy
-                (numer, chip, plecak biegowy),
+                * zwycięzcy poszczególnych biegów, kobiety i mężczyźni, otrzymają nagrodę finansową w wysokości:
               </span>
             </p>
             <p>
               <span>
-                - w klasyfikacji generalnej kobiet i mężczyzn w poszczególnych
+                - półmaraton – 700 zł
+              </span>
+            </p>
+            <p>
+              <span>
+                - bieg na 10 km – 500 zł
+              </span>
+            </p>
+            <p>
+              <span>
+                - nordic walking – 300 zł
+              </span>
+            </p>
+            <p>
+              <span>
+                * wszyscy, <span style="text-decoration: underline">zweryfikowani</span> zawodnicy otrzymają pakiet startowy (numer, chip)
+              </span>
+            </p>
+            <p>
+              <span>
+                * koszulka okolicznościowa w II wariancie opłaty startowej,
+              </span>
+            </p>
+            <p>
+              <span>
+                * w klasyfikacji generalnej kobiet i mężczyzn w poszczególnych
                 biegach i w Nordic Walking – po 3 puchary,
               </span>
             </p>
             <p>
               <span>
-                - zwycięzcy w poszczególnych kategoriach otrzymają statuetki,
+                * zwycięzcy w poszczególnych kategoriach otrzymają statuetki,
               </span>
             </p>
             <p>
               <span>
-                - puchar dla najlepszej zawodniczki i zawodnika Gminy Gryfino,
+                * puchar dla najlepszej zawodniczki i zawodnika Gminy Gryfino,
               </span>
             </p>
             <p>
@@ -552,8 +603,7 @@ const TransgranicznyRegulaminPage = () => {
                 -
                 <strong>
                   {" "}
-                  zawodnicy nagrodzeni w klasyfikacji generalnej kobiet i
-                  mężczyzn nie będą nagradzani w kategoriach wiekowych,
+                  zawodnicy nagrodzeni w klasyfikacji generalnej kobiet i mężczyzn nie będą nagradzani w kategoriach wiekowych,
                 </strong>
               </span>
             </p>
@@ -572,9 +622,11 @@ const TransgranicznyRegulaminPage = () => {
                 </strong>
                 <br />{" "}
                 <strong>
-                  13, 18, 22, 25, 31, 36, 39, 45, 57, 65, 76, 83, 89, 100, 101,
-                  109, 116, 122, 136, 145, 157, 165, 176, 182, 199, 204, 210,
-                  218, 221, 228.
+                  Bieg 10 km i półmaraton: 7, 13, 18, 22, 25, 31, 36, 39, 45, 51, 58, 65, 76, 83, 100
+                </strong>
+                <br />{" "}
+                <strong>
+                  Nordic Walking: 6, 8, 15, 18, 20, 24, 26, 30, 33, 36.
                 </strong>
               </span>
             </p>
@@ -599,11 +651,11 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - W przeddzień zawodów - 2.05.2023 r. w godz. 16:30 – 19:00
+                - W przeddzień zawodów - - 2.05.2024 r. w godz. 16:30 – 19:00
               </span>
             </p>
             <p>
-              <span>- W dniu zawodów - 3.05.2023 r. od godz. 8:30 – 11:00</span>
+              <span>- W dniu zawodów - 3.05.2024 r. od godz. 8:30 – 11:00</span>
             </p>
             <p>
               <span>
@@ -613,7 +665,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - Osoby w wieku 16-18 lat (które w dniu biegu tj. 3 maja 2023
+                - Osoby w wieku 16-18 lat (które w dniu biegu tj. 3 maja 2024
                 nie osiągnęły jeszcze pełnoletności) zobowiązane są do
                 posiadania pozwolenia na udział od rodziców lub prawnych
                 opiekunów, z ich podpisem i nr PESEL.
@@ -625,14 +677,16 @@ const TransgranicznyRegulaminPage = () => {
                 <strong>
                   Warunkiem dopuszczenia ich do startu jest obecność rodzica lub
                   opiekuna prawnego wraz z dowodem osobistym w momencie
-                  weryfikacji zawodnika w biurze zawodów. Powyższe nie dotyczy
-                  zawodników zrzeszonych w klubach sportowych, posiadających
-                  aktualne badania lekarskie wystawione przez lekarza
-                  sportowego, które należy okazać przy weryfikacji. Osoby
-                  poniżej 16 roku życia (liczy się rok urodzenia) nie będą do
-                  biegu przyjęte.
-                  <br />
+                  weryfikacji zawodnika w biurze zawodów.
                 </strong>
+                Powyższe nie dotyczy
+                zawodników zrzeszonych w klubach sportowych, posiadających
+                aktualne badania lekarskie wystawione przez lekarza
+                sportowego, które należy okazać przy weryfikacji.
+                <strong>
+                  Osobyponiżej 16 roku życia (liczy się rok urodzenia) nie będą do biegu przyjęte.
+                </strong>
+                <br />
               </span>
             </p>
             <StaticImage
@@ -658,7 +712,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                i może wziąć udział w 7. edycji Gryfińskiego Transgranicznego
+                i może wziąć udział w 8. edycji Gryfińskiego Transgranicznego
                 Festiwalu Biegowego (bieg na 10 000 m).
               </span>
             </p>
@@ -713,14 +767,14 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - Komunikat końcowy będzie dostępny na stronach csir.gryfino.pl,
-                maratonypolskie.pl, domtel.pl, gryfinobiega.pl,
+                - Komunikat końcowy będzie dostępny na stronach <a href="csir.gryfino.pl" target="_blank">csir.gryfino.pl</a>,
+                <a href="maratonypolskie.pl" target="_blank">maratonypolskie.pl</a>, <a href="domtel.pl" target="_blank">domtel.pl</a>, <a href="gryfinobiega.pl">gryfinobiega.pl</a>,
               </span>
             </p>
             <p>
               <span>
-                - Galeria zdjęć będzie dostępna na stronach csir.gryfino.pl,
-                maratonypolskie.pl, gryfinobiega.pl,
+                - Galeria zdjęć będzie dostępna na stronach <a href="csir.gryfino.pl" target="_blank">csir.gryfino.pl</a>,
+                <a href="maratonypolskie.pl" target="_blank">maratonypolskie.pl</a>, <a href="gryfinobiega.pl">gryfinobiega.pl</a>,
               </span>
             </p>
             <p>
@@ -734,10 +788,12 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - Wszyscy zawodnicy startują w biegu na własną odpowiedzialność.
-                Organizator zaleca, aby ubezpieczyli się na własny koszt od
-                następstw nieszczęśliwych wypadków, - Organizator zapewnia wodę
-                niegazowaną na trasie biegu,
+                - Wszyscy zawodnicy startują w biegu na własną odpowiedzialność. Organizator zaleca, aby ubezpieczyli się na własny koszt od następstw nieszczęśliwych wypadków,
+              </span>
+            </p>
+            <p>
+              <span>
+                - Organizator zapewnia wodę niegazowaną na trasie biegu,
               </span>
             </p>
             <p>
@@ -751,8 +807,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - Parking dla samochodów znajduje się w miejscu weryfikacji
-                (wjazd od ul. Niepodległości, od strony południowej miasta),
+                - Parking dla samochodów znajduje się w miejscu weryfikacji (wjazd od ul. Niepodległości, od strony południowej miasta),
               </span>
             </p>
             <p>
@@ -766,16 +821,14 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                - Po zakończeniu biegu zawodnicy na podstawie talonu
-                konsumpcyjnego otrzymają posiłek regeneracyjny, napój
-                izotoniczny,
+                - Po zakończeniu biegu zawodnicy otrzymają posiłek regeneracyjny wraz z napojem izotonicznym,
               </span>
             </p>
             <p>
               <span>
-                - Po zakończeniu biegu każdy zawodnik, na podstawie otrzymanego
-                karnetu, będzie mógł skorzystać
-                <br /> z Centrum Wodnego „Laguna” (ok. 800 m od mety),
+                - Po zakończeniu biegu każdy zawodnik będzie mógł skorzystać z darmowego, 1-godzinnego pobytu
+                  w Centrum Wodnym „Laguna” (ok. 800 m od mety), po okazaniu numeru startowego w kasie CW.
+                  Zaproszenie jakie otrzyma zawodnik będzie można zrealizować wyłącznie w dniu biegu - 3 maja 2024r.
               </span>
             </p>
             <p>
@@ -797,32 +850,23 @@ const TransgranicznyRegulaminPage = () => {
             <br />
             <p>
               <span>
-                W związku z zapisami art. 13 ROZPORZĄDZENIA PARLAMENTU
-                EUROPEJSKIEGO I RADY (UE) 2016/679 z dnia 27 kwietnia 2016 r. w
-                sprawie ochrony osób fizycznych w związku z przetwarzaniem
-                danych osobowych i w sprawie swobodnego przepływu takich danych
-                oraz uchylenia dyrektywy 95/46/WE (RODO) (Dz.U.UE. z 2016 r., L
-                119, poz. 1) informujemy, że: CSiR Gryfino, jest
-                administratorami danych osobowych zbieranych w celu organizacji
-                i przeprowadzenia 7. Gryfińskiego Transgranicznego Festiwalu
-                Biegowego. Państwa dane osobowe przetwarzane będą zgodnie z
-                obowiązującymi przepisami prawa a rodzaj pobieranych danych i
-                sposób ich przetwarzania jest niezbędny do prawidłowej
-                organizacji biegu. W celu wykonania umowy przekazujemy Państwa
-                dane firmie DOMTEL-SPORT ul. Aluchny-Emelianow 23, 76-200
-                Słupsk, NIP: 839-002-80-09 zajmującej się prowadzeniem zapisów
-                na biegi oraz pomiarem czasu na zawodach. Mają Państwo prawo do
-                bezpłatnej informacji dotyczącej Państwa danych osobowych, które
-                są u nas przechowywane, a także prawo do ich sprostowania,
-                ograniczenia przetwarzania, usunięcia tych danych lub ich
-                przeniesienia. W przypadku pytań dotyczących gromadzenia,
-                przetwarzania i wykorzystania Państwa danych osobowych,
-                sprostowania, blokowania czy kasowania danych oraz w celu
-                odwołania udzielonych zgód lub wyrażenia sprzeciwu wobec
-                wykorzystywania określonych danych, prosimy o kontakt z
-                administratorem danych: CSiR w Gryfinie, ul. Wodnika 1, 74-100,
-                Gryfino, sport@csir.gryfino.pl Ponadto przysługuje Państwu prawo
-                do złożenia skargi do właściwego organu nadzorczego.
+              W związku z zapisami art. 13 ROZPORZĄDZENIA PARLAMENTU EUROPEJSKIEGO I RADY (UE)
+              2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem
+              danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy
+              95/46/WE (RODO) (Dz.U.UE. z 2016 r., L 119, poz. 1) informujemy, że: CSiR Gryfino, są
+              administratorami danych osobowych zbieranych w celu organizacji i przeprowadzenia
+              8. Gryfińskiego Transgranicznego Festiwalu Biegowego. Państwa dane osobowe przetwarzane będą
+              zgodnie z obowiązującymi przepisami prawa a rodzaj pobieranych danych i sposób ich przetwarzania
+              jest niezbędny do prawidłowej organizacji biegu. W celu wykonania umowy przekazujemy Państwa dane
+              firmie DOMTEL-SPORT ul. Aluchny-Emelianow 23, 76-200 Słupsk, NIP: 839-002-80-09 zajmującej się
+              prowadzeniem zapisów na biegi oraz pomiarem czasu na zawodach. Mają Państwo prawo do bezpłatnej
+              informacji dotyczącej Państwa danych osobowych, które są u nas przechowywane, a także prawo do ich
+              sprostowania, ograniczenia przetwarzania, usunięcia tych danych lub ich przeniesienia. W przypadku
+              pytań dotyczących gromadzenia, przetwarzania i wykorzystania Państwa danych osobowych,
+              sprostowania, blokowania czy kasowania danych oraz w celu odwołania udzielonych zgód lub wyrażenia
+              sprzeciwu wobec wykorzystywania określonych danych, prosimy o kontakt z administratorem danych:
+              CSiR w Gryfinie, ul. Sportowa 3, 74-100, Gryfino, sport@osir.gryfino.pl Ponadto przysługuje Państwu
+              prawo do złożenia skargi do właściwego organu nadzorczego.
               </span>
             </p>
             <br />
@@ -833,32 +877,28 @@ const TransgranicznyRegulaminPage = () => {
             <br />
             <p>
               <span>
-                Oświadczam, że zostałem(łam) poinformowany(na) o prawie wglądu
-                do moich danych oraz do złożenia wniosków o ich poprawienie.
-                Przekazanie danych osobowych Uczestnika jest dobrowolne,
-                jednakże stanowi warunek uczestnictwa w 7. Gryfińskim
-                Transgranicznym Festiwalu Biegowym. Wyrażam zgodę na
-                przetwarzanie moich danych osobowych, w tym do ich udostępnienia
-                przez CSiR Gryfino, w celu zamieszczania wyników z biegu oraz na
-                nieodpłatną publikację wizerunku utrwalonego w przekazach
-                telewizyjnych, internetowych, radiu, gazetach, magazynach i
-                umieszczania wizerunku w materiałach promocyjno- reklamowych
-                wydawanych przez organizatora. Ponadto, wyrażam zgodę na
-                przekazywanie mi za pomocą poczty elektronicznej informacji o
-                przyszłych imprezach Organizatora, a także do gromadzenia moich
-                danych do potrzeb administracyjnych i analitycznych. Wyrażam
-                także zgodę na nieodpłatne wykorzystanie mojego wizerunku
-                utrwalonego w formie fotografii lub zapisu video. Na podstawie
-                par.2 ust.1 pkt 6 Rozporządzenia Ministra Edukacji Narodowej z
-                dnia 12 września 2001r. w sprawie szczególnych zasad i warunków
-                prowadzenia działalności w dziedzinie rekreacji ruchowej
-                oświadczam, że jestem zdolny(a) i nie występują w przypadku
-                mojej osoby przeciwwskazania zdrowotne do udziału w 7.
-                Gryfińskim Transgranicznym Festiwalu Biegowym. Zgłoszenie się do
-                zawodów jest równoznaczne z akceptacją powyższego oświadczenia.
+              Oświadczam, że zostałem(łam) poinformowany(na) o prawie wglądu do moich danych oraz do złożenia
+              wniosków o ich poprawienie. Przekazanie danych osobowych Uczestnika jest dobrowolne, jednakże
+              stanowi warunek uczestnictwa w 8 Gryfińskim Transgranicznym Festiwalu Biegowym. Wyrażam zgodę
+              na przetwarzanie moich danych osobowych, w tym do ich udostępnienia przez CSiR Gryfino, w celu
+              zamieszczania wyników z biegu oraz na nieodpłatną publikację wizerunku utrwalonego w przekazach
+              telewizyjnych, internetowych, radiu, gazetach, magazynach i umieszczania wizerunku w materiałach
+              promocyjno- reklamowych wydawanych przez organizatora. Ponadto, wyrażam zgodę na przekazywanie
+              mi za pomocą poczty elektronicznej informacji o przyszłych imprezach Organizatora, a także do
+              gromadzenia moich danych do potrzeb administracyjnych i analitycznych.
+              Wyrażam także zgodę na nieodpłatne wykorzystanie mojego wizerunku utrwalonego w formie fotografii
+              lub zapisu video. Na podstawie par.2 ust.1 pkt 6 Rozporządzenia Ministra Edukacji Narodowej z dnia 12
+              września 2001r. w sprawie szczególnych zasad i warunków prowadzenia działalności w dziedzinie
+              rekreacji ruchowej oświadczam, że jestem zdolny(a) i nie występują w przypadku mojej osoby
+              przeciwwskazania zdrowotne do udziału w 8 Gryfińskim Transgranicznym Festiwalu Biegowym.
               </span>
             </p>
             <br />
+            <p>
+              <strong>
+                <span>Zgłoszenie się do zawodów jest równoznaczne z akceptacją powyższego oświadczenia.</span>
+              </strong>
+            </p>
             <br />
             <p style={{ marginBottom: "48px" }}>
               <span>Dyrektor Biegu - Jan Podleśny</span>
