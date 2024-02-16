@@ -16,7 +16,7 @@ import BgRedSVG3 from "../../images/red-bg-4.inline.svg"
 import BgRedSVG4 from "../../images/red-bg-3.inline.svg"
 import BgRedSVG5 from "../../images/red-bg-5.inline.svg"
 
-import Rules from "../../assets/regulamin_7gtfb_maj.2023_4.pdf"
+import Rules from "../../assets/8.gtfb-regulamin-maj-2024.pdf"
 import Heading from "../../atomic/atoms/Heading/Heading"
 
 const Component = styled(Box)`
@@ -139,8 +139,7 @@ const TransgranicznyRegulaminPage = () => {
             </h2>
             <p>
               <span>
-                Urząd Miasta i Gminy Gryfino - Centrum Sportu i Rekreacji w
-                Gryfinie
+                Urząd Miasta i Gminy Gryfino - Centrum Sportu i Rekreacji w Gryfinie
               </span>
             </p>
             <br />
@@ -151,7 +150,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <br />
             <p>
-              <span>Burmistrz Miasta i Gminy Gryfino – Mieczysław Sawaryn</span>
+              <span>Burmistrz Miasta i Gminy Gryfino</span>
             </p>
             <br />
             <p>
@@ -164,10 +163,7 @@ const TransgranicznyRegulaminPage = () => {
               <span>Urząd Rejonowy Gartz,</span>
             </p>
             <p>
-              <span>Starostwo Powiatowe w Gryfinie,</span>
-            </p>
-            <p>
-              <span>Gardenia – studio architektury krajobrazu.</span>
+              <span>Starostwo Powiatowe w Gryfinie</span>
             </p>
             <br />
             <p>
@@ -186,8 +182,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                promocja gminy Gryfino, powiatu gryfińskiego oraz województwa
-                zachodniopomorskiego,
+                promocja gminy Gryfino, powiatu gryfińskiego oraz województwa zachodniopomorskiego,
               </span>
             </p>
             <p>
@@ -202,23 +197,31 @@ const TransgranicznyRegulaminPage = () => {
             <br />
             <p>
               <span>
-                Centrum Sportu i Rekreacji w Gryfinie, ul. Wodnika 1, 74-100
-                Gryfino,
+                Centrum Sportu i Rekreacji w Gryfinie, ul. Wodnika 1, 74-100 Gryfino,
               </span>
             </p>
             <p>
               <span>
-                tel/fax 91 416 30 11 e-mail: sport@csir.gryfino.pl, strona
-                internetowa: www.csir.gryfino.pl{" "}
+                e-mail: <a mailto="sport@csir.gryfino.pl">sport@csir.gryfino.pl</a>, strona internetowa: <a href="www.csir.gryfino.pl" target="_blank" >www.csir.gryfino.pl</a>{" "}
               </span>
             </p>
             <p>
               <span>
-                Oficjalna strona internetowa biegu: www.gryfinobiega.pl
+                Oficjalna strona internetowa biegu: <a href="www.gryfinobiega.pl">www.gryfinobiega.pl</a>
               </span>
             </p>
             <p>
               <span>Dyrektor biegu – Jan Podleśny, tel 601 205 951</span>
+            </p>
+            <br />
+            <p>
+              <strong>
+                <span>TERMIN I MIEJSCE:</span>
+              </strong>
+            </p>
+            <br />
+            <p>
+              <span>3.05.2024 r. (piątek) - Nabrzeże Miejskie w Gryfinie, ul. Energetyków 5</span>
             </p>
             <br />
             <p>
@@ -237,13 +240,13 @@ const TransgranicznyRegulaminPage = () => {
               <span>- 10 km z atestem</span>
             </p>
             <p>
-              <span>- 10 km z atestem - Nordic Walking</span>
+              <span>- nordic walking 10 km </span>
             </p>
             <p>
-              <span>Trasy po ścieżkach rowerowych w Polsce i w Niemczech.</span>
+              <span>Trasy po drogach twardych – ulica i ścieżka rowerowa w Polsce i w Niemczech.</span>
             </p>
             <h3>
-              <span>BIEG 10 KM ORAZ NORDIC WALKING 10 KM</span>
+              <span>10 KM:</span>
             </h3>
             <StaticImage
               src="../../images/trasa1a.jpg"
@@ -261,7 +264,7 @@ const TransgranicznyRegulaminPage = () => {
               alt="A Gatsby astronaut"
               style={{ margin: "24px auto 0" }}
             />
-            <h3>PÓŁMARATON:</h3>
+            <h3>Półmaraton:</h3>
             <StaticImage
               src="../../images/trasa2a.jpg"
               width={800}
