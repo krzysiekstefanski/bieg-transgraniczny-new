@@ -420,12 +420,12 @@ const TransgranicznyRegulaminPage = () => {
                 - startowa – płatna przelewem na konto Centrum Sportu i
                 Rekreacji Gryfino nr konta: <br />
                 PL 63124062921111001128488541 SWIFT PKOPPLPW Bank PEKAO S.A. I
-                O/Gryfino. Opłata powinna być wpłacona <span style="text-decoration: underline">w terminie 7 dni od daty
+                O/Gryfino. Opłata powinna być wpłacona <span style={{ textDecoration: "underline" }}>w terminie 7 dni od daty
                 zgłoszenia</span>, nie później jednak jak do
                 29.04.2024 r. (dla osób, które zgłosiły się po 22.04.2024 r.). W tytule przelewu proszę wpisać imię
                 i nazwisko uczestnika oraz dopisek „Bieg Transgraniczny”. Opłata może być wnoszona także zbiorowo.
-                Wysokość opłaty zależna jest od terminu jej dokonania (<span style="font-weight: bold">liczy się data zaksięgowania opłaty na
-                koncie</span>)
+                Wysokość opłaty zależna jest od terminu jej dokonania (<strong>liczy się data zaksięgowania opłaty na
+                koncie</strong>)
               </span>
             </p>
             <StaticImage
@@ -574,7 +574,7 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <p>
               <span>
-                * wszyscy, <span style="text-decoration: underline">zweryfikowani</span> zawodnicy otrzymają pakiet startowy (numer, chip)
+                * wszyscy, <span style={{ textDecoration: "underline" }}>zweryfikowani</span> zawodnicy otrzymają pakiet startowy (numer, chip)
               </span>
             </p>
             <p>
