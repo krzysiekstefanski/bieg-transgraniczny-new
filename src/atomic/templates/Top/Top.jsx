@@ -91,7 +91,7 @@ const Top = ({ theme }) => (
                 margin="0 0 24px"
                 marginMD="0 0 32px"
               >
-                7. Gryfiński{" "}
+                8. Gryfiński{" "}
                 <Heading
                   as="span"
                   size="h700"
@@ -109,7 +109,7 @@ const Top = ({ theme }) => (
                 margin="0 0 24px"
                 marginMD="0 0 80px"
               >
-                7. Gryfiński Transgraniczny Festiwal Biegowy – W kolejną
+                8. Gryfiński Transgraniczny Festiwal Biegowy – W kolejną
                 rocznicę Konstytucji 3 Maja organizujemy nasz Festiwal, aby
                 uczcić to jakże znamienne wydarzenie w historii naszego kraju.
               </Text>

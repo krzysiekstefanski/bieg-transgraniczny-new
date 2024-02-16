@@ -65,7 +65,7 @@ const IndexPage = () => (
             max="350px"
           >
             <StaticImage
-              src="../images/7-gtfb-logo.jpg"
+              src="../images/8-gtfb-logo.jpg"
               placeholder="none"
               objectFit="contain"
             />

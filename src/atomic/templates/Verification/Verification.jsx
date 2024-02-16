@@ -55,10 +55,10 @@ const Verification = ({ theme }) => (
           </Text>
           <List>
             <ListItem variant={theme}>
-              W przeddzień zawodów - 2.05.2023 r. w godz. 16:30 – 19:00
+              W przeddzień zawodów - 2.05.2024 r. w godz. 16:30 – 19:00
             </ListItem>
             <ListItem variant={theme}>
-              W dniu zawodów - 3.05.2023 r. od godz. 8:30 – 11:00
+              W dniu zawodów - 3.05.2024 r. od godz. 8:30 – 11:00
             </ListItem>
             <ListItem variant={theme}>
               Zawodnicy powyżej 18 roku życia podpisują oświadczenie o biegu na

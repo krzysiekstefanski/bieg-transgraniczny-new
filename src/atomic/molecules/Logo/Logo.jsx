@@ -24,7 +24,7 @@ const Logo = ({ theme }) => (
           width="270px"
           margin="0 16px 0 0"
         >
-          <StaticImage src="../../../images/7-gtfb-logo.jpg" />
+          <StaticImage src="../../../images/8-gtfb-logo.jpg" />
         </Box>
         {/* <Heading size="h500" sizeXL="h600" wrap="nowrap">
           Bieg Transgraniczny
