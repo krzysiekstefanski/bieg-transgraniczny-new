@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import Box from "../../atoms/Box/Box"
 import Hamburger from "../../atoms/Hamburger/Hamburger"
 import Navigation from "../../molecules/Navigation/Navigation"
-import { colors } from "../../colors"
 
 const Menu = ({ theme }) => {
   const [hamburgerIsActive, setHamburgerIsActive] = useState(false)
@@ -15,8 +14,8 @@ const Menu = ({ theme }) => {
     },
     {
       icon: "zapisy",
-      text: "Wyniki",
-      link: "wyniki",
+      text: "Zapisy",
+      link: "zapisy",
     },
     {
       icon: "lista-startowa",
