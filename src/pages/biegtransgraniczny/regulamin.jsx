@@ -125,7 +125,7 @@ const TransgranicznyRegulaminPage = () => {
               marginLG="0 0 48px"
             >
               <StaticImage
-                src="../../images/bieg-transgraniczny-regulamin-naglowek-p.png"
+                src="../../images/bieg-transgraniczny-regulamin-naglowek-p.jpg"
                 width={789}
                 quality={100}
                 formats={["auto", "webp", "avif"]}
@@ -257,7 +257,7 @@ const TransgranicznyRegulaminPage = () => {
               style={{ margin: "24px auto 32px" }}
             />
             <StaticImage
-              src="../../images/trasa1c.png"
+              src="../../images/trasa1c.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
@@ -429,7 +429,7 @@ const TransgranicznyRegulaminPage = () => {
               </span>
             </p>
             <StaticImage
-              src="../../images/wplatybieg-p1.png"
+              src="../../images/wplatybieg-p1.jpg"
               width={800}
               quality={100}
               formats={["auto", "webp", "avif"]}
@@ -437,7 +437,7 @@ const TransgranicznyRegulaminPage = () => {
               style={{ margin: "24px auto 32px" }}
             />
             <StaticImage
-              src="../../images/wplatybieg-p2.png"
+              src="../../images/wplatybieg-p2.jpg"
               width={800}
               quality={100}
               formats={["auto", "webp", "avif"]}

@@ -43,7 +43,7 @@ const TransgranicznyZapisyPage = () => {
           title="Zapisy na bieg"
           width="100%"
           height="100%"
-          src="https://dostartu.pl/7-gryfinski-transgraniczny-festiwal-biegowy-v8785"
+          src="https://zapisy.domtel-sport.pl/8-gryfinski-transgraniczny-festiwal-biegowy-v10564"
           style={{ border: "none" }}
         ></iframe>
       </Wrapper>

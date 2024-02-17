@@ -210,7 +210,7 @@ const NiepodleglosciRegulaminPage = () => {
             <p>Trasy po ścieżkach rowerowych w Polsce i w Niemczech.</p>
             <h3>BIEG 10 KM ORAZ NORDIC WALKING 10 KM</h3>
             <StaticImage
-              src="../../images/trasa1a.png"
+              src="../../images/trasa1a.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
@@ -218,7 +218,7 @@ const NiepodleglosciRegulaminPage = () => {
               style={{ margin: "24px auto 32px" }}
             />
             <StaticImage
-              src="../../images/trasa1c.png"
+              src="../../images/trasa1c.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
@@ -227,7 +227,7 @@ const NiepodleglosciRegulaminPage = () => {
             />
             <h3>PÓŁMARATON:</h3>
             <StaticImage
-              src="../../images/trasa2a.png"
+              src="../../images/trasa2a.jpg"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
