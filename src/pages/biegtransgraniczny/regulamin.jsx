@@ -355,12 +355,12 @@ const TransgranicznyRegulaminPage = () => {
               <span>- nordic walking 10 km – 3 godz.</span>
             </p>
             <br />
+            <br />
             <p>
               <strong>
                 <span>PROGRAM ZAWODÓW:</span>
               </strong>
             </p>
-            <br />
             <br />
             <p>
               <span style={{ textDecoration: "underline" }}>
