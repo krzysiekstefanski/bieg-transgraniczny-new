@@ -143,6 +143,7 @@ const TransgranicznyRegulaminPage = () => {
               </span>
             </p>
             <br />
+            <br />
             <p>
               <strong>
                 <span>PATRONAT HONOROWY:</span>
@@ -152,6 +153,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>Burmistrz Miasta i Gminy Gryfino</span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -165,6 +167,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>Starostwo Powiatowe w Gryfinie</span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -188,6 +191,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>integracja społeczeństw gmin przygranicznych.</span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -214,6 +218,7 @@ const TransgranicznyRegulaminPage = () => {
               <span>Dyrektor biegu – Jan Podleśny, tel 601 205 951</span>
             </p>
             <br />
+            <br />
             <p>
               <strong>
                 <span>TERMIN I MIEJSCE:</span>
@@ -223,6 +228,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>3.05.2024 r. (piątek) - Nabrzeże Miejskie w Gryfinie, ul. Energetyków 5</span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -281,6 +287,8 @@ const TransgranicznyRegulaminPage = () => {
               alt="A Gatsby astronaut"
               style={{ margin: "24px auto 48px" }}
             />
+            <br />
+            <br />
             <p>
               <strong>
                 <span>WARUNKI UCZESTNICTWA:</span>
@@ -317,6 +325,7 @@ const TransgranicznyRegulaminPage = () => {
               <span>- dokonają weryfikacji w biurze zawodów.</span>
             </p>
             <br />
+            <br />
             <p>
               <strong>
                 <span>POMIAR CZASU:</span>
@@ -352,6 +361,7 @@ const TransgranicznyRegulaminPage = () => {
               </strong>
             </p>
             <br />
+            <br />
             <p>
               <span style={{ textDecoration: "underline" }}>
                 <span>2.05.2024 r. (czwartek)</span>
@@ -379,6 +389,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>ok. godz. 15:00 dekoracja zawodników</span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -408,6 +419,7 @@ const TransgranicznyRegulaminPage = () => {
                 Organizator zastrzega możliwość zmiany limitu zawodników w zależności od zainteresowania naszymi zawodami.
               </span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -469,6 +481,7 @@ const TransgranicznyRegulaminPage = () => {
                   <a mailto="sport@csir.gryfino.pl">sport@csir.gryfino.pl</a> z danymi potrzebnymi do wystawienia faktury.
               </span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -545,6 +558,7 @@ const TransgranicznyRegulaminPage = () => {
             <p>
               <span>M60, 60 lat i więcej (1964 i starsi)</span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -629,11 +643,12 @@ const TransgranicznyRegulaminPage = () => {
                   Nordic Walking: 6, 8, 15, 18, 20, 24, 26, 30, 33, 36.
                 </strong>
                 <br />{" "}
-                <strong style={{color: '#ef2d3d'}}>
+                <strong>
                   Bony należy odebrać osobiście, nie będą wysyłane drogą pocztową.
                 </strong>
               </span>
             </p>
+            <br />
             <br />
             <p>
               <strong>
@@ -701,6 +716,7 @@ const TransgranicznyRegulaminPage = () => {
               alt="A Gatsby astronaut"
               style={{ margin: "24px auto 32px" }}
             />
+            <br />
             <br />
             <p>
               <strong>
