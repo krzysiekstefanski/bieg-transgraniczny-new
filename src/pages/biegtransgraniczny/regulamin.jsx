@@ -629,9 +629,9 @@ const TransgranicznyRegulaminPage = () => {
                   Nordic Walking: 6, 8, 15, 18, 20, 24, 26, 30, 33, 36.
                 </strong>
                 <br />{" "}
-                <span style={{color: '#c3222f'}}>
+                <strong style={{color: '#ef2d3d'}}>
                   Bony należy odebrać osobiście, nie będą wysyłane drogą pocztową.
-                </span>
+                </strong>
               </span>
             </p>
             <br />
