@@ -85,8 +85,8 @@ const Form = ({ theme }) => {
             <Input placeholder="Imię i nazwisko" />
           </label>
           <label className={"form-label"} htmlFor="lname">
-            <p style={{ display: "none" }}>Adres email</p>
-            <Input placeholder="Adres email" />
+            <p style={{ display: "none" }}>Adres e-mail</p>
+            <Input placeholder="Adres e-mail" />
           </label>
         </Flexbox>
         <label

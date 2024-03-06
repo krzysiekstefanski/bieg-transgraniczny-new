@@ -506,22 +506,22 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <br />
             <p>
-              <span>K16, M16, 16 - 29 lat (2008 - 1993)</span>
+              <span>K16, M16, 16 - 29 lat (2008 - 1995)</span>
             </p>
             <p>
-              <span>K30, M30, 30 - 39 lat (1994- 1983)</span>
+              <span>K30, M30, 30 - 39 lat (1994- 1985)</span>
             </p>
             <p>
-              <span>K40, M40, 40 - 49 lat (1984 - 1973)</span>
+              <span>K40, M40, 40 - 49 lat (1984 - 1975)</span>
             </p>
             <p>
-              <span>K50, M50, 50 - 59 lat (1974 - 1963)</span>
+              <span>K50, M50, 50 - 59 lat (1974 - 1965)</span>
             </p>
             <p>
               <span>K60, 60 lat i więcej (1964 i starsze)</span>
             </p>
             <p>
-              <span>M60, 60 - 69 lat (1964 - 1953)</span>
+              <span>M60, 60 - 69 lat (1964 - 1955)</span>
             </p>
             <p>
               <span>M70, 70 lat i więcej (1954 i starsi)</span>
@@ -544,13 +544,13 @@ const TransgranicznyRegulaminPage = () => {
             </p>
             <br />
             <p>
-              <span>K16, M16, 16 - 39 lat (2008 - 1983)</span>
+              <span>K16, M16, 16 - 39 lat (2008 - 1985)</span>
             </p>
             <p>
-              <span>K40, M40, 40 - 49 lat (1984 - 1973)</span>
+              <span>K40, M40, 40 - 49 lat (1984 - 1975)</span>
             </p>
             <p>
-              <span>K50, M50, 50 - 59 lat (1974 - 1963)</span>
+              <span>K50, M50, 50 - 59 lat (1974 - 1965)</span>
             </p>
             <p>
               <span>K60, 60 lat i więcej (1964 i starsze)</span>

@@ -94,10 +94,10 @@ const Kontakt = ({ theme }) => (
                 <Text size="contentL">Adres e-mail:</Text>
                 <Link
                   variant={theme}
-                  to="mailto:sport.csir.gryfino.pl"
+                  to="mailto:sport@csir.gryfino.pl"
                   target="_blank"
                 >
-                  sport.csir.gryfino.pl
+                  sport@csir.gryfino.pl
                 </Link>
               </Box>
             </Box>
