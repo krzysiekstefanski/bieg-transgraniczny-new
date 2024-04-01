@@ -12,6 +12,10 @@ import BgGreenSVG from "../../../images/teal-bg-1.inline.svg"
 import BgRedSVG from "../../../images/red-bg-1.inline.svg"
 import { colors } from "../../colors"
 import CustomLink from "../../atoms/Link/Link"
+import ImagesGallery from "../../organisms/ImagesGallery/ImagesGallery"
+
+import image1 from "../../../images/05f3bffe-f0d1-4cbb-b294-8c84c1499cb3.jpg"
+import image2 from "../../../images/0a891bfe-c147-44bb-bf09-586d1ef65886.jpg"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -48,6 +52,11 @@ const BoxSVG = styled(Box)`
     }
   }
 `;
+
+const images = [
+  image1,
+  image2,
+];
 
 const Banner = ({ theme }) => (
   <Component
@@ -90,7 +99,7 @@ const Banner = ({ theme }) => (
           <StaticImage src="../../../images/bieg-niepodleglosci.jpg" />
         )}
         {/* <Box column width="100%" max="664px" margin="32px 0 24px"> */}
-        <Box column width="100%" max="756px" margin="32px 0 24px">
+        <Box column width="100%" max="756px" margin="0 0 40px">
           {/* <Text
             size="contentM"
             align="center"
@@ -141,10 +150,9 @@ const Banner = ({ theme }) => (
         </Box>
         {/* <Button as={Link} to={`/bieg${theme}/zapisy`} variant={theme}> */}
         {theme === "transgraniczny" && (
-          <>  
-            <StaticImage src="../../../images/05f3bffe-f0d1-4cbb-b294-8c84c1499cb3.jpg" />
-            <StaticImage src="../../../images/0a891bfe-c147-44bb-bf09-586d1ef65886.jpg" />
-          </>
+          <Box display="block" width="100%">
+            <ImagesGallery images={images} theme={theme} columns={2} />
+          </Box>
         )}
       </Box>
     </Container>

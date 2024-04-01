@@ -43,7 +43,7 @@ const Modal = ({ children, isOpenFromParent, handleCloseModal }) => {
       <Box
         height="100vh"
         width="100%"
-        backgroundColor="rgba(255,255,255,0.5)"
+        backgroundColor="white"
         onClick={e => closeModal(e)}
       />
 

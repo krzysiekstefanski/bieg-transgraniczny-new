@@ -38,6 +38,7 @@ const Component = styled(Box)`
     }
 
     img {
+      height: 100%;
       width: 100%;
       position: absolute;
       top: 0;
@@ -112,7 +113,7 @@ const ArrowRightButton = styled(Button)`
   }
 `
 
-const ImagesGallery = ({ theme, images }) => {
+const ImagesGallery = ({ theme, images, columns }) => {
   const [clickedImage, setClickedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
   const [isOpenModal, setIsOpenModal] = useState(false)
@@ -179,8 +180,8 @@ const ImagesGallery = ({ theme, images }) => {
             onClick={() => handleClick(image, index)}
             width="100%"
             widthSM="calc(50% - 12px)"
-            widthMD="calc(33% - 14px)"
-            widthXL="calc(33% - 12px)"
+            widthMD={columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 14px)"}
+            widthXL={columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 12px)"}
           >
             <img src={image} style={{ objectFit: "contain" }} />
           </Box>
@@ -198,10 +199,10 @@ const ImagesGallery = ({ theme, images }) => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
+            padding="25px 0"
           >
             <Box
               width="100%"
-              backgroundColor="black"
               radius="8px"
               overflow="hidden"
             >
