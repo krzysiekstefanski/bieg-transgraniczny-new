@@ -8,6 +8,8 @@ import Container from "../../atomic/molecules/Container/Container"
 
 const Wrapper = styled(Box)`
   width: 100%;
+  height: 1200px;
+  margin-bottom: 24px;
 `
 
 const TransgranicznyWynikiPage = () => {
