@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from "react"
-import ReactDOM from "react-dom"
-import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
 
 const Modal = ({ children, isOpenFromParent, handleCloseModal }) => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const modalRef = useRef()
 
   const openModal = () => {
@@ -13,9 +11,6 @@ const Modal = ({ children, isOpenFromParent, handleCloseModal }) => {
 
   const closeModal = e => {
     setIsOpen(false)
-    if (handleCloseModal) {
-      handleCloseModal()
-    }
   }
 
   useEffect(() => {
@@ -40,12 +35,7 @@ const Modal = ({ children, isOpenFromParent, handleCloseModal }) => {
       right="0"
       zIndex="999"
     >
-      <Box
-        height="100vh"
-        width="100%"
-        backgroundColor="white"
-        onClick={e => closeModal(e)}
-      />
+      <Box height="100vh" width="100%" backgroundColor="white" />
 
       {children}
     </Box>

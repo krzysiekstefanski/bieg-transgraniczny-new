@@ -1,5 +1,4 @@
-import React, { useRef, useEffect, useCallback, useState } from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import React, { useEffect, useCallback, useState } from "react"
 import styled from "styled-components"
 import { checkColor } from "../../utils"
 import Box from "../../atoms/Box/Box"
@@ -148,28 +147,29 @@ const ImagesGallery = ({ theme, images, columns }) => {
     }
   }
 
-  const useEscapeKey = () => {
-    const handleEscKey = useCallback(
-      event => {
-        if (event.key === "Escape") {
-          handleCloseModal()
-        }
-      },
-      [handleCloseModal]
-    )
+  const handleKey = event => {
+    if (event.key === "Escape") {
+      handleCloseModal()
+    }
 
-    useEffect(() => {
-      if (isOpenModal) {
-        document.addEventListener("keyup", handleEscKey, false)
-      }
+    if (event.key === "ArrowLeft") {
+      handleLeftArrowClick()
+    }
 
-      return () => {
-        document.removeEventListener("keyup", handleEscKey, false)
-      }
-    }, [isOpenModal])
+    if (event.key === "ArrowRight") {
+      handleRightArrowClick()
+    }
   }
 
-  useEscapeKey()
+  useEffect(() => {
+    if (isOpenModal) {
+      document.addEventListener("keyup", handleKey)
+    }
+
+    return () => {
+      document.removeEventListener("keyup", handleKey)
+    }
+  }, [isOpenModal, currentIndex])
 
   return (
     <Component theme={theme}>
@@ -180,8 +180,12 @@ const ImagesGallery = ({ theme, images, columns }) => {
             onClick={() => handleClick(image, index)}
             width="100%"
             widthSM="calc(50% - 12px)"
-            widthMD={columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 14px)"}
-            widthXL={columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 12px)"}
+            widthMD={
+              columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 14px)"
+            }
+            widthXL={
+              columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 12px)"
+            }
           >
             <img src={image} style={{ objectFit: "contain" }} />
           </Box>
@@ -201,11 +205,7 @@ const ImagesGallery = ({ theme, images, columns }) => {
             transform="translate(-50%, -50%)"
             padding="25px 0"
           >
-            <Box
-              width="100%"
-              radius="8px"
-              overflow="hidden"
-            >
+            <Box width="100%" radius="8px" overflow="hidden">
               <img
                 src={images[currentIndex]}
                 alt={clickedImage}
@@ -217,20 +217,24 @@ const ImagesGallery = ({ theme, images, columns }) => {
               />
             </Box>
           </Box>
-          <ArrowRightButton
-            variant={theme}
-            padding="0"
-            onClick={handleRightArrowClick}
-          >
-            <ArrowRightSVG />
-          </ArrowRightButton>
-          <ArrowLeftButton
-            variant={theme}
-            padding="0"
-            onClick={handleLeftArrowClick}
-          >
-            <ArrowLeftSVG />
-          </ArrowLeftButton>
+          {images.length > 1 && (
+            <>
+              <ArrowRightButton
+                variant={theme}
+                padding="0"
+                onClick={handleRightArrowClick}
+              >
+                <ArrowRightSVG />
+              </ArrowRightButton>
+              <ArrowLeftButton
+                variant={theme}
+                padding="0"
+                onClick={handleLeftArrowClick}
+              >
+                <ArrowLeftSVG />
+              </ArrowLeftButton>
+            </>
+          )}
           <CancelButton variant={theme} padding="0" onClick={handleCloseModal}>
             <CancelSVG />
           </CancelButton>
