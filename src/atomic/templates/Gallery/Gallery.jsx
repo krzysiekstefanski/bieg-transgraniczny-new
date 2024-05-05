@@ -13,16 +13,15 @@ import BgRedSVG2 from "../../../images/red-bg-5.inline.svg"
 import { Link } from "gatsby"
 import { colors } from "../../colors"
 
-import gallery1 from "../../../images/gallery/gallery-1.jpg"
-import gallery2 from "../../../images/gallery/gallery-2.jpg"
-import gallery3 from "../../../images/gallery/gallery-3.jpg"
-import gallery4 from "../../../images/gallery/gallery-4.jpg"
-import gallery5 from "../../../images/gallery/gallery-5.jpg"
-import gallery6 from "../../../images/gallery/gallery-6.jpg"
-import gallery7 from "../../../images/gallery/gallery-7.jpg"
-import gallery8 from "../../../images/gallery/gallery-8.jpg"
-import gallery9 from "../../../images/gallery/gallery-9.jpg"
-
+import gallery1 from "../../../images/gallery/8/IMG_4506.jpg"
+import gallery2 from "../../../images/gallery/8/IMG_4544.jpg"
+import gallery3 from "../../../images/gallery/8/IMG_4736.jpg"
+import gallery4 from "../../../images/gallery/8/IMG_4934.jpg"
+import gallery5 from "../../../images/gallery/8/IMG_4939.jpg"
+import gallery6 from "../../../images/gallery/8/IMG_4960.jpg"
+import gallery7 from "../../../images/gallery/8/IMG_5630.jpg"
+import gallery8 from "../../../images/gallery/8/IMG_5771.jpg"
+import gallery9 from "../../../images/gallery/8/IMG_5791.jpg"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -38,54 +37,93 @@ const TopSVGBox = styled(Box)`
   svg {
     path {
       &:nth-child(1) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny40 : colors.niepodleglosci20};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny40
+            : colors.niepodleglosci20};
       }
       &:nth-child(2) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny80 : colors.niepodleglosci40};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny80
+            : colors.niepodleglosci40};
       }
       &:nth-child(3) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci00};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny20
+            : colors.niepodleglosci00};
       }
       &:nth-child(4) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny60
+            : colors.niepodleglosci60};
       }
       &:nth-child(5) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci40};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny00
+            : colors.niepodleglosci40};
       }
       &:nth-child(6) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny20
+            : colors.niepodleglosci60};
       }
     }
   }
-`;
+`
 
 const BottomSVGBox = styled(Box)`
   svg {
     path {
       &:nth-child(1) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci80};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny20
+            : colors.niepodleglosci80};
       }
       &:nth-child(2) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci40};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny20
+            : colors.niepodleglosci40};
       }
       &:nth-child(3) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny00
+            : colors.niepodleglosci60};
       }
       &:nth-child(4) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny80 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny80
+            : colors.niepodleglosci60};
       }
       &:nth-child(5) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci20};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny00
+            : colors.niepodleglosci20};
       }
       &:nth-child(6) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci40};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny60
+            : colors.niepodleglosci40};
       }
       &:nth-child(7) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci40};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny00
+            : colors.niepodleglosci40};
       }
     }
   }
-`;
+`
 
 const images = [
   gallery1,
@@ -165,7 +203,7 @@ const Gallery = ({ theme }) => (
             displayMD="flex"
             variant={theme + "Outline"}
             as={Link}
-            to="https://photos.app.goo.gl/AHHLVs1w1et6e83M9"
+            to="https://photos.app.goo.gl/CNyfvE91JAUGR5my6"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -180,7 +218,7 @@ const Gallery = ({ theme }) => (
           displayMD="none"
           variant={theme + "Outline"}
           as={Link}
-          to="https://photos.app.goo.gl/AHHLVs1w1et6e83M9"
+          to="https://photos.app.goo.gl/CNyfvE91JAUGR5my6"
           target="_blank"
           rel="noopener noreferrer"
           margin="0 auto"

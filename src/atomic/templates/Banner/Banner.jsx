@@ -14,8 +14,7 @@ import { colors } from "../../colors"
 import CustomLink from "../../atoms/Link/Link"
 import ImagesGallery from "../../organisms/ImagesGallery/ImagesGallery"
 
-import image1 from "../../../images/05f3bffe-f0d1-4cbb-b294-8c84c1499cb3.jpg"
-import image2 from "../../../images/0a891bfe-c147-44bb-bf09-586d1ef65886.jpg"
+import image1 from "../../../images/gallery/8/IMG_4506.jpg"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -32,31 +31,46 @@ const BoxSVG = styled(Box)`
   svg {
     path {
       &:nth-child(1) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny40 : colors.niepodleglosci80};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny40
+            : colors.niepodleglosci80};
       }
       &:nth-child(2) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny60
+            : colors.niepodleglosci60};
       }
       &:nth-child(3) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny20
+            : colors.niepodleglosci60};
       }
       &:nth-child(4) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny00 : colors.niepodleglosci60};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny00
+            : colors.niepodleglosci60};
       }
       &:nth-child(5) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny20 : colors.niepodleglosci20};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny20
+            : colors.niepodleglosci20};
       }
       &:nth-child(6) {
-        fill: ${props => props.theme === 'transgraniczny' ? colors.transgraniczny60 : colors.niepodleglosci00};
+        fill: ${props =>
+          props.theme === "transgraniczny"
+            ? colors.transgraniczny60
+            : colors.niepodleglosci00};
       }
     }
   }
-`;
+`
 
-const images = [
-  image1,
-  image2,
-];
+const images = [image1]
 
 const Banner = ({ theme }) => (
   <Component
@@ -99,7 +113,8 @@ const Banner = ({ theme }) => (
           <StaticImage src="../../../images/bieg-niepodleglosci.jpg" />
         )}
         {/* <Box column width="100%" max="664px" margin="32px 0 24px"> */}
-        <Box column width="100%" max="756px" margin="0 0 40px">
+        {/* <Box column width="100%" max="756px" margin="0 0 40px"> */}
+        <Box column width="100%" max="936px" margin="0 0 40px">
           {/* <Text
             size="contentM"
             align="center"
@@ -128,22 +143,66 @@ const Banner = ({ theme }) => (
           </Text> */}
           {theme === "niepodleglosci" ? (
             <Box column gap="16px">
-              <Button as={Link} to={`/bieg${theme}/lista-startowa`} variant={theme}>Lista Startowa</Button>
-              <Button as={Link} to={`/bieg${theme}/wyniki`} variant={theme}>Wyniki</Button>
-              <Button as={Link} to={`https://photos.google.com/share/AF1QipPQQJTcSPJ4vxZxL3ILmgmSPSSFC0JKNcVVoc-byitoS_pDI8SYEJiRqBBzq7l8ig?key=U2V1anhDTGNpV280NHEwU2otNnh3Ym9EdldHNU1n`} variant={theme}>Zdjęcia</Button>
-              <Button as={Link} to={`/bieg${theme}/regulamin`} variant={theme}>Regulamin</Button>
+              <Button
+                as={Link}
+                to={`/bieg${theme}/lista-startowa`}
+                variant={theme}
+              >
+                Lista Startowa
+              </Button>
+              <Button as={Link} to={`/bieg${theme}/wyniki`} variant={theme}>
+                Wyniki
+              </Button>
+              <Button
+                as={Link}
+                to={`https://photos.google.com/share/AF1QipPQQJTcSPJ4vxZxL3ILmgmSPSSFC0JKNcVVoc-byitoS_pDI8SYEJiRqBBzq7l8ig?key=U2V1anhDTGNpV280NHEwU2otNnh3Ym9EdldHNU1n`}
+                variant={theme}
+              >
+                Zdjęcia
+              </Button>
+              <Button as={Link} to={`/bieg${theme}/regulamin`} variant={theme}>
+                Regulamin
+              </Button>
             </Box>
           ) : (
+            // <>
+            //   <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
+            //     31 marca zakończy się 1 termin zapisów na nasz Festiwal. Jednak
+            //     realnie, jeżeli zarejestrowany uczestnik nie opłacił startowego
+            //     do piątku 29 marca to nie ma szansy na zaksięgowanie opłaty na
+            //     koncie organizatora (Święta). Wchodzimy więc w II termin a to
+            //     wiąże się wyższymi kosztami i mamy nadzieję, że 10 zł więcej i
+            //     będzie stanowić dla Was przeszkody do rejestracji (regulamin).
+            //   </Text>
+            //   <Text>
+            //     Dla zachęty prezentujemy świeże projekty ładnego medalu i
+            //     koszulki. Zastrzegamy sobie że w produkcie końcowym mogą być
+            //     drobne różnice.
+            //   </Text>
+            // </>
             <>
-              <Text
-                size="contentM"
-                margin="0 0 8px"
-                marginMD="0 0 16px"
-              >
-                31 marca zakończy się 1 termin zapisów na nasz Festiwal. Jednak realnie, jeżeli zarejestrowany uczestnik nie opłacił startowego do piątku 29 marca to nie ma szansy na zaksięgowanie opłaty na koncie organizatora (Święta). Wchodzimy więc w II termin a to wiąże się wyższymi kosztami i mamy nadzieję, że 10 zł więcej i będzie stanowić dla Was przeszkody do rejestracji (regulamin).
+              <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
+                296 zawodników i zawodniczek ukończyło 8. Gryfiński
+                Transgraniczny Festiwal Biegowy (sobota 03.05.2024 r.) z czego
+                najwięcej bieg na 10 km – 158 osób, półmaraton – 99 osób a 10km
+                nordic walking – 39 osób. Pogoda dopisała aczkolwiek dla
+                zawodników było troszkę za ciepło a także wiaterek mógł sprawiać
+                małe kłopoty.
               </Text>
-              <Text>
-                Dla zachęty prezentujemy świeże projekty ładnego medalu i koszulki. Zastrzegamy sobie że w produkcie końcowym mogą być drobne różnice.
+              <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
+                Gratulujemy zwycięzcom poszczególnych biegów, którzy oprócz
+                okazałych pucharów otrzymali nagrodę pieniężną ale nasze
+                organizacyjne serduszko zawsze będzie z całą rzeszą biegaczy
+                amatorów dla których nasz bieg jest wyzwaniem a ich walka na
+                trasie biegu nie polega na rywalizacji o jak najlepsze miejsce a
+                o ukończeniu zadanego dystansu i sprawdzeniu swoich możliwości.
+              </Text>
+              <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
+                Dziękujemy wszystkim, którzy pomagali przy biegu (panowie na
+                motorach prowadzących biegi, młodzież wydająca wodę na trasie,
+                zabezpieczenie trasy – policja, służba medyczna, nasi partnerzy
+                w Niemczech, instruktorzy z The Body Gryfino) bez których łatwo
+                by nie było.
               </Text>
             </>
           )}
@@ -151,7 +210,8 @@ const Banner = ({ theme }) => (
         {/* <Button as={Link} to={`/bieg${theme}/zapisy`} variant={theme}> */}
         {theme === "transgraniczny" && (
           <Box display="block" width="100%">
-            <ImagesGallery images={images} theme={theme} columns={2} />
+            {/* <ImagesGallery images={images} theme={theme} columns={2} /> */}
+            <ImagesGallery images={images} theme={theme} columns={1} />
           </Box>
         )}
       </Box>
