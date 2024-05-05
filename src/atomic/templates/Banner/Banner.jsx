@@ -14,7 +14,7 @@ import { colors } from "../../colors"
 import CustomLink from "../../atoms/Link/Link"
 import ImagesGallery from "../../organisms/ImagesGallery/ImagesGallery"
 
-import image1 from "../../../images/gallery/8/IMG_4506.jpg"
+import image1 from "../../../images/gallery/8/trans-8-1.jpg"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
