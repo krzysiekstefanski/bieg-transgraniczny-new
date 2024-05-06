@@ -183,25 +183,26 @@ const Banner = ({ theme }) => (
             <>
               <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
                 296 zawodników i zawodniczek ukończyło 8. Gryfiński
-                Transgraniczny Festiwal Biegowy (sobota 03.05.2024 r.) z czego
-                najwięcej bieg na 10 km – 158 osób, półmaraton – 99 osób a 10km
-                nordic walking – 39 osób. Pogoda dopisała aczkolwiek dla
-                zawodników było troszkę za ciepło a także wiaterek mógł sprawiać
-                małe kłopoty.
+                Transgraniczny Festiwal Biegowy (piątek 03.05.2024 r.), z czego
+                najwięcej bieg na 10 km – 158 osób, półmaraton – 99 osób, a 10
+                km nordic walking – 39 osób. Pogoda dopisała, aczkolwiek dla
+                zawodników było troszkę za ciepło, a także wiaterek mógł
+                sprawiać małe kłopoty.
               </Text>
               <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
                 Gratulujemy zwycięzcom poszczególnych biegów, którzy oprócz
-                okazałych pucharów otrzymali nagrodę pieniężną ale nasze
+                okazałych pucharów otrzymali nagrodę pieniężną, ale nasze
                 organizacyjne serduszko zawsze będzie z całą rzeszą biegaczy
-                amatorów dla których nasz bieg jest wyzwaniem a ich walka na
-                trasie biegu nie polega na rywalizacji o jak najlepsze miejsce a
-                o ukończeniu zadanego dystansu i sprawdzeniu swoich możliwości.
+                amatorów, dla których nasz bieg jest wyzwaniem, a ich walka na
+                trasie biegu nie polega na rywalizacji o jak najlepsze miejsce,
+                tylko na ukończeniu zadanego dystansu i sprawdzeniu swoich
+                możliwości.
               </Text>
               <Text size="contentM" margin="0 0 8px" marginMD="0 0 16px">
                 Dziękujemy wszystkim, którzy pomagali przy biegu (panowie na
                 motorach prowadzących biegi, młodzież wydająca wodę na trasie,
                 zabezpieczenie trasy – policja, służba medyczna, nasi partnerzy
-                w Niemczech, instruktorzy z The Body Gryfino) bez których łatwo
+                w Niemczech, instruktorzy z The Body Gryfino), bez których łatwo
                 by nie było.
               </Text>
             </>
