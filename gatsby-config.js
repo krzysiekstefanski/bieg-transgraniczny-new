@@ -63,7 +63,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/*": ["X-Frame-Options: Allow-From: gryfinobiega.pl"],
+          "/*": ["X-Frame-Options: SAMEORIGIN"],
         },
       },
     },

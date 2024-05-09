@@ -5,11 +5,12 @@ import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
 import Button from "../../atomic/atoms/Button/Button"
 import Container from "../../atomic/molecules/Container/Container"
-import WebViewer from "@pdftron/pdfjs-express"
+import WebViewer from "@pdftron/pdfjs-express-viewer"
 
 const Wrapper = styled(Box)`
   width: 100%;
-  height: 1200px;
+  height: 130vw;
+  max-height: 1200px;
   margin-bottom: 24px;
 `
 
@@ -24,12 +25,14 @@ const TransgranicznyWynikiPage = () => {
     WebViewer(
       {
         path: "/webviewer/lib",
-        initialDoc: `/pdf/16991.pdf`,
+        initialDoc: "/pdf/16991.pdf",
         licenseKey: "5MH0z4wBBOEfB48yb31C",
+        css: "/webviewer/style.css",
       },
       viewer.current
     ).then(instance => {
       instance.UI.setLanguage("pl")
+      instance.UI.disableElements(["ribbons"])
       button10k.current.onclick = () => {
         instance.UI.loadDocument(`/pdf/16991.pdf`)
       }
@@ -63,7 +66,6 @@ const TransgranicznyWynikiPage = () => {
           </Button>
         </Box>
         <Wrapper>
-          {/* <iframe src={pdfUrl} style={{ width: "100%" }}></iframe> */}
           <div
             className="webviewer"
             ref={viewer}

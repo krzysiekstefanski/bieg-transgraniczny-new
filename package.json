@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@loadable/component": "^5.15.2",
-    "@pdftron/pdfjs-express": "^8.7.4",
+    "@pdftron/pdfjs-express-viewer": "^8.7.4",
     "@svgr/webpack": "^6.5.1",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.4.0",
