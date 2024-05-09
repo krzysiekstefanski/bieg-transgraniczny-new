@@ -16,17 +16,6 @@ module.exports = {
     author: `krzysztofstefanski`,
     siteUrl: `https://gryfinobiega.pl/`,
   },
-  headers: [
-    {
-      source: `/slug`,
-      headers: [
-        {
-          key: `x-frame-options`,
-          value: `Allow-From-All`,
-        },
-      ],
-    },
-  ],
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -70,6 +59,13 @@ module.exports = {
     `gatsby-plugin-svgr-svgo`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-portal`,
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": ["X-Frame-Options: Allow-From: gryfinobiega.pl"],
+        },
+      },
+    },
   ],
 }
