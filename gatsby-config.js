@@ -16,6 +16,17 @@ module.exports = {
     author: `krzysztofstefanski`,
     siteUrl: `https://gryfinobiega.pl/`,
   },
+  headers: [
+    {
+      source: `/slug`,
+      headers: [
+        {
+          key: `x-frame-options`,
+          value: `Allow-From-All`,
+        },
+      ],
+    },
+  ],
   plugins: [
     `gatsby-plugin-image`,
     {
