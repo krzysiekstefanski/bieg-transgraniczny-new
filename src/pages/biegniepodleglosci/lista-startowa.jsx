@@ -7,7 +7,7 @@ const NiepodleglosciListaStartowaPage = () => {
   const theme = "niepodleglosci"
   const [test, setTest] = useState([])
   useEffect(() => {
-    fetch("/api")
+    fetch("/api/competitions/9661/players")
       .then(response => response.json())
       .then(resultData => {
         setTest(resultData)
