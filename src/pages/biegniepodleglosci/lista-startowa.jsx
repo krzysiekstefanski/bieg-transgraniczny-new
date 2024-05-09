@@ -20,7 +20,7 @@ const NiepodleglosciListaStartowaPage = () => {
 
   return (
     <Layout theme={theme}>
-      <Box height="1000px" heightLG="calc(100vh - 277px)" overflow="hidden">
+      {/* <Box height="1000px" heightLG="calc(100vh - 277px)" overflow="hidden">
         <iframe
           id="zapisy-ramka"
           title="Zapisy na bieg"
@@ -29,14 +29,14 @@ const NiepodleglosciListaStartowaPage = () => {
           src="https://dostartu.pl/vi-gryfinski-bieg-niepodleg-osci-c9661"
           style={{ border: "none" }}
         ></iframe>
-      </Box>
-      {/* <Box column>
+      </Box> */}
+      <Box column>
         {test.map((item, index) => (
           <Box
             key={index}
           >{`${item.playerNumber} ${item.firstname} ${item.lastname} ${item.clubname} ${item.pay}`}</Box>
         ))}
-      </Box> */}
+      </Box>
     </Layout>
   )
 }

@@ -31,8 +31,8 @@ module.exports = {
       options: {
         defaults: {
           placeholder: `none`,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -59,5 +59,6 @@ module.exports = {
     `gatsby-plugin-svgr-svgo`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-portal`,
+    `gatsby-plugin-netlify`,
   ],
 }
