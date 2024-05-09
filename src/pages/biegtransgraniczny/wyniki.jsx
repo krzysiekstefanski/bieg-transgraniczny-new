@@ -1,10 +1,11 @@
-import React, { useState } from "react"
+import React, { useRef, useEffect } from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
 import Button from "../../atomic/atoms/Button/Button"
 import Container from "../../atomic/molecules/Container/Container"
+import WebViewer from "@pdftron/pdfjs-express"
 
 const Wrapper = styled(Box)`
   width: 100%;
@@ -14,7 +15,18 @@ const Wrapper = styled(Box)`
 
 const TransgranicznyWynikiPage = () => {
   const theme = "transgraniczny"
-  const [pdfUrl, setPdfUrl] = useState("/pdf/16991.pdf")
+  const viewer = useRef(null)
+
+  useEffect(() => {
+    WebViewer(
+      {
+        path: "/webviewer/lib",
+        initialDoc: "/pdf/16993.pdf",
+        licenseKey: "5MH0z4wBBOEfB48yb31C",
+      },
+      viewer.current
+    ).then(instance => {})
+  }, [])
 
   return (
     <Layout theme={theme}>
@@ -26,7 +38,7 @@ const TransgranicznyWynikiPage = () => {
           gap={"16px"}
           padding={"24px 0"}
         >
-          <Button variant={theme} onClick={() => setPdfUrl("/pdf/16991.pdf")}>
+          {/* <Button variant={theme} onClick={() => setPdfUrl("/pdf/16991.pdf")}>
             10 km
           </Button>
           <Button variant={theme} onClick={() => setPdfUrl("/pdf/16992.pdf")}>
@@ -34,10 +46,15 @@ const TransgranicznyWynikiPage = () => {
           </Button>
           <Button variant={theme} onClick={() => setPdfUrl("/pdf/16993.pdf")}>
             Półmaraton
-          </Button>
+          </Button> */}
         </Box>
         <Wrapper>
-          <iframe src={pdfUrl} style={{ width: "100%" }}></iframe>
+          {/* <iframe src={pdfUrl} style={{ width: "100%" }}></iframe> */}
+          <div
+            className="webviewer"
+            ref={viewer}
+            style={{ width: "100%" }}
+          ></div>
         </Wrapper>
       </Container>
     </Layout>
