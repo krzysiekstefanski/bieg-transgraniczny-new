@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
+import WebViewer from "@pdftron/pdfjs-express"
 
 const Wrapper = styled(Box)`
   height: 3930px;
@@ -34,18 +35,33 @@ const Wrapper = styled(Box)`
 
 const NiepodleglosciWynikiPage = () => {
   const theme = "niepodleglosci"
+  const viewer = useRef(null)
+
+  useEffect(() => {
+    WebViewer(
+      {
+        path: "/webviewer/lib",
+        initialDoc: "/pdf/16993.pdf",
+      },
+      viewer.current
+    ).then(instance => {})
+  }, [])
 
   return (
     <Layout theme={theme}>
       <Wrapper>
-        <iframe
+        {/* <iframe
           id="wyniki-ramka"
           title="Wyniki biegu"
           width="100%"
           height="100%"
           src="https://domtel-sport.pl/wyniki,zawody,5715"
           style={{ border: "none" }}
-        ></iframe>
+        ></iframe> */}
+        <div className="MyComponent">
+          <div className="header">React sample</div>
+          <div className="webviewer" ref={viewer}></div>
+        </div>
       </Wrapper>
     </Layout>
   )
