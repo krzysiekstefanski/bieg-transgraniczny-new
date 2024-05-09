@@ -16,16 +16,30 @@ const Wrapper = styled(Box)`
 const TransgranicznyWynikiPage = () => {
   const theme = "transgraniczny"
   const viewer = useRef(null)
+  const button10k = useRef(null)
+  const buttonNW = useRef(null)
+  const button21k = useRef(null)
 
   useEffect(() => {
     WebViewer(
       {
         path: "/webviewer/lib",
-        initialDoc: "/pdf/16993.pdf",
+        initialDoc: `/pdf/16991.pdf`,
         licenseKey: "5MH0z4wBBOEfB48yb31C",
       },
       viewer.current
-    ).then(instance => {})
+    ).then(instance => {
+      instance.UI.setLanguage("pl")
+      button10k.current.onclick = () => {
+        instance.UI.loadDocument(`/pdf/16991.pdf`)
+      }
+      buttonNW.current.onclick = () => {
+        instance.UI.loadDocument(`/pdf/16992.pdf`)
+      }
+      button21k.current.onclick = () => {
+        instance.UI.loadDocument(`/pdf/16993.pdf`)
+      }
+    })
   }, [])
 
   return (
@@ -38,15 +52,15 @@ const TransgranicznyWynikiPage = () => {
           gap={"16px"}
           padding={"24px 0"}
         >
-          {/* <Button variant={theme} onClick={() => setPdfUrl("/pdf/16991.pdf")}>
+          <Button variant={theme} ref={button10k}>
             10 km
           </Button>
-          <Button variant={theme} onClick={() => setPdfUrl("/pdf/16992.pdf")}>
+          <Button variant={theme} ref={buttonNW}>
             10 km Nordic Walking
           </Button>
-          <Button variant={theme} onClick={() => setPdfUrl("/pdf/16993.pdf")}>
+          <Button variant={theme} ref={button21k}>
             Półmaraton
-          </Button> */}
+          </Button>
         </Box>
         <Wrapper>
           {/* <iframe src={pdfUrl} style={{ width: "100%" }}></iframe> */}
