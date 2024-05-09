@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.dostartu.pl/competitions/9661/players"
+  status = 200
