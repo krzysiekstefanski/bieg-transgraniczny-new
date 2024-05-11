@@ -2,17 +2,17 @@ import { getColor } from "./utils"
 
 // const transgraniczny = "#1FAD66"
 const transgraniczny = "#208e9c"
-//const niepodleglosci = "#AD1f37"
+// const niepodleglosci = "#AD1f37"
 const niepodleglosci = "#ad1f32"
-//const niepodleglosci = "#ad9c1f"
+// const niepodleglosci = "#ad9c1f"
 
 export const colors = {
-  transgraniczny00: transgraniczny,
-  transgraniczny20: getColor(transgraniczny, 20),
-  transgraniczny40: getColor(transgraniczny, 40),
-  transgraniczny60: getColor(transgraniczny, 60),
-  transgraniczny80: getColor(transgraniczny, 80),
-  transgraniczny100: getColor(transgraniczny, 100),
+  transgraniczny00: transgraniczny, // 208e9c
+  transgraniczny20: getColor(transgraniczny, 20), // 22b0c3
+  transgraniczny40: getColor(transgraniczny, 40), // 3ccadd
+  transgraniczny60: getColor(transgraniczny, 60), // 55e3f6
+  transgraniczny80: getColor(transgraniczny, 80), // b6f3fb
+  transgraniczny100: getColor(transgraniczny, 100), //
   niepodleglosci00: niepodleglosci,
   niepodleglosci20: getColor(niepodleglosci, 20),
   niepodleglosci40: getColor(niepodleglosci, 40),

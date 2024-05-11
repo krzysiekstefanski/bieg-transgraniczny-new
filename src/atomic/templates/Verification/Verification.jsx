@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
@@ -7,6 +6,8 @@ import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
 import List from "../../atoms/List/List"
 import ListItem from "../../atoms/ListItem/ListItem"
+import ImagesGallery from "../../organisms/ImagesGallery/ImagesGallery"
+import image1 from "../../../images/transgraniczny-mapa-p.png"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -17,10 +18,12 @@ const Component = styled(Box)`
     }
   }
 `
+const images = [image1]
 
-const Verification = ({ theme }) => (
+const Verification = ({ theme, display }) => (
   <Component
     id="weryfikacja"
+    display={display}
     width="100%"
     backgroundColor="grey95"
     padding="48px 0"
@@ -66,8 +69,14 @@ const Verification = ({ theme }) => (
             </ListItem>
           </List>
         </Box>
-        <Box widthMD="calc(50% - 12px)">
-          <StaticImage src="../../../images/transgraniczny-mapa-p.png" />
+        <Box widthMD="calc(50% - 12px)" align="center">
+          <div style={{ width: "100%" }}>
+            <ImagesGallery
+              images={images}
+              theme={theme}
+              imagesOptions={{ imageFit: "cover" }}
+            />
+          </div>
         </Box>
       </Box>
     </Container>

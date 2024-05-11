@@ -1,26 +1,32 @@
-import React, { useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
+import { useEffect, useRef } from "react"
+import ReactDOM from "react-dom"
 
 const Portal = ({ children }) => {
-    const portalRoot = typeof document !== `undefined` ? document.getElementById('portal') : null
-    const el = useRef(typeof document !== `undefined` ? document.createElement("div") : null);
+  const portalRoot =
+    typeof document !== `undefined` ? document.getElementById("portal") : null
+  const el = useRef(
+    typeof document !== `undefined` ? document.createElement("div") : null
+  )
 
-    useEffect(() => {
-        portalRoot.appendChild(el.current);
+  useEffect(() => {
+    const portalElement = el.current
 
-
-        return () => {
-            portalRoot.removeChild(el.current);
-        };
-    }, []);
-
-    if (el.current) {
-        return ReactDOM.createPortal(
-            children, el.current
-        );
-    } else {
-        return null
+    if (portalRoot) {
+      portalRoot.appendChild(portalElement)
     }
+
+    return () => {
+      if (portalRoot && portalElement) {
+        portalRoot.removeChild(portalElement)
+      }
+    }
+  }, [])
+
+  if (el.current) {
+    return ReactDOM.createPortal(children, el.current)
+  } else {
+    return null
+  }
 }
 
 export default Portal

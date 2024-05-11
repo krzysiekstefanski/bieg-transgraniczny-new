@@ -1,16 +1,20 @@
-import React, { useState } from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
 import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
 import Heading from "../../atoms/Heading/Heading"
 import Text from "../../atoms/Text/Text"
-import Portal from "../../atoms/Portal/Portal"
-import Modal from "../../atoms/Modal/Modal"
 import BgGreenSVG from "../../../images/teal-bg-2.inline.svg"
 import BgGreenSVG2 from "../../../images/teal-bg-3.inline.svg"
 import BgRedSVG from "../../../images/red-bg-2.inline.svg"
 import BgRedSVG2 from "../../../images/red-bg-3.inline.svg"
+import ImagesGallery from "../../organisms/ImagesGallery/ImagesGallery"
+import image1 from "../../../images/medal-1.png"
+import image2 from "../../../images/medal-2.png"
+import image3 from "../../../images/medal-3.png"
+import image4 from "../../../images/medal-4.png"
+import image5 from "../../../images/koszulka-przod.png"
+import image6 from "../../../images/koszulka-tyl.png"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -21,28 +25,14 @@ const Component = styled(Box)`
     }
   }
 `
+const images = [image1, image2, image3, image4]
+const images2 = [image5, image6]
 
-const Rewards = ({ theme }) => {
-  const [clickedImage, setClickedImage] = useState(null)
-  const [currentIndex, setCurrentIndex] = useState(null)
-  const [isOpenModal, setIsOpenModal] = useState(false)
-  const body =
-    typeof document !== `undefined` ? document.querySelector("body") : null
-
-  const handleClick = (item, index) => {
-    setCurrentIndex(index)
-    setClickedImage(item)
-    setIsOpenModal(true)
-    body.classList.add("open-modal")
-  }
-
-  const handleCloseModal = () => {
-    setIsOpenModal(false)
-    body.classList.remove("open-modal")
-  }
-
+const Rewards = ({ theme, disabled }) => {
   return (
     <Component
+      id="nagrody"
+      display={disabled && "none"}
       width="100%"
       padding="0 0 48px"
       paddingMD="120px 0"
@@ -110,44 +100,16 @@ const Rewards = ({ theme }) => {
             </Heading>
             <Box gap="24px" wrap="wrap">
               <Box grow="1" gap="24px" wrap="wrap">
-                <Box
-                  grow="1"
-                  padding="34px"
-                  borderWidth="1px"
-                  borderColor="grey90"
-                  radius="8px"
-                >
-                  <StaticImage src="../../../images/medal-1.png" />
-                </Box>
-                <Box
-                  grow="1"
-                  padding="34px"
-                  borderWidth="1px"
-                  borderColor="grey90"
-                  radius="8px"
-                >
-                  <StaticImage src="../../../images/medal-2.png" />
-                </Box>
-              </Box>
-              <Box grow="1" gap="24px" wrap="wrap">
-                <Box
-                  grow="1"
-                  padding="34px"
-                  borderWidth="1px"
-                  borderColor="grey90"
-                  radius="8px"
-                >
-                  <StaticImage src="../../../images/medal-3.png" />
-                </Box>
-                <Box
-                  grow="1"
-                  padding="34px"
-                  borderWidth="1px"
-                  borderColor="grey90"
-                  radius="8px"
-                >
-                  <StaticImage src="../../../images/medal-4.png" />
-                </Box>
+                <ImagesGallery
+                  images={images}
+                  imagesOptions={{
+                    borderWidth: "1px",
+                    borderColor: "grey90",
+                    padding: "34px",
+                  }}
+                  theme={theme}
+                  columns={2}
+                />
               </Box>
             </Box>
           </Box>
@@ -161,41 +123,19 @@ const Rewards = ({ theme }) => {
               Koszulka
             </Heading>
             <Box grow="1" gap="24px" wrap="wrap">
-              <Box
-                grow="1"
-                backgroundColor="white"
-                borderWidth="1px"
-                borderColor="grey90"
-                radius="8px"
-                padding="34px"
-                onClick={() => handleClick("koszulka-przód", 1)}
-              >
-                <StaticImage src="../../../images/koszulka-przod.png" />
-              </Box>
-              <Box
-                grow="1"
-                backgroundColor="white"
-                borderWidth="1px"
-                borderColor="grey90"
-                radius="8px"
-                padding="34px"
-                onClick={() => handleClick("koszulka-tył", 1)}
-              >
-                <StaticImage src="../../../images/koszulka-tyl.png" />
-              </Box>
+              <ImagesGallery
+                images={images2}
+                imagesOptions={{
+                  borderWidth: "1px",
+                  borderColor: "grey90",
+                  padding: "34px",
+                }}
+                theme={theme}
+                columns={2}
+              />
             </Box>
           </Box>
         </Box>
-        <Portal>
-          <Modal
-            isOpenFromParent={isOpenModal}
-            handleCloseModal={handleCloseModal}
-          >
-            <Box height="80%" width="80%">
-              <StaticImage src="../../../images/koszulka-przod.png" />
-            </Box>
-          </Modal>
-        </Portal>
       </Container>
     </Component>
   )

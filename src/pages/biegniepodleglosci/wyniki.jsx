@@ -51,6 +51,7 @@ const NiepodleglosciWynikiPage = () => {
         <Box
           direction="column"
           directionSM="row"
+          justify="center"
           width="100%"
           gap={"16px"}
           padding={"24px 0"}

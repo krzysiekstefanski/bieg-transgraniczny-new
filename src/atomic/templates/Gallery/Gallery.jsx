@@ -137,9 +137,10 @@ const images = [
   gallery9,
 ]
 
-const Gallery = ({ theme }) => (
+const Gallery = ({ theme, display }) => (
   <Component
     id="galeria"
+    display={display}
     width="100%"
     backgroundColor="grey95"
     padding="0 0 48px"
@@ -212,7 +213,7 @@ const Gallery = ({ theme }) => (
         </Box>
 
         <Box column margin="0 0 40px" marginMD="0 0 80px">
-          <ImagesGallery theme={theme} images={images} />
+          <ImagesGallery theme={theme} images={images} columns={3} />
         </Box>
         <Button
           displayMD="none"

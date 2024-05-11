@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Box from "../../atomic/atoms/Box/Box"
@@ -17,33 +17,33 @@ const Wrapper = styled(Box)`
 const TransgranicznyWynikiPage = () => {
   const theme = "transgraniczny"
   const viewer = useRef(null)
-  const button10k = useRef(null)
-  const buttonNW = useRef(null)
-  const button21k = useRef(null)
+  const [pdf, setPdf] = useState(undefined)
+  const [instance, setInstance] = useState(null)
 
   useEffect(() => {
-    WebViewer(
-      {
-        path: "/webviewer/lib",
-        initialDoc: "/pdf/16991.pdf",
-        licenseKey: "5MH0z4wBBOEfB48yb31C",
-        css: "/webviewer/style.css",
-      },
-      viewer.current
-    ).then(instance => {
-      instance.UI.setLanguage("pl")
-      instance.UI.disableElements(["ribbons"])
-      button10k.current.onclick = () => {
-        instance.UI.loadDocument(`/pdf/16991.pdf`)
-      }
-      buttonNW.current.onclick = () => {
-        instance.UI.loadDocument(`/pdf/16992.pdf`)
-      }
-      button21k.current.onclick = () => {
-        instance.UI.loadDocument(`/pdf/16993.pdf`)
-      }
-    })
-  }, [])
+    if (!instance) {
+      WebViewer(
+        {
+          path: "/webviewer/lib",
+          initialDoc: "/pdf/16991.pdf",
+          licenseKey: "5MH0z4wBBOEfB48yb31C",
+          css: "/webviewer/style.css",
+        },
+        viewer.current
+      ).then(instance => {
+        setInstance(instance)
+        instance.UI.setLanguage("pl")
+        instance.UI.disableElements(["ribbons"])
+      })
+    }
+  })
+
+  useEffect(() => {
+    console.log(pdf)
+    if (instance && pdf) {
+      instance.loadDocument(`/pdf/${pdf}.pdf`)
+    }
+  }, [pdf, instance])
 
   return (
     <Layout theme={theme}>
@@ -51,17 +51,18 @@ const TransgranicznyWynikiPage = () => {
         <Box
           direction="column"
           directionSM="row"
+          justify="center"
           width="100%"
           gap={"16px"}
           padding={"24px 0"}
         >
-          <Button variant={theme} ref={button10k}>
+          <Button variant={theme} onClick={() => setPdf("16991")}>
             10 km
           </Button>
-          <Button variant={theme} ref={buttonNW}>
+          <Button variant={theme} onClick={() => setPdf("16992")}>
             10 km Nordic Walking
           </Button>
-          <Button variant={theme} ref={button21k}>
+          <Button variant={theme} onClick={() => setPdf("16993")}>
             Półmaraton
           </Button>
         </Box>

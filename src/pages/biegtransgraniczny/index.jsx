@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Header from "../../atomic/templates/Header/Header"
 import Top from "../../atomic/templates/Top/Top"
 import Banner from "../../atomic/templates/Banner/Banner"
 import Verification from "../../atomic/templates/Verification/Verification"
@@ -16,7 +15,7 @@ const TransgranicznyPage = () => {
       <Top theme={theme} />
       <Banner theme={theme} />
       <Verification theme={theme} />
-      {/* <Rewards theme={theme} /> */}
+      <Rewards theme={theme} disabled />
       <Gallery theme={theme} />
     </Layout>
   )

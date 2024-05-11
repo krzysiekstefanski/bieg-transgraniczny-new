@@ -41,13 +41,13 @@ export function getColor(hexColor, level) {
     b = "0"
 
   // Check if hex is 3 digits
-  if (hexColor.length == 4) {
+  if (hexColor.length === 4) {
     r = "0x" + hexColor[1] + hexColor[1]
     g = "0x" + hexColor[2] + hexColor[2]
     b = "0x" + hexColor[3] + hexColor[3]
 
     // Check if hex is 6 digits
-  } else if (hexColor.length == 7) {
+  } else if (hexColor.length === 7) {
     r = "0x" + hexColor[1] + hexColor[2]
     g = "0x" + hexColor[3] + hexColor[4]
     b = "0x" + hexColor[5] + hexColor[6]
@@ -73,11 +73,11 @@ export function getColor(hexColor, level) {
 
   // Get hue from RGB
   // If there is no difference
-  if (delta == 0) h = 0
+  if (delta === 0) h = 0
   // If Red is max
-  else if (cMax == redValue) h = ((greenValue - blueValue) / delta) % 6
+  else if (cMax === redValue) h = ((greenValue - blueValue) / delta) % 6
   // If Green is max
-  else if (cMax == greenValue) h = (blueValue - redValue) / delta + 2
+  else if (cMax === greenValue) h = (blueValue - redValue) / delta + 2
   // If Blue is max
   else h = (redValue - greenValue) / delta + 4
 

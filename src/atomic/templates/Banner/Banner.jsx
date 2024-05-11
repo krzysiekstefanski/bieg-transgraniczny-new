@@ -5,15 +5,12 @@ import styled from "styled-components"
 import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
 import Text from "../../atoms/Text/Text"
-import LinkInternal from "../../atoms/Link/Link"
 import Button from "../../atoms/Button/Button"
 import BgSVG from "../../../images/background-stripes-2.inline.svg"
 import BgGreenSVG from "../../../images/teal-bg-1.inline.svg"
 import BgRedSVG from "../../../images/red-bg-1.inline.svg"
 import { colors } from "../../colors"
-import CustomLink from "../../atoms/Link/Link"
 import ImagesGallery from "../../organisms/ImagesGallery/ImagesGallery"
-
 import image1 from "../../../images/gallery/8/trans-8-1.jpg"
 
 const Component = styled(Box)`
@@ -72,9 +69,10 @@ const BoxSVG = styled(Box)`
 
 const images = [image1]
 
-const Banner = ({ theme }) => (
+const Banner = ({ theme, display }) => (
   <Component
     id="bieg"
+    display={display}
     width="100%"
     backgroundColor="grey95"
     padding="0"
@@ -212,7 +210,7 @@ const Banner = ({ theme }) => (
         {theme === "transgraniczny" && (
           <Box display="block" width="100%">
             {/* <ImagesGallery images={images} theme={theme} columns={2} /> */}
-            <ImagesGallery images={images} theme={theme} columns={1} />
+            <ImagesGallery images={images} theme={theme} />
           </Box>
         )}
       </Box>

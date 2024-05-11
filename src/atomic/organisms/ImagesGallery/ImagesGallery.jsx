@@ -13,15 +13,7 @@ import { colors } from "../../colors"
 const Component = styled(Box)`
   div > div {
     overflow: hidden;
-    border-radius: 8px;
-    position: relative;
     cursor: pointer;
-
-    ::before {
-      content: "";
-      width: 100%;
-      padding-top: 60%;
-    }
 
     &::after {
       content: "";
@@ -34,17 +26,6 @@ const Component = styled(Box)`
       bottom: 0;
       z-index: 2;
       transition: background-color 0.3s ease, background-position 0.3s ease;
-    }
-
-    img {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
     }
 
     &:hover {
@@ -60,6 +41,27 @@ const Component = styled(Box)`
         background-position: center center;
         background-repeat: no-repeat;
       }
+    }
+  }
+
+  div div > div {
+    position: relative;
+
+    ::before {
+      content: "";
+      width: 100%;
+      padding-top: 60%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
     }
   }
 `
@@ -112,7 +114,7 @@ const ArrowRightButton = styled(Button)`
   }
 `
 
-const ImagesGallery = ({ theme, images, columns }) => {
+const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
   const [clickedImage, setClickedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
   const [isOpenModal, setIsOpenModal] = useState(false)
@@ -171,23 +173,42 @@ const ImagesGallery = ({ theme, images, columns }) => {
     }
   }, [isOpenModal, currentIndex])
 
+  useEffect(() => {
+    if (imagesOptions) {
+      console.log(imagesOptions)
+      console.log(imagesOptions.borderWidth)
+    }
+  }, [imagesOptions])
+
   return (
-    <Component theme={theme}>
+    <Component theme={theme} width="100%">
       <Box width="100%" grow="1" gap="24px" wrap="wrap">
         {images.map((image, index) => (
           <Box
             key={index}
             onClick={() => handleClick(image, index)}
             width="100%"
-            widthSM="calc(50% - 12px)"
+            widthSM={columns > 1 ? `calc(50% - 12px)` : "100%"}
             widthMD={
-              columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 14px)"
+              columns > 1
+                ? `calc((100% / ${columns}) - (${
+                    columns - 1
+                  } * 24px / ${columns}))`
+                : "100%"
             }
-            widthXL={
-              columns ? `calc(100% / ${columns} - 14px)` : "calc(33% - 12px)"
-            }
+            backgroundColor="white"
+            radius="8px"
+            position="relative"
+            borderWidth={imagesOptions?.borderWidth}
+            borderColor={imagesOptions?.borderColor}
+            padding={imagesOptions?.padding}
           >
-            <img src={image} style={{ objectFit: "contain" }} />
+            <Box width="100%">
+              <img
+                src={image}
+                style={{ objectFit: imagesOptions?.imageFit ?? "contain" }}
+              />
+            </Box>
           </Box>
         ))}
       </Box>

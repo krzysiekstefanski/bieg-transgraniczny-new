@@ -195,7 +195,6 @@ const ButtonVariants = {
     focusOutline: "none",
     border: "1px solid transparent",
     hoverBorder: "1px solid transparent",
-    focusBorder: "1px solid transparent",
   },
   red: {
     color: checkColor("white"),

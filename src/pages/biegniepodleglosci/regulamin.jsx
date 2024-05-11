@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import Box from "../../atomic/atoms/Box/Box"

@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 202 439" width="100%" height="100%"><path fill="#3ccadd" d="M66 187.768L133.553 187.768L99.7762 125.179L66 187.768Z" class="color3CDC8C svgShape"></path><path fill="#55e3f6" d="M134.105 312.918L201.658 312.918 167.881 250.357 134.105 312.918zM.532125 312.918L68.0847 312.918 34.3084 250.357.532125 312.918z" class="color55F6A6 svgShape"></path><path fill="#22b0c3" d="M134.105 438.096L167.881 375.507 100.329 375.507 134.105 438.096zM100.288 375.225L134.064 312.635 66.5119 312.635 100.288 375.225z" class="color23C473 svgShape"></path><path fill="#208e9c" d="M32.776 -2.95282e-06L66.5523 62.5893L100.329 0L32.776 -2.95282e-06Z" class="color1FAD66 svgShape"></path><path fill="#22b0c3" d="M167.881 125.178L201.658 62.5891L134.105 62.5891L167.881 125.178Z" class="color23C473 svgShape"></path><path fill="#55e3f6" d="M201.658 187.768L134.105 187.768L167.881 250.357L201.658 187.768Z" class="color55F6A6 svgShape"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 202 439" width="100%" height="100%">
+  <path fill="#3ccadd" d="M66 187.768L133.553 187.768L99.7762 125.179L66 187.768Z" class="color3CDC8C svgShape"></path>
+  <path fill="#55e3f6"
+    d="M134.105 312.918L201.658 312.918 167.881 250.357 134.105 312.918zM.532125 312.918L68.0847 312.918 34.3084 250.357.532125 312.918z"
+    class="color55F6A6 svgShape"></path>
+  <path fill="#22b0c3"
+    d="M134.105 438.096L167.881 375.507 100.329 375.507 134.105 438.096zM100.288 375.225L134.064 312.635 66.5119 312.635 100.288 375.225z"
+    class="color23C473 svgShape"></path>
+  <path fill="#208e9c" d="M32.776 -2.95282e-06L66.5523 62.5893L100.329 0L32.776 -2.95282e-06Z"
+    class="color1FAD66 svgShape"></path>
+  <path fill="#22b0c3" d="M167.881 125.178L201.658 62.5891L134.105 62.5891L167.881 125.178Z"
+    class="color23C473 svgShape"></path>
+  <path fill="#55e3f6" d="M201.658 187.768L134.105 187.768L167.881 250.357L201.658 187.768Z"
+    class="color55F6A6 svgShape"></path>
+</svg>
