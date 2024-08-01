@@ -88,7 +88,7 @@ const TransgranicznyZapisyPage = () => {
     <Layout theme={theme}>
       <Container padding="48px 16px">
         {players?.length > 0 && (
-          <Box overflow="auto">
+          <Box width="100%" overflow="auto">
             <Table>
               <thead>
                 <TableRowHeading>

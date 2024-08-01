@@ -350,7 +350,6 @@ const Top = ({ theme, display }) => (
           <Box
             maxHeight="480px"
             maxHeightLG="none"
-            height="100vh"
             width="111.8%"
             padding={theme === "niepodleglosci" ? "8px 0 0" : "56px 0 0"}
             position="absolute"
