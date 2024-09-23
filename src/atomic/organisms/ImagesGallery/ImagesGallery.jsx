@@ -1,4 +1,5 @@
-import React, { useEffect, useCallback, useState } from "react"
+import React, { useEffect, useState } from "react"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { checkColor } from "../../utils"
 import Box from "../../atoms/Box/Box"
@@ -46,12 +47,6 @@ const Component = styled(Box)`
 
   div div > div {
     position: relative;
-
-    ::before {
-      content: "";
-      width: 100%;
-      padding-top: 60%;
-    }
 
     img {
       height: 100%;
@@ -116,7 +111,7 @@ const ArrowRightButton = styled(Button)`
 
 const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
   const [clickedImage, setClickedImage] = useState(null)
-  const [currentIndex, setCurrentIndex] = useState(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
   const [isOpenModal, setIsOpenModal] = useState(false)
   //const body =
   //typeof document !== `undefined` ? document.querySelector("body") : null
@@ -173,20 +168,43 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
     }
   }, [isOpenModal, currentIndex])
 
-  useEffect(() => {
-    if (imagesOptions) {
-      console.log(imagesOptions)
-      console.log(imagesOptions.borderWidth)
-    }
-  }, [imagesOptions])
-
   return (
     <Component theme={theme} width="100%">
+      {console.log(images)}
       <Box width="100%" grow="1" gap="24px" wrap="wrap">
-        {images.map((image, index) => (
+        {Array.isArray(images) ? (
+          images.map((image, index) => (
+            <Box
+              key={index}
+              onClick={() => handleClick(image, index)}
+              width="100%"
+              widthSM={columns > 1 ? `calc(50% - 12px)` : "100%"}
+              widthMD={
+                columns > 1
+                  ? `calc((100% / ${columns}) - (${
+                      columns - 1
+                    } * 24px / ${columns}))`
+                  : "100%"
+              }
+              backgroundColor="white"
+              radius="8px"
+              position="relative"
+              borderWidth={imagesOptions?.borderWidth}
+              borderColor={imagesOptions?.borderColor}
+              padding={imagesOptions?.padding}
+            >
+              <Box width="100%">
+                <GatsbyImage
+                  image={image.localFile.childrenImageSharp[0].gatsbyImageData}
+                  alt={"hero image"}
+                  objectPosition={"50% 50%"}
+                />
+              </Box>
+            </Box>
+          ))
+        ) : (
           <Box
-            key={index}
-            onClick={() => handleClick(image, index)}
+            onClick={() => handleClick(images, 0)}
             width="100%"
             widthSM={columns > 1 ? `calc(50% - 12px)` : "100%"}
             widthMD={
@@ -204,13 +222,14 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
             padding={imagesOptions?.padding}
           >
             <Box width="100%">
-              <img
-                src={image}
-                style={{ objectFit: imagesOptions?.imageFit ?? "contain" }}
+              <GatsbyImage
+                image={images.localFile.childImageSharp.gatsbyImageData}
+                alt={"hero image"}
+                objectPosition={"50% 50%"}
               />
             </Box>
           </Box>
-        ))}
+        )}
       </Box>
       <Portal>
         <Modal
@@ -227,7 +246,7 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
             padding="25px 0"
           >
             <Box width="100%" radius="8px" overflow="hidden">
-              <img
+              {/* <img
                 src={images[currentIndex]}
                 alt={clickedImage}
                 style={{
@@ -235,7 +254,23 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
                   height: "auto",
                   objectFit: "contain",
                 }}
-              />
+              /> */}
+              {Array.isArray(images) ? (
+                <GatsbyImage
+                  image={
+                    images[currentIndex].localFile.childrenImageSharp[0]
+                      .gatsbyImageData
+                  }
+                  alt={"hero image"}
+                  objectPosition={"50% 50%"}
+                />
+              ) : (
+                <GatsbyImage
+                  image={images.localFile.childImageSharp.gatsbyImageData}
+                  alt={"hero image"}
+                  objectPosition={"50% 50%"}
+                />
+              )}
             </Box>
           </Box>
           {images.length > 1 && (

@@ -21,8 +21,9 @@ const Component = styled(Box)`
   }
 `
 
-const Kontakt = ({ theme }) => (
+const Kontakt = ({ className, theme }) => (
   <Component
+    className={className}
     grow="1"
     width="100%"
     backgroundColor="grey95"

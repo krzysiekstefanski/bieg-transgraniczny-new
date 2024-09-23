@@ -14,8 +14,8 @@ const Menu = ({ theme }) => {
     },
     {
       icon: "zapisy",
-      text: "Wyniki",
-      link: "wyniki",
+      text: theme == "transgraniczny" ? "Wyniki" : "Zapisy",
+      link: theme == "transgraniczny" ? "wyniki" : "zapisy",
     },
     {
       icon: "lista-startowa",

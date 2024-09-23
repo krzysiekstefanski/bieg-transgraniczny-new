@@ -134,3 +134,14 @@ export function getColor(hexColor, level) {
   }
   return `#${f(0)}${f(8)}${f(4)}`
 }
+
+export function colorizeText(text, theme) {
+  // Regular expression to find words enclosed in **
+  const regex = /\*\*(.*?)\*\*/g
+  // Replace matched words with span tag having blue color
+  const coloredText = text.replace(regex, (match, p1) => {
+    return `<span style="color: ${checkColor(theme + "20")};">${p1}</span>`
+  })
+
+  return coloredText
+}

@@ -28,10 +28,11 @@ const Component = styled(Box)`
 const images = [image1, image2, image3, image4]
 const images2 = [image5, image6]
 
-const Rewards = ({ theme, disabled }) => {
+const Rewards = ({ className, theme, disabled }) => {
   return (
     <Component
       id="nagrody"
+      className={className}
       display={disabled && "none"}
       width="100%"
       padding="0 0 48px"

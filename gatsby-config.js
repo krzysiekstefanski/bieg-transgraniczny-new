@@ -42,7 +42,7 @@ module.exports = {
         start_url: `/`,
         background_color: browserColor.transgraniczny,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gryfinobiega.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -65,6 +65,12 @@ module.exports = {
         headers: {
           "/*": ["X-Frame-Options: SAMEORIGIN"],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: `https://kstefanski.pl/gryfinobiega/graphql`,
       },
     },
   ],

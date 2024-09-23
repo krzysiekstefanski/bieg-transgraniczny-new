@@ -15,8 +15,9 @@ const Component = styled(Box)`
   }
 `
 
-const Header = ({ theme }) => (
+const Header = ({ className, theme }) => (
   <Component
+    className={className}
     width="100%"
     backgroundColor="white"
     shadow="md"

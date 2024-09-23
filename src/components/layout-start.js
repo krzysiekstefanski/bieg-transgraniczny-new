@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
 import Footer from "../atomic/templates/Footer/Footer"
 import Box from "../atomic/atoms/Box/Box"
@@ -82,14 +81,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Layout = ({ children }) => (
-  <>
-    <GlobalStyle />
-    <Box column minHeight="100vh">
-      <main>{children}</main>
-      <Footer/>
-    </Box>
-  </>
-)
+const Layout = ({ children }) => {
+  return (
+    <>
+      <GlobalStyle />
+      <Box column minHeight="100vh">
+        <main>{children}</main>
+        <Footer />
+      </Box>
+    </>
+  )
+}
 
 export default Layout
