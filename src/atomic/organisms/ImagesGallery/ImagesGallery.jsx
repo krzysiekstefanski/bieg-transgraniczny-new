@@ -194,11 +194,11 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
               padding={imagesOptions?.padding}
             >
               <Box width="100%">
-                {/* <GatsbyImage
+                <GatsbyImage
                   image={image.localFile.childrenImageSharp[0].gatsbyImageData}
                   alt={"hero image"}
                   objectPosition={"50% 50%"}
-                /> */}
+                />
               </Box>
             </Box>
           ))
@@ -222,11 +222,11 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
             padding={imagesOptions?.padding}
           >
             <Box width="100%">
-              {/* <GatsbyImage
+              <GatsbyImage
                 image={images.localFile.childImageSharp.gatsbyImageData}
                 alt={"hero image"}
                 objectPosition={"50% 50%"}
-              /> */}
+              />
             </Box>
           </Box>
         )}
@@ -255,7 +255,7 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
                   objectFit: "contain",
                 }}
               /> */}
-              {/* {Array.isArray(images) ? (
+              {Array.isArray(images) ? (
                 <GatsbyImage
                   image={
                     images[currentIndex].localFile.childrenImageSharp[0]
@@ -270,7 +270,7 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
                   alt={"hero image"}
                   objectPosition={"50% 50%"}
                 />
-              )} */}
+              )}
             </Box>
           </Box>
           {images.length > 1 && (
