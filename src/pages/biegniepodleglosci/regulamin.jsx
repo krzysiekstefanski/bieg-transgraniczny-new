@@ -4,15 +4,16 @@ import Seo from "../../components/seo"
 import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
 import Container from "../../atomic/molecules/Container/Container"
-import loadable from "@loadable/component"
 
-const WebViewer = loadable(() => import("@pdftron/pdfjs-express-viewer"))
+if (typeof window !== `undefined`) {
+  const WebViewer = require("@pdftron/pdfjs-express-viewer")
+}
 
 const Wrapper = styled(Box)`
   width: 100%;
   height: 130vw;
   max-height: 1200px;
-  margin-bottom: 24px;
+  margin: 24px 0;
 `
 
 const NiepodleglosciRegulaminPage = () => {
