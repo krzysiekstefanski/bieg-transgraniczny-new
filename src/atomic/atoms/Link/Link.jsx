@@ -20,6 +20,7 @@ const Component = styled(Link)`
       ? checkColor(props.variant + "20")
       : checkColor("transgraniczny20")};
   line-height: ${props => (props.big ? "28" : "24")}px;
+  text-align: ${props => props.align ?? "left"};
   text-decoration: none;
   padding: ${props => props.padding};
   margin: ${props => props.margin};

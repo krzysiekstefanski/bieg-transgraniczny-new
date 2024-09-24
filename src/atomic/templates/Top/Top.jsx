@@ -269,6 +269,7 @@ const Top = ({ className, theme, display, data }) => {
                 size="h700"
                 sizeLG="h800"
                 sizeXL="h900"
+                align="left"
                 margin={herosubtitle ? "0" : "0 0 24px"}
                 marginMD={herosubtitle ? "0" : "0 0 32px"}
               >
@@ -280,6 +281,7 @@ const Top = ({ className, theme, display, data }) => {
                 as="h2"
                 size="h600"
                 sizeXL="h700"
+                align="left"
                 margin="0 0 24px"
                 marginMD="0 0 32px"
               >
