@@ -4,11 +4,9 @@ import Seo from "../../components/seo"
 import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
 import Container from "../../atomic/molecules/Container/Container"
+import loadable from "@loadable/component"
 
-let WebViewer
-if (typeof window !== `undefined`) {
-  WebViewer = require("@pdftron/pdfjs-express-viewer")
-}
+const WebViewer = loadable(() => import("@pdftron/pdfjs-express-viewer"))
 
 const Wrapper = styled(Box)`
   width: 100%;
