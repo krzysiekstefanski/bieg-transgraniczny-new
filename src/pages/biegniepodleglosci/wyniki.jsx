@@ -5,7 +5,7 @@ import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
 import Button from "../../atomic/atoms/Button/Button"
 import Container from "../../atomic/molecules/Container/Container"
-import WebViewer from "@pdftron/pdfjs-express-viewer"
+// import WebViewer from "@pdftron/pdfjs-express-viewer"
 
 const Wrapper = styled(Box)`
   width: 100%;
@@ -16,34 +16,34 @@ const Wrapper = styled(Box)`
 
 const NiepodleglosciWynikiPage = () => {
   const theme = "niepodleglosci"
-  const viewer = useRef(null)
-  const button10k = useRef(null)
-  const buttonNW = useRef(null)
-  const button21k = useRef(null)
+  // const viewer = useRef(null)
+  // const button10k = useRef(null)
+  // const buttonNW = useRef(null)
+  // const button21k = useRef(null)
 
-  useEffect(() => {
-    WebViewer(
-      {
-        path: "/webviewer/lib",
-        initialDoc: "/pdf/16991.pdf",
-        licenseKey: "5MH0z4wBBOEfB48yb31C",
-        css: "/webviewer/style.css",
-      },
-      viewer.current
-    ).then(instance => {
-      instance.UI.setLanguage("pl")
-      instance.UI.disableElements(["ribbons"])
-      button10k.current.onclick = () => {
-        instance.UI.loadDocument(`/pdf/16991.pdf`)
-      }
-      buttonNW.current.onclick = () => {
-        instance.UI.loadDocument(`/pdf/16992.pdf`)
-      }
-      button21k.current.onclick = () => {
-        instance.UI.loadDocument(`/pdf/16993.pdf`)
-      }
-    })
-  }, [])
+  // useEffect(() => {
+  //   WebViewer(
+  //     {
+  //       path: "/webviewer/lib",
+  //       initialDoc: "/pdf/16991.pdf",
+  //       licenseKey: "5MH0z4wBBOEfB48yb31C",
+  //       css: "/webviewer/style.css",
+  //     },
+  //     viewer.current
+  //   ).then(instance => {
+  //     instance.UI.setLanguage("pl")
+  //     instance.UI.disableElements(["ribbons"])
+  //     button10k.current.onclick = () => {
+  //       instance.UI.loadDocument(`/pdf/16991.pdf`)
+  //     }
+  //     buttonNW.current.onclick = () => {
+  //       instance.UI.loadDocument(`/pdf/16992.pdf`)
+  //     }
+  //     button21k.current.onclick = () => {
+  //       instance.UI.loadDocument(`/pdf/16993.pdf`)
+  //     }
+  //   })
+  // }, [])
 
   return (
     <Layout theme={theme}>
@@ -56,7 +56,7 @@ const NiepodleglosciWynikiPage = () => {
           gap={"16px"}
           padding={"24px 0"}
         >
-          <Button variant={theme} ref={button10k}>
+          {/* <Button variant={theme} ref={button10k}>
             10 km
           </Button>
           <Button variant={theme} ref={buttonNW}>
@@ -64,14 +64,14 @@ const NiepodleglosciWynikiPage = () => {
           </Button>
           <Button variant={theme} ref={button21k}>
             Półmaraton
-          </Button>
+          </Button> */}
         </Box>
         <Wrapper>
-          <div
+          {/* <div
             className="webviewer"
             ref={viewer}
             style={{ width: "100%" }}
-          ></div>
+          ></div> */}
         </Wrapper>
       </Container>
     </Layout>
