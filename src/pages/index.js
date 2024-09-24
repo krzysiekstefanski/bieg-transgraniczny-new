@@ -300,28 +300,28 @@ const IndexPage = () => {
   )
 }
 
-export const data = graphql`
-  {
-    wpPage(id: { eq: "cG9zdDoxMDM3" }) {
-      websiteCore {
-        sitetitle
-        sitedescription
-      }
-      top {
-        herotitle
-        herosubtitle
-        herotext
-        heroimage {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const data = graphql`
+//   {
+//     wpPage(id: { eq: "cG9zdDoxMDM3" }) {
+//       websiteCore {
+//         sitetitle
+//         sitedescription
+//       }
+//       top {
+//         herotitle
+//         herosubtitle
+//         herotext
+//         heroimage {
+//           localFile {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export const Head = () => <Seo title="Home" />
 
