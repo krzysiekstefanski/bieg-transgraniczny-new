@@ -7,71 +7,71 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-const browserColor = require("./src/atomic/browserColor")
+const browserColor = require("./src/atomic/browserColor");
 
 module.exports = {
-  siteMetadata: {
-    title: `GryfinoBiega.pl`,
-    description: `Festiwal biegowy 3 maja i Bieg Niepodległości 11 listopada w Gryfinie`,
-    author: `krzysztofstefanski`,
-    siteUrl: `https://gryfinobiega.pl/`,
-  },
-  plugins: [
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          placeholder: `none`,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: browserColor.transgraniczny,
-        display: `minimal-ui`,
-        icon: `src/images/gryfinobiega.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Bai+Jamjuree:500,700", "Urbanist:400"],
-        },
-        active: () => {
-          sessionStorage.fontsLoaded = true
-        },
-      },
-    },
-    `gatsby-plugin-svgr-svgo`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-portal`,
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          "/*": ["X-Frame-Options: SAMEORIGIN"],
-        },
-      },
-    },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        url: `https://kstefanski.pl/gryfinobiega/graphql`,
-      },
-    },
-  ],
-}
+	siteMetadata: {
+		title: `GryfinoBiega.pl`,
+		description: `Festiwal biegowy 3 maja i Bieg Niepodległości 11 listopada w Gryfinie`,
+		author: `krzysztofstefanski`,
+		siteUrl: `https://gryfinobiega.pl/`,
+	},
+	plugins: [
+		`gatsby-plugin-image`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: `${__dirname}/src/images`,
+			},
+		},
+		`gatsby-transformer-sharp`,
+		{
+			resolve: `gatsby-plugin-sharp`,
+			options: {
+				defaults: {
+					placeholder: `none`,
+				},
+			},
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `gatsby-starter-default`,
+				short_name: `starter`,
+				start_url: `/`,
+				background_color: browserColor.transgraniczny,
+				display: `minimal-ui`,
+				icon: `src/images/gryfinobiega.png`, // This path is relative to the root of the site.
+			},
+		},
+		{
+			resolve: "gatsby-plugin-web-font-loader",
+			options: {
+				google: {
+					families: ["Bai+Jamjuree:500,700", "Urbanist:400"],
+				},
+				active: () => {
+					sessionStorage.fontsLoaded = true;
+				},
+			},
+		},
+		`gatsby-plugin-svgr-svgo`,
+		`gatsby-plugin-styled-components`,
+		`gatsby-plugin-portal`,
+		{
+			resolve: `gatsby-plugin-netlify`,
+			options: {
+				headers: {
+					"/*": ["X-Frame-Options: SAMEORIGIN"],
+				},
+			},
+		},
+		{
+			resolve: `gatsby-source-wordpress`,
+			options: {
+				url: `https://kstefanski.pl/gryfinobiega/graphql`,
+			},
+		},
+	],
+};

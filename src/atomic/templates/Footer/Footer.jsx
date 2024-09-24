@@ -23,25 +23,25 @@ const Component = styled(Box)`
 `
 
 const Footer = ({ className, margin }) => {
-  const data = useStaticQuery(graphql`
-    query footerDataQuery {
-      wpPage(id: { eq: "cG9zdDoxMDM3" }) {
-        partners {
-          partnerslist {
-            partnersimage {
-              localFile {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-            }
-            partnersheight
-            partnerspadding
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query footerDataQuery {
+  //     wpPage(id: { eq: "cG9zdDoxMDM3" }) {
+  //       partners {
+  //         partnerslist {
+  //           partnersimage {
+  //             localFile {
+  //               childImageSharp {
+  //                 gatsbyImageData
+  //               }
+  //             }
+  //           }
+  //           partnersheight
+  //           partnerspadding
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <Component
@@ -52,7 +52,6 @@ const Footer = ({ className, margin }) => {
       padding="0 16px"
       margin={margin}
     >
-      {console.log(data)}
       <Container
         display="grid"
         columns={"repeat(3, 1fr)"}
@@ -62,7 +61,7 @@ const Footer = ({ className, margin }) => {
         position="relative"
         zIndex="1"
       >
-        {data.wpPage.partners.partnerslist.length > 0 &&
+        {/* {data.wpPage.partners.partnerslist.length > 0 &&
           data.wpPage.partners.partnerslist.map(partner => (
             <Box
               justify="center"
@@ -80,7 +79,7 @@ const Footer = ({ className, margin }) => {
                 objectPosition={"50% 50%"}
               />
             </Box>
-          ))}
+          ))} */}
       </Container>
     </Component>
   )

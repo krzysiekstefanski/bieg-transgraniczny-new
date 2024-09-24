@@ -8,7 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-// import Header from "./header"
+import Header from "./header"
 import Header from "../atomic/templates/Header/Header"
 import SubFooter from "../atomic/templates/SubFooter/SubFooter"
 import Footer from "../atomic/templates/Footer/Footer"
@@ -110,7 +110,7 @@ const Layout = ({ theme, children }) => {
   return (
     <>
       <GlobalStyle />
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Box id="main-wrapper" column minHeight="100vh">
         <Header theme={theme} />
         <main

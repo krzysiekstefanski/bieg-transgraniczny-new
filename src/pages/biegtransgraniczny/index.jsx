@@ -10,72 +10,72 @@ import Gallery from "../../atomic/templates/Gallery/Gallery"
 
 const TransgranicznyPage = ({ data }) => {
   const theme = "transgraniczny"
-  const { websiteCore, top, banner, verification, gallery } = data.wpPage
+  //const { websiteCore, top, banner, verification, gallery } = data.wpPage
 
   return (
     <Layout theme={theme}>
-      <Top theme={theme} data={top} />
+      {/* <Top theme={theme} data={top} />
       <Banner theme={theme} data={banner} />
-      <Verification theme={theme} data={verification} />
+      <Verification theme={theme} data={verification} /> */}
       {/* <Rewards theme={theme} disabled /> */}
-      <Gallery theme={theme} data={gallery} />
+      {/* <Gallery theme={theme} data={gallery} /> */}
     </Layout>
   )
 }
 
-export const data = graphql`
-  {
-    wpPage(id: { eq: "cG9zdDo3MzM=" }) {
-      websiteCore {
-        sitetitle
-        sitedescription
-      }
-      top {
-        herotitle
-        herosubtitle
-        herotext
-        heroimage {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-      }
-      banner {
-        bannerimage {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-      }
-      verification {
-        verificationtitle
-        verificationtext
-        verificationimage {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-      }
-      gallery {
-        gallerytitle
-        galleryimages {
-          localFile {
-            childrenImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-        gallerylinktoall
-      }
-    }
-  }
-`
+// export const data = graphql`
+//   {
+//     wpPage(id: { eq: "cG9zdDo3MzM=" }) {
+//       websiteCore {
+//         sitetitle
+//         sitedescription
+//       }
+//       top {
+//         herotitle
+//         herosubtitle
+//         herotext
+//         heroimage {
+//           localFile {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//         }
+//       }
+//       banner {
+//         bannerimage {
+//           localFile {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//         }
+//       }
+//       verification {
+//         verificationtitle
+//         verificationtext
+//         verificationimage {
+//           localFile {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//         }
+//       }
+//       gallery {
+//         gallerytitle
+//         galleryimages {
+//           localFile {
+//             childrenImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//         }
+//         gallerylinktoall
+//       }
+//     }
+//   }
+// `
 
 export const Head = () => <Seo title="Home" />
 

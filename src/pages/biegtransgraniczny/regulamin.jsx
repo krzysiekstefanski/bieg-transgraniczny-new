@@ -293,14 +293,14 @@ const TransgranicznyRegulaminPage = () => {
               alt="A Gatsby astronaut"
               style={{ margin: "24px auto 32px" }}
             />
-            <StaticImage
+            {/* <StaticImage
               src="../../images/trasa2b.png"
               width={800}
               quality={85}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
               style={{ margin: "24px auto 48px" }}
-            />
+            /> */}
             <br />
             <br />
             <p>
