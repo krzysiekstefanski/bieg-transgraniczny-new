@@ -1,4 +1,5 @@
 [[redirects]]
+  force = true
   from = "/api/*"
   to = "https://api.dostartu.pl/:splat"
   status = 200

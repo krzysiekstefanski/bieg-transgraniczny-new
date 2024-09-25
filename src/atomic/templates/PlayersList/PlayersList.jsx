@@ -76,7 +76,7 @@ const PlayersList = ({ className, theme, api }) => {
   const [players, setPlayers] = useState([])
 
   useEffect(() => {
-    fetch(`https://api.dostartu.pl/competitions/${api}/players`)
+    fetch(`/api/${api}/players`)
       .then(response => response.json())
       .then(resultData => {
         setPlayers(resultData)
