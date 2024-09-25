@@ -74,7 +74,7 @@ const TransgranicznyZapisyPage = () => {
   const [players, setPlayers] = useState([])
 
   useEffect(() => {
-    fetch("https://api.dostartu.pl/competitions/10564/players")
+    fetch("/api/competitions/10564/players")
       .then(response => response.json())
       .then(resultData => {
         setPlayers(resultData)
