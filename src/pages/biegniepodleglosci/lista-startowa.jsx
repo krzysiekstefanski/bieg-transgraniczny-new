@@ -74,7 +74,7 @@ const NiepodleglosciListaStartowaPage = () => {
   const [players, setPlayers] = useState([])
 
   useEffect(() => {
-    fetch("/api/competitions/10564/players")
+    fetch("/api/competitions/12912/players")
       .then(response => response.json())
       .then(resultData => {
         setPlayers(resultData)
