@@ -4,10 +4,7 @@ import Seo from "../../components/seo"
 import Box from "../../atomic/atoms/Box/Box"
 import styled from "styled-components"
 import Container from "../../atomic/molecules/Container/Container"
-
-if (typeof window !== `undefined`) {
-  const WebViewer = require("@pdftron/pdfjs-express-viewer")
-}
+import WebViewer from "@pdftron/pdfjs-express-viewer"
 
 const Wrapper = styled(Box)`
   width: 100%;
@@ -22,9 +19,6 @@ const NiepodleglosciRegulaminPage = () => {
   const [instance, setInstance] = useState(null)
 
   useEffect(() => {
-    console.log(WebViewer)
-    console.log(viewer.current)
-    console.log(instance)
     if (!instance) {
       WebViewer(
         {
@@ -43,9 +37,6 @@ const NiepodleglosciRegulaminPage = () => {
   })
 
   useEffect(() => {
-    console.log(WebViewer)
-    console.log(viewer.current)
-    console.log(instance)
     if (instance) {
       instance.loadDocument(`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`)
     }
