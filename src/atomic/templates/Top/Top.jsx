@@ -312,12 +312,9 @@ const Top = ({ className, theme, display, data }) => {
             displayMD="flex"
             maxHeight="480px"
             maxHeightLG="none"
-            height="100vh"
-            width="111.8%"
-            padding={theme === "niepodleglosci" ? "8px 0 0" : "56px 0 0"}
-            position="absolute"
-            top="0"
-            right="0"
+            width="100%"
+            max="60%"
+            position="relative"
           >
             <BoxSVG theme={theme} justify="center" width="100%">
               {theme === "niepodleglosci" ? <TopBgRedSvg /> : <TopBgSvg />}

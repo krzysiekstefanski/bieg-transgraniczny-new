@@ -39,7 +39,6 @@ const TransgranicznyWynikiPage = () => {
   })
 
   useEffect(() => {
-    console.log(pdf)
     if (instance && pdf) {
       instance.loadDocument(`/pdf/${pdf}.pdf`)
     }
