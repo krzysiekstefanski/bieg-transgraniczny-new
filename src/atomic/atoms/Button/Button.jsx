@@ -231,7 +231,7 @@ const ButtonVariants = {
     border: `1px solid ${checkColor("niepodleglosci20")}`,
     hoverColor: checkColor("niepodleglosci20"),
     hoverBorder: `1px solid ${checkColor("niepodleglosci40")}`,
-    focusColor: checkColor("niepodleglosci20"),
+    focusColor: checkColor("transgraniczny20"),
     focusBorder: `1px solid ${checkColor("niepodleglosci40")}`,
     focusOutline: "none",
     transition: "0.25s ease-in background-color, 0.1s ease-in color",

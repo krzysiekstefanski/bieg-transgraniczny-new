@@ -1,7 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import parse from "html-react-parser"
 import Box from "../../atoms/Box/Box"
 import Container from "../../molecules/Container/Container"
 import Button from "../../atoms/Button/Button"
@@ -11,7 +10,6 @@ import TopBgSvg from "../../../images/teal-top.inline.svg"
 import TopBgRedSvg from "../../../images/red-top.inline.svg"
 import BgSVG from "../../../images/background-stripes-1.inline.svg"
 import { colors } from "../../colors"
-import { colorizeText } from "../../utils"
 
 const Component = styled(Box)`
   .gatsby-image-wrapper {
@@ -231,114 +229,143 @@ const BoxSVG = styled(Box)`
   }
 `
 
-const Top = ({ className, theme, display, data }) => {
-  const { herotitle, herosubtitle, herotext } = data
-
-  return (
-    <Component
-      className={className}
-      display={display}
-      backgroundColor="grey95"
-      position="relative"
-      padding="0 0 48px"
-      paddingMD="0"
+const Top = ({ theme, display }) => (
+  <Component
+    display={display}
+    backgroundColor="grey95"
+    position="relative"
+    padding="0 0 48px"
+    paddingMD="0"
+  >
+    <Box
+      justify="flex-end"
+      width="100%"
+      widthMD="80%"
+      position="absolute"
+      top="0"
+      right="0"
+      zIndex="1"
     >
-      <Box
-        justify="flex-end"
-        width="100%"
-        widthMD="80%"
-        position="absolute"
-        top="0"
-        right="0"
-        zIndex="1"
-      >
-        <BgSVG />
-      </Box>
-      <Container position="relative" zIndex="1">
-        <Box width="100%" gap="48px" gapLG="100px">
-          <Box
-            column
-            maxMD="42%"
-            maxLG="540px"
-            width="100%"
-            padding="32px 0 0"
-            paddingMD="88px 0 0"
-          >
-            {herotitle && (
+      <BgSVG />
+    </Box>
+    <Container position="relative" zIndex="1">
+      <Box width="100%" gap="48px" gapLG="100px">
+        <Box
+          column
+          maxMD="42%"
+          maxLG="540px"
+          width="100%"
+          padding="32px 0 0"
+          paddingMD="88px 0 0"
+        >
+          {theme === "niepodleglosci" ? (
+            <>
+              <Heading size="h700" sizeLG="h800" sizeXL="h900">
+                Bieg Niepodległości
+              </Heading>
               <Heading
+                as="span"
                 size="h700"
                 sizeLG="h800"
                 sizeXL="h900"
-                margin={herosubtitle ? "0" : "0 0 24px"}
-                marginMD={herosubtitle ? "0" : "0 0 32px"}
+                color={theme + "20"}
               >
-                {parse(colorizeText(herotitle, theme))}
+                11.11.1918
               </Heading>
-            )}
-            {herosubtitle && (
               <Heading
-                as="h2"
                 size="h600"
                 sizeXL="h700"
                 margin="0 0 24px"
                 marginMD="0 0 32px"
               >
-                {parse(colorizeText(herosubtitle, theme))}
+                Dzień odzyskania niepodległości
               </Heading>
-            )}
-            {herotext && (
+              {/* <Text
+                size="contentL"
+                color="grey20"
+                margin="0 0 24px"
+                marginMD="0 0 80px"
+              >
+                Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
+                6. edycji Gryfińskiego Transgranicznego Festiwalu Biegowego
+                uczcić rocznicę Konstytucji 3 Maja.
+              </Text> */}
+            </>
+          ) : (
+            <>
+              <Heading
+                size="h700"
+                sizeLG="h800"
+                sizeXL="h900"
+                margin="0 0 24px"
+                marginMD="0 0 32px"
+              >
+                8. Gryfiński{" "}
+                <Heading
+                  as="span"
+                  size="h700"
+                  sizeLG="h800"
+                  sizeXL="h900"
+                  color={theme + "20"}
+                >
+                  Transgraniczny
+                </Heading>{" "}
+                Festiwal Biegowy
+              </Heading>
               <Text
                 size="contentL"
                 color="grey20"
                 margin="0 0 24px"
                 marginMD="0 0 80px"
               >
-                {parse(colorizeText(herotext, theme))}
+                8. Gryfiński Transgraniczny Festiwal Biegowy – W kolejną
+                rocznicę Konstytucji 3 Maja organizujemy nasz Festiwal, aby
+                uczcić to jakże znamienne wydarzenie w historii naszego kraju.
               </Text>
-            )}
-            <Button
-              variant={theme}
-              as={"a"}
-              href="#bieg"
-              size="big"
-              margin="0 auto"
-              marginMD="0 auto 0 0"
-            >
-              Zobacz więcej
-            </Button>
-          </Box>
+            </>
+          )}
+          <Button
+            variant={theme}
+            as={"a"}
+            href="#bieg"
+            size="big"
+            margin="0 auto"
+            marginMD="0 auto 0 0"
+          >
+            Zobacz więcej
+          </Button>
+        </Box>
+        <Box
+          display="none"
+          displayMD="flex"
+          maxHeight="480px"
+          maxHeightLG="none"
+          width="100%"
+          max="60%"
+          position="relative"
+        >
+          <BoxSVG theme={theme} justify="center" width="100%">
+            {theme === "niepodleglosci" ? <TopBgRedSvg /> : <TopBgSvg />}
+          </BoxSVG>
           <Box
-            display="none"
-            displayMD="flex"
             maxHeight="480px"
             maxHeightLG="none"
-            width="100%"
-            max="60%"
-            position="relative"
+            width="111.8%"
+            padding={theme === "niepodleglosci" ? "8px 0 0" : "56px 0 0"}
+            position="absolute"
+            top="0"
+            right="0"
           >
-            <BoxSVG theme={theme} justify="center" width="100%">
-              {theme === "niepodleglosci" ? <TopBgRedSvg /> : <TopBgSvg />}
-            </BoxSVG>
-            <Box
-              maxHeight="480px"
-              maxHeightLG="none"
-              width="111.8%"
-              padding={theme === "niepodleglosci" ? "8px 0 0" : "56px 0 0"}
-              position="absolute"
-              top="0"
-              right="0"
-            >
-              {theme === "niepodleglosci" ? (
-                <StaticImage src="../../../images/bieg-niepodleglosci-runner-2x.png" />
-              ) : (
-                <StaticImage src="../../../images/bieg-transgraniczny-runner-2p.png" />
-              )}
-            </Box>
+            {theme === "niepodleglosci" ? (
+              <StaticImage src="../../../images/bieg-niepodleglosci-runner-2x.png" />
+            ) : (
+              <StaticImage src="../../../images/bieg-transgraniczny-runner-2p.png" />
+            )}
           </Box>
         </Box>
-      </Container>
-    </Component>
-  )
-}
+      </Box>
+    </Container>
+  </Component>
+)
 
 export default Top

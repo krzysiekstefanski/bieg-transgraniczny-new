@@ -7,48 +7,28 @@ import styled from "styled-components"
 const Wrapper = styled(Box)`
   height: 3930px;
 
-  @media (min-width: 400px) {
-    height: 4010px;
-  }
-
-  @media (min-width: 446px) {
-    height: 4100px;
-  }
-
-  @media (min-width: 500px) {
-    height: 4140px;
-  }
-
-  @media (min-width: 525px) {
-    height: 4160px;
-  }
-
-  @media (min-width: 550px) {
-    height: 4180px;
+  @media (min-width: 445px) {
+    height: 4150px;
   }
 
   @media (min-width: 576px) {
+    height: 4200px;
+  }
+
+  @media (min-width: 593px) {
     height: 3800px;
   }
 
-  @media (min-width: 654px) {
-    height: 3750px;
+  @media (min-width: 785px) {
+    height: 2700px;
   }
 
-  @media (min-width: 768px) {
-    height: 2650px;
-  }
-
-  @media (min-width: 992px) {
+  @media (min-width: 1009px) {
     height: 2200px;
   }
 
-  @media (min-width: 1152px) {
-    height: 2100px;
-  }
-
-  @media (min-width: 1200px) {
-    height: 2060px;
+  @media (min-width: 1217px) {
+    height: 2023px;
   }
 `
 
@@ -63,7 +43,7 @@ const NiepodleglosciZapisyPage = () => {
           title="Zapisy na bieg"
           width="100%"
           height="100%"
-          src="https://zapisy.domtel-sport.pl/vi-gryfinski-bieg-niepodleglosci-v12912.pl.html"
+          src="https://zapisy.domtel-sport.pl/vi-gryfinski-bieg-niepodleg-osci-v9661"
           style={{ border: "none" }}
         ></iframe>
       </Wrapper>
