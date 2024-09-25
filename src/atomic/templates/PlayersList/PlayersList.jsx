@@ -76,7 +76,7 @@ const PlayersList = ({ className, theme, api }) => {
   const [players, setPlayers] = useState([])
 
   useEffect(() => {
-    fetch(`/api/${api}/players`)
+    fetch(`/api/competitions/${api}/players`)
       .then(response => response.json())
       .then(resultData => {
         setPlayers(resultData)
