@@ -22,6 +22,9 @@ const NiepodleglosciRegulaminPage = () => {
   const [instance, setInstance] = useState(null)
 
   useEffect(() => {
+    console.log(WebViewer)
+    console.log(viewer.current)
+    console.log(instance)
     if (!instance) {
       WebViewer(
         {
@@ -40,6 +43,9 @@ const NiepodleglosciRegulaminPage = () => {
   })
 
   useEffect(() => {
+    console.log(WebViewer)
+    console.log(viewer.current)
+    console.log(instance)
     if (instance) {
       instance.loadDocument(`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`)
     }
