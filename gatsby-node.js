@@ -1,3 +1,9 @@
+const express = require("express")
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static("public"))
+}
+
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   actions.setWebpackConfig({
     devtool: "eval-source-map",
