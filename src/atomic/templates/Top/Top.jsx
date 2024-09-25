@@ -260,7 +260,7 @@ const Top = ({ theme, display }) => (
         >
           {theme === "niepodleglosci" ? (
             <>
-              <Heading size="h700" sizeLG="h800" sizeXL="h900">
+              <Heading size="h700" sizeLG="h800" sizeXL="h900" align="left">
                 Bieg Niepodległości
               </Heading>
               <Heading
@@ -268,6 +268,7 @@ const Top = ({ theme, display }) => (
                 size="h700"
                 sizeLG="h800"
                 sizeXL="h900"
+                align="left"
                 color={theme + "20"}
               >
                 11.11.1918
@@ -275,21 +276,20 @@ const Top = ({ theme, display }) => (
               <Heading
                 size="h600"
                 sizeXL="h700"
+                align="left"
                 margin="0 0 24px"
                 marginMD="0 0 32px"
               >
                 Dzień odzyskania niepodległości
               </Heading>
-              {/* <Text
+              <Text
                 size="contentL"
                 color="grey20"
                 margin="0 0 24px"
                 marginMD="0 0 80px"
               >
-                Po 3 latach wracamy na gryfińskie Nabrzeże Miejskie aby podczas
-                6. edycji Gryfińskiego Transgranicznego Festiwalu Biegowego
-                uczcić rocznicę Konstytucji 3 Maja.
-              </Text> */}
+                Rozpoczynamy akcję VII. Gryfiński Bieg Niepodległości.
+              </Text>
             </>
           ) : (
             <>

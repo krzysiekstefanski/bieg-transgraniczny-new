@@ -14,8 +14,8 @@ const Menu = ({ theme }) => {
     },
     {
       icon: "zapisy",
-      text: "Wyniki",
-      link: "wyniki",
+      text: "Zapisy",
+      link: "zapisy",
     },
     {
       icon: "lista-startowa",
