@@ -84,6 +84,51 @@ const NiepodleglosciListaStartowaPage = () => {
       })
   }, [])
 
+  const getClassification = (classification, category) => {
+    let tempClassification
+
+    switch (classification) {
+      case 38239:
+        tempClassification = "D10"
+        break
+      case 38240:
+        tempClassification = "5km"
+        break
+      default:
+        tempClassification = classification
+        break
+    }
+
+    switch (category[0]) {
+      case 242032:
+        return tempClassification + "/K50-59"
+      case 242035:
+        return tempClassification + "/M60-69"
+      case 242036:
+        return tempClassification + "/M50-59"
+      case 242037:
+        return tempClassification + "/K40-49"
+      case 242038:
+        return tempClassification + "/M40-49"
+      case 242039:
+        return tempClassification + "/M30-39"
+      case 242040:
+        return tempClassification + "/M16-29"
+      case 242041:
+        return tempClassification + "/K30-39"
+      case 242042:
+        return tempClassification + "/K16-29"
+      case 242045:
+        return tempClassification + "/M60-99"
+      case 242048:
+        return tempClassification + "/M16-39"
+      case 242050:
+        return tempClassification + "/K60-99"
+      default:
+        return tempClassification + "/" + category
+    }
+  }
+
   return (
     <Layout theme={theme}>
       <Container padding="48px 16px">
@@ -113,7 +158,12 @@ const NiepodleglosciListaStartowaPage = () => {
                     <TableData>{player.clubname}</TableData>
                     <TableData>{player.country}</TableData>
                     <TableData>{player.city}</TableData>
-                    <TableData>{player.classification}</TableData>
+                    <TableData>
+                      {getClassification(
+                        player.classification,
+                        player.category
+                      )}
+                    </TableData>
                     <TableData>
                       {player.pay ? "Opłacone" : "Nieopłacone"}
                     </TableData>
