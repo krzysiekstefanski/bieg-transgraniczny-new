@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import { checkColor } from "../../utils"
 import Box from "../../atoms/Box/Box"
@@ -14,54 +14,77 @@ const Component = styled(Box)`
   div > div {
     overflow: hidden;
     cursor: pointer;
+  }
+`
 
-    &::after {
-      content: "";
-      background-color: transparent;
-      background-position: bottom center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 2;
-      transition: background-color 0.3s ease, background-position 0.3s ease;
-    }
+const ImageWrapper = styled(Box)`
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  border-width: ${props =>
+    props.imagesOptions ? props.imagesOptions.borderWidth : ""};
+  border-color: ${props =>
+    props.imagesOptions ? props.imagesOptions.borderColor : ""};
+  padding: ${props => (props.imagesOptions ? props.imagesOptions.padding : "")};
 
-    &:hover {
-      ::after {
-        background-color: rgba(
-          ${props =>
-            props.theme
-              ? checkColor(props.theme + "00", true)
-              : checkColor("transgraniczny00", true)},
-          0.7
-        );
-        background-image: url("/images/magnifying-glass.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-    }
+  @media (min-width: 576px) {
+    width: ${props => (props.columns > 1 ? `calc(50% - 12px)` : "100%")};
   }
 
-  div div > div {
-    position: relative;
+  @media (min-width: 768px) {
+    width: ${props =>
+      props.columns > 1
+        ? `calc((100% / ${props.columns}) - (${props.columns - 1} * 24px / ${
+            props.columns
+          }))`
+        : "100%"};
+  }
+`
 
-    ::before {
-      content: "";
-      width: 100%;
-      padding-top: 60%;
-    }
+const InnerImageWrapper = styled(Box)`
+  width: 100%;
+  position: relative;
 
-    img {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
+  &::after {
+    content: "";
+    background-color: transparent;
+    background-position: center bottom;
+    position: absolute;
+    inset: 0px;
+    z-index: 2;
+    transition: background-color 0.3s, background-position 0.3s;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    padding-top: 60%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+    &::after {
+      background-color: rgba(
+        ${props =>
+          props.theme
+            ? checkColor(props.theme + "00", true)
+            : checkColor("transgraniczny00", true)},
+        0.7
+      );
+      background-image: url("/images/magnifying-glass.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   }
 `
@@ -173,43 +196,23 @@ const ImagesGallery = ({ theme, images, imagesOptions, columns = 1 }) => {
     }
   }, [isOpenModal, currentIndex])
 
-  useEffect(() => {
-    if (imagesOptions) {
-      console.log(imagesOptions)
-      console.log(imagesOptions.borderWidth)
-    }
-  }, [imagesOptions])
-
   return (
     <Component theme={theme} width="100%">
       <Box width="100%" grow="1" gap="24px" wrap="wrap">
         {images.map((image, index) => (
-          <Box
+          <ImageWrapper
             key={index}
             onClick={() => handleClick(image, index)}
-            width="100%"
-            widthSM={columns > 1 ? `calc(50% - 12px)` : "100%"}
-            widthMD={
-              columns > 1
-                ? `calc((100% / ${columns}) - (${
-                    columns - 1
-                  } * 24px / ${columns}))`
-                : "100%"
-            }
-            backgroundColor="white"
-            radius="8px"
-            position="relative"
-            borderWidth={imagesOptions?.borderWidth}
-            borderColor={imagesOptions?.borderColor}
-            padding={imagesOptions?.padding}
+            imagesOptions={imagesOptions}
+            columns={columns}
           >
-            <Box width="100%">
+            <InnerImageWrapper theme={theme}>
               <img
                 src={image}
                 style={{ objectFit: imagesOptions?.imageFit ?? "contain" }}
               />
-            </Box>
-          </Box>
+            </InnerImageWrapper>
+          </ImageWrapper>
         ))}
       </Box>
       <Portal>

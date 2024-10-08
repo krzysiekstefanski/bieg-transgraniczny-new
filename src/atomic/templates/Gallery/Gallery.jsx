@@ -13,16 +13,6 @@ import BgRedSVG2 from "../../../images/red-bg-5.inline.svg"
 import { Link } from "gatsby"
 import { colors } from "../../colors"
 
-import gallery1 from "../../../images/gallery/8/trans-8-1.jpg"
-import gallery2 from "../../../images/gallery/8/trans-8-2.jpg"
-import gallery3 from "../../../images/gallery/8/trans-8-3.jpg"
-import gallery4 from "../../../images/gallery/8/trans-8-4.jpg"
-import gallery5 from "../../../images/gallery/8/trans-8-5.jpg"
-import gallery6 from "../../../images/gallery/8/trans-8-6.jpg"
-import gallery7 from "../../../images/gallery/8/trans-8-7.jpg"
-import gallery8 from "../../../images/gallery/8/trans-8-8.jpg"
-import gallery9 from "../../../images/gallery/8/trans-8-9.jpg"
-
 const Component = styled(Box)`
   .gatsby-image-wrapper {
     margin: 0 auto;
@@ -125,19 +115,7 @@ const BottomSVGBox = styled(Box)`
   }
 `
 
-const images = [
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
-  gallery6,
-  gallery7,
-  gallery8,
-  gallery9,
-]
-
-const Gallery = ({ theme, display }) => (
+const Gallery = ({ theme, display, images, imagesLink }) => (
   <Component
     id="galeria"
     display={display}
@@ -204,7 +182,7 @@ const Gallery = ({ theme, display }) => (
             displayMD="flex"
             variant={theme + "Outline"}
             as={Link}
-            to="https://photos.app.goo.gl/CNyfvE91JAUGR5my6"
+            to={imagesLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -219,7 +197,7 @@ const Gallery = ({ theme, display }) => (
           displayMD="none"
           variant={theme + "Outline"}
           as={Link}
-          to="https://photos.app.goo.gl/CNyfvE91JAUGR5my6"
+          to={imagesLink}
           target="_blank"
           rel="noopener noreferrer"
           margin="0 auto"
