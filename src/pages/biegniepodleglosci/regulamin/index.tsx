@@ -44,7 +44,7 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
   })
 
   useEffect(() => {
-    if (instance) {
+    if (instance && pdf) {
       instance.loadDocument(`/pdf/${pdf}.pdf`)
     }
   }, [instance])
