@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import styled from "styled-components"
 import WebViewer from "@pdftron/pdfjs-express-viewer"
 
-import { Layout, Seo, Container } from "../../../components-gb"
+import { Layout, Seo, Container, Link } from "../../../components-gb"
 import { graphql } from "gatsby"
 import { EventTheme } from "../../../enums-gb"
 import { StyledComponent } from "../../../interfaces"
@@ -12,51 +12,66 @@ const Wrapper: StyledComponent<"div"> = styled.div`
   width: 100%;
   height: 130vw;
   max-height: 1200px;
+  padding: 40px 0;
   margin-bottom: 24px;
 `
 
 const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
-  const viewer = useRef(null)
-  const [pdf, setPdf] = useState(undefined)
-  const [instance, setInstance] = useState(null)
   const { host, events, partners } = data.mainPage
   const { pageCore, logo, top, banner, verification, gallery } =
     data.niepodleglosciPage
   const theme = EventTheme.Niepodleglosci
+  // const viewer = useRef(null);
+  // const [pdf, setPdf] = useState(undefined);
+  // const [instance, setInstance] = useState(null);
 
-  useEffect(() => {
-    if (!instance) {
-      WebViewer(
-        {
-          path: "/webviewer/lib",
-          initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
-          licenseKey: "5MH0z4wBBOEfB48yb31C",
-          css: "/webviewer/style.css",
-        },
-        viewer.current
-      ).then(instance => {
-        setInstance(instance)
-        instance.UI.setLanguage("pl")
-        instance.UI.disableElements(["ribbons"])
-      })
-    }
-  })
+  // useEffect(() => {
+  // 	if (!instance) {
+  // 		WebViewer(
+  // 			{
+  // 				path: "/webviewer/lib",
+  // 				initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
+  // 				licenseKey: "5MH0z4wBBOEfB48yb31C",
+  // 				css: "/webviewer/style.css",
+  // 			},
+  // 			viewer.current
+  // 		).then((instance) => {
+  // 			setInstance(instance);
+  // 			instance.UI.setLanguage("pl");
+  // 			instance.UI.disableElements(["ribbons"]);
+  // 		});
+  // 	}
+  // });
 
-  useEffect(() => {
-    if (instance) {
-      instance.loadDocument(`/pdf/${pdf}.pdf`)
-    }
-  }, [instance])
+  // useEffect(() => {
+  // 	if (instance) {
+  // 		instance.loadDocument(`/pdf/${pdf}.pdf`);
+  // 	}
+  // }, [instance]);
 
   return (
     <Layout data={{ pageCore, partners, logo }} eventTheme={theme}>
       <Container>
         <Wrapper>
-          <div
-            className="webviewer"
-            ref={viewer}
-            style={{ width: "100%" }}
-          ></div>
+          {/* <div
+						className='webviewer'
+						ref={viewer}
+						style={{ width: "100%" }}
+					></div> */}
+          <>
+            <a
+              href={`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`}
+              target={"_blank"}
+            >
+              Regulamin
+            </a>
+            <Link
+              text={"Regulamin biegu"}
+              to={`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`}
+              eventTheme={theme}
+              blank
+            />
+          </>
         </Wrapper>
       </Container>
     </Layout>
