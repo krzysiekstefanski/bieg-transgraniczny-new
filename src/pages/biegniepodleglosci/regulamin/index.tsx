@@ -21,43 +21,43 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
   const { pageCore, logo, top, banner, verification, gallery } =
     data.niepodleglosciPage
   const theme = EventTheme.Niepodleglosci
-  // const viewer = useRef(null);
-  // const [pdf, setPdf] = useState(undefined);
-  // const [instance, setInstance] = useState(null);
+  const viewer = useRef(null)
+  const [pdf, setPdf] = useState(undefined)
+  const [instance, setInstance] = useState(null)
 
-  // useEffect(() => {
-  // 	if (!instance) {
-  // 		WebViewer(
-  // 			{
-  // 				path: "/webviewer/lib",
-  // 				initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
-  // 				licenseKey: "5MH0z4wBBOEfB48yb31C",
-  // 				css: "/webviewer/style.css",
-  // 			},
-  // 			viewer.current
-  // 		).then((instance) => {
-  // 			setInstance(instance);
-  // 			instance.UI.setLanguage("pl");
-  // 			instance.UI.disableElements(["ribbons"]);
-  // 		});
-  // 	}
-  // });
+  useEffect(() => {
+    if (!instance) {
+      WebViewer(
+        {
+          path: "/webviewer/lib",
+          initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
+          licenseKey: "5MH0z4wBBOEfB48yb31C",
+          css: "/webviewer/style.css",
+        },
+        viewer.current
+      ).then(instance => {
+        setInstance(instance)
+        instance.UI.setLanguage("pl")
+        instance.UI.disableElements(["ribbons"])
+      })
+    }
+  })
 
-  // useEffect(() => {
-  // 	if (instance) {
-  // 		instance.loadDocument(`/pdf/${pdf}.pdf`);
-  // 	}
-  // }, [instance]);
+  useEffect(() => {
+    if (instance) {
+      instance.loadDocument(`/pdf/${pdf}.pdf`)
+    }
+  }, [instance])
 
   return (
     <Layout data={{ pageCore, partners, logo }} eventTheme={theme}>
       <Container>
         <Wrapper>
-          {/* <div
-						className='webviewer'
-						ref={viewer}
-						style={{ width: "100%" }}
-					></div> */}
+          <div
+            className="webviewer"
+            ref={viewer}
+            style={{ width: "100%" }}
+          ></div>
           <>
             <Link
               text={"Regulamin biegu"}
