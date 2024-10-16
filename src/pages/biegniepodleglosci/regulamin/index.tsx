@@ -58,14 +58,6 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
             ref={viewer}
             style={{ width: "100%" }}
           ></div>
-          <>
-            <Link
-              text={"Regulamin biegu"}
-              to={`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`}
-              eventTheme={theme}
-              blank
-            />
-          </>
         </Wrapper>
       </Container>
     </Layout>
