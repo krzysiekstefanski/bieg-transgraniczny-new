@@ -5,5 +5,9 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  [headers.values]
+		X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self' https://www.duxiana.com"
+		X-XSS-Protection = "1; mode=block"
+		X-Robots-Tag = "index"
+		cache-control = "public, max-age=0, no-cache, no-store, must-revalidate"

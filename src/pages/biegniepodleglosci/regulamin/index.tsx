@@ -22,7 +22,6 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
     data.niepodleglosciPage
   const theme = EventTheme.Niepodleglosci
   const viewer = useRef(null)
-  const [pdf, setPdf] = useState(undefined)
   const [instance, setInstance] = useState(null)
 
   useEffect(() => {
@@ -44,8 +43,8 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
   })
 
   useEffect(() => {
-    if (instance && pdf) {
-      instance.loadDocument(`/pdf/${pdf}.pdf`)
+    if (instance) {
+      instance.loadDocument(`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`)
     }
   }, [instance])
 
