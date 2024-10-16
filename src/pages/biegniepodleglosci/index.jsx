@@ -39,7 +39,7 @@ const NiepodleglosciPage = () => {
       <Top theme={theme} />
       <Banner theme={theme} />
       <Verification theme={theme} display="none" />
-      <Rewards theme={theme} disabled />
+      <Rewards theme={theme} />
       <Gallery theme={theme} images={images} imagesLink={imagesLink} />
     </Layout>
   )

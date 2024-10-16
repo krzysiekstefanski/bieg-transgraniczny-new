@@ -39,7 +39,7 @@ const TransgranicznyPage = () => {
       <Top theme={theme} />
       <Banner theme={theme} />
       <Verification theme={theme} />
-      <Rewards theme={theme} disabled />
+      <Rewards theme={theme} />
       <Gallery theme={theme} images={images} imagesLink={imagesLink} />
     </Layout>
   )
