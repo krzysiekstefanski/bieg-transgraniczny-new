@@ -59,12 +59,6 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
 						style={{ width: "100%" }}
 					></div> */}
           <>
-            <a
-              href={`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`}
-              target={"_blank"}
-            >
-              Regulamin
-            </a>
             <Link
               text={"Regulamin biegu"}
               to={`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`}
