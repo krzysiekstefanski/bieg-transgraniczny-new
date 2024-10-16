@@ -25,8 +25,8 @@ export const PlayersList: React.FC<PlayersListProps> = (
   const [players, setPlayers] = useState([])
 
   useEffect(() => {
-    console.log(process.env.API_DOSTARTU)
-    fetch(`${process.env.API_DOSTARTU}competitions/${api}/players`)
+    console.log(process.env.GATSBY_API_DOSTARTU)
+    fetch(`${process.env.GATSBY_API_DOSTARTU}competitions/${api}/players`)
       .then(response => response.json())
       .then(resultData => {
         setPlayers(resultData)
