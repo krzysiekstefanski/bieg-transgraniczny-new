@@ -1,13 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-const browserColor = require("./src/atomic/browserColor");
+require("dotenv").config({
+	path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
 	siteMetadata: {
@@ -26,25 +19,23 @@ module.exports = {
 			},
 		},
 		`gatsby-transformer-sharp`,
-		{
-			resolve: `gatsby-plugin-sharp`,
-			options: {
-				defaults: {
-					placeholder: `none`,
-				},
-			},
-		},
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				name: `gatsby-starter-default`,
 				short_name: `starter`,
 				start_url: `/`,
-				background_color: browserColor.transgraniczny,
+				background_color: `#FFF`,
+				// This will impact how browsers show your PWA/website
+				// https://css-tricks.com/meta-theme-color-and-trickery/
+				// theme_color: `#663399`,
 				display: `minimal-ui`,
 				icon: `src/images/gryfinobiega.png`, // This path is relative to the root of the site.
 			},
 		},
+		`gatsby-plugin-portal`,
+		"gatsby-transformer-remark",
 		{
 			resolve: "gatsby-plugin-web-font-loader",
 			options: {
@@ -56,9 +47,10 @@ module.exports = {
 				},
 			},
 		},
-		`gatsby-plugin-svgr-svgo`,
 		`gatsby-plugin-styled-components`,
-		`gatsby-plugin-portal`,
+		`gatsby-plugin-svgr-svgo`,
+		`gatsby-plugin-scroll-reveal`,
+		`gatsby-plugin-smoothscroll`,
 		{
 			resolve: `gatsby-plugin-netlify`,
 			options: {

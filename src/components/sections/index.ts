@@ -1,0 +1,5 @@
+export { AboutSection } from "./aboutSection/aboutSection.component"
+export { ContactSection } from "./contactSection/contactSection.component"
+export { GallerySection } from "./gallerySection/gallerySection.component"
+export { PricesSection } from "./pricesSection/pricesSection.component"
+export { TopSection } from "./topSection/topSection.component"

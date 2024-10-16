@@ -1,5 +1,9 @@
 import React from "react";
+import { GlobalStyle } from "./src/components/single/globalStyle/globalStyle.const";
 
 export const wrapPageElement = ({ element }) => {
-	<>{element}</>;
+	<>
+		<GlobalStyle />
+		{element}
+	</>;
 };
