@@ -29,7 +29,8 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
       WebViewer(
         {
           path: "/webviewer/lib",
-          initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
+          initialDoc:
+            "https://gryfinobiega.pl/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
           licenseKey: "5MH0z4wBBOEfB48yb31C",
           css: "/webviewer/style.css",
         },
@@ -44,7 +45,9 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
 
   useEffect(() => {
     if (instance) {
-      instance.loadDocument(`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`)
+      instance.loadDocument(
+        `https://gryfinobiega.pl/pdf/regulamin-bieg-niepodleglosci-2024.pdf`
+      )
     }
   }, [instance])
 
