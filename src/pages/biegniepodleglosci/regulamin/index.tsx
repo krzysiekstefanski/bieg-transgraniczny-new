@@ -29,8 +29,7 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
       WebViewer(
         {
           path: "/webviewer/lib",
-          initialDoc:
-            "https://kstefanski.pl/gryfinobiega/wp-content/uploads/2024/10/regulamin-bieg-niepodleglosci-2024.pdf",
+          initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
           licenseKey: "5MH0z4wBBOEfB48yb31C",
           css: "/webviewer/style.css",
         },
@@ -45,9 +44,7 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
 
   useEffect(() => {
     if (instance) {
-      instance.loadDocument(
-        `https://kstefanski.pl/gryfinobiega/wp-content/uploads/2024/10/regulamin-bieg-niepodleglosci-2024.pdf`
-      )
+      instance.loadDocument(`/pdf/regulamin-bieg-niepodleglosci-2024.pdf`)
     }
   }, [instance])
 

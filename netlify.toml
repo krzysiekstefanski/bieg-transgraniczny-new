@@ -17,5 +17,5 @@
 [[redirects]]
   force = true
   from = "/pdf/*"
-  to = "https://gryfinobiega.netlify.app/pdf/:splat"
+  to = "https://kstefanski.pl/gryfinobiega/wp-content/uploads/2024/10/:splat"
   status = 200
