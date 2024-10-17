@@ -16,6 +16,8 @@
 [[redirects]]
   force = true
   from = "/*"
+  to = "https://gryfinobiega.pl/:splat"
+  status = 200
   [headers.values]
     Access-Control-Allow-Origin = "*"
 		X-Frame-Options = "SAMEORIGIN"

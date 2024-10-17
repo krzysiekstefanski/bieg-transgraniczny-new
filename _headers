@@ -1,0 +1,9 @@
+/biegniepodleglosci/regulamin/index.html
+  # headers for that path:
+  X-Frame-Options: SAMEORIGIN
+/biegniepodleglosci/regulamin/
+  # headers for that path:
+  X-Frame-Options: SAMEORIGIN
+/pdf/regulamin-bieg-niepodleglosci-2024.pdf
+  # headers for that path:
+  X-Frame-Options: SAMEORIGIN
