@@ -14,8 +14,8 @@ module.exports = {
       source: `*`,
       headers: [
         {
-          key: `x-custom-header`,
-          value: `Hello World`,
+          key: `x-frame-options`,
+          value: `SAMEORIGIN`,
         },
       ],
     },
