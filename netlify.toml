@@ -10,7 +10,7 @@
 [[redirects]]
   force = true
   from = "/pdf/*"
-  to = "https://gryfinobiega.pl/pdf/:splat"
+  to = "https://gryfinobiega.netlify.app/pdf/:splat"
   status = 200
 
 [[redirects]]
