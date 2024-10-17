@@ -1,0 +1,289 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/gatsby-plugin-image-efa17f1fd767100af6e9.js
+  Cache-Control: public, max-age=31536000, immutable
+/styles.62401a4b1096ecc0c51e.css
+  Cache-Control: public, max-age=31536000, immutable
+/731-2184d91eeaa919b5eea6.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/app-f5f05f2349ae41651fad.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/commons-9954856d83e1d7445b70.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/framework-6a525285796fb83f2864.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/app-f5f05f2349ae41651fad.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-tsx-cfad5427d5116983689a.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-index-tsx-882bb7ddc96981633de2.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-kontakt-index-tsx-e6c23bc44ffb51790344.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-lista-startowa-index-tsx-96e7b25da080d5a33ac0.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-zapisy-index-tsx-4da4ae147eb37c383557.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-index-tsx-4365647a6c62978e9da1.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-kontakt-index-tsx-551019c5ddfbceb45976.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-lista-startowa-index-tsx-af9262a0c40ed3668515.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-regulamin-index-tsx-e7036cf3c7ce84e1a756.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-zapisy-index-tsx-3e31b6bda82a5875cb1d.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-tsx-3abdeb3a6c8aa673ee20.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-thank-you-tsx-16f8e4a073317015cbc8.js
+  Cache-Control: public, max-age=31536000, immutable
+/731-2184d91eeaa919b5eea6.js
+  Cache-Control: public, max-age=31536000, immutable
+/449-c72a143bf561c3e39bc3.js
+  Cache-Control: public, max-age=31536000, immutable
+/802-08c661e9b44dd3442e26.js
+  Cache-Control: public, max-age=31536000, immutable
+/843-4d22e4d87d98fa226c97.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-6a525285796fb83f2864.js
+  Cache-Control: public, max-age=31536000, immutable
+/commons-9954856d83e1d7445b70.js
+  Cache-Control: public, max-age=31536000, immutable
+/5b599cdc2860994ac400de913054f0a94d430d48-c6b75ba92f2685f56e34.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-f5f05f2349ae41651fad.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-tsx-cfad5427d5116983689a.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-index-tsx-882bb7ddc96981633de2.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-kontakt-index-tsx-e6c23bc44ffb51790344.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-lista-startowa-index-tsx-96e7b25da080d5a33ac0.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-zapisy-index-tsx-4da4ae147eb37c383557.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-index-tsx-4365647a6c62978e9da1.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-kontakt-index-tsx-551019c5ddfbceb45976.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-lista-startowa-index-tsx-af9262a0c40ed3668515.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-regulamin-index-tsx-e7036cf3c7ce84e1a756.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-zapisy-index-tsx-3e31b6bda82a5875cb1d.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-tsx-3abdeb3a6c8aa673ee20.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-thank-you-tsx-16f8e4a073317015cbc8.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/731-2184d91eeaa919b5eea6.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/449-c72a143bf561c3e39bc3.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/802-08c661e9b44dd3442e26.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/843-4d22e4d87d98fa226c97.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/framework-6a525285796fb83f2864.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/commons-9954856d83e1d7445b70.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/5b599cdc2860994ac400de913054f0a94d430d48-c6b75ba92f2685f56e34.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-f387b48991044c97d903.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-regulamin-index-tsx-d572121f30977726b0b4.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-f387b48991044c97d903.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-regulamin-index-tsx-d572121f30977726b0b4.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/0098677dcd1cbe19ae73ead8b973d8aff9d5e505-84127af1ee7c5dffe7e4.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/0098677dcd1cbe19ae73ead8b973d8aff9d5e505-84127af1ee7c5dffe7e4.js
+  Cache-Control: public, max-age=31536000, immutable
+/1e9285d03d147c5648beb49151f3995a79891e3e-d8e05d1fe8dfa812e044.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/1e9285d03d147c5648beb49151f3995a79891e3e-d8e05d1fe8dfa812e044.js
+  Cache-Control: public, max-age=31536000, immutable
+/731-50a6dabafe7d779dd9de.js
+  Cache-Control: public, max-age=31536000, immutable
+/731-50a6dabafe7d779dd9de.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/731-50a6dabafe7d779dd9de.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/94223909aa0f08e93b4d5a3d39e1a9eec6248d70-2c19021db3e433dece2e.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/94223909aa0f08e93b4d5a3d39e1a9eec6248d70-2c19021db3e433dece2e.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-994a81ecb31e49f7c82a.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/app-994a81ecb31e49f7c82a.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/app-ea74d018d423038e34c0.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/app-ea74d018d423038e34c0.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/b104876c015a2fa4afec00d2af8dced0117389f4-739e04de869de3842e49.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/b104876c015a2fa4afec00d2af8dced0117389f4-739e04de869de3842e49.js
+  Cache-Control: public, max-age=31536000, immutable
+/commons-ae98b53330b44970e9fa.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/commons-c393e74cb31003473e78.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/commons-c393e74cb31003473e78.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-55fd3d71da11d8cb462a.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-55fd3d71da11d8cb462a.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-index-jsx-27bb127ba4ed47c12721.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-index-jsx-27bb127ba4ed47c12721.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-kontakt-jsx-7a3acdc78879ae85f88f.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-kontakt-jsx-7a3acdc78879ae85f88f.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-lista-startowa-jsx-65974bc4af9fb7857860.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-lista-startowa-jsx-65974bc4af9fb7857860.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-regulamin-index-tsx-850f7c185646b297ce23.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-regulamin-index-tsx-e5e28c326280065c9640.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-regulamin-jsx-51ac30baf393a857e51f.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-regulamin-jsx-51ac30baf393a857e51f.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-wyniki-jsx-88c54cec1996dda40e76.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-wyniki-jsx-88c54cec1996dda40e76.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-zapisy-jsx-e6aedfe3e302d55a8138.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegniepodleglosci-zapisy-jsx-e6aedfe3e302d55a8138.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-index-jsx-e5cb1cdd0cd8ba9b8183.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-index-jsx-e5cb1cdd0cd8ba9b8183.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-kontakt-jsx-1ff43c38afaa4dd83585.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-kontakt-jsx-1ff43c38afaa4dd83585.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-lista-startowa-jsx-4948058a4a19fb561de3.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-lista-startowa-jsx-4948058a4a19fb561de3.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-regulamin-jsx-6694f6265569af4a4b6e.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-regulamin-jsx-6694f6265569af4a4b6e.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-wyniki-jsx-4aebb66e21544b0386bc.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-wyniki-jsx-4aebb66e21544b0386bc.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-zapisy-jsx-c8955fef71380ceab4bd.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-biegtransgraniczny-zapisy-jsx-c8955fef71380ceab4bd.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-005f5b7568ea30041c55.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-005f5b7568ea30041c55.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-005f5b7568ea30041c55.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-page-2-js-4cbe647db5c0c34fb7e7.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-page-2-js-4cbe647db5c0c34fb7e7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-using-ssr-js-b770c3d78e3e592628cf.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-using-ssr-js-b770c3d78e3e592628cf.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-using-typescript-tsx-2525ffb708cfc01f00f7.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-using-typescript-tsx-2525ffb708cfc01f00f7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-using-dsg-js-e78915480b052259baea.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-using-dsg-js-fd7a249ab3b7394799a7.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-using-dsg-js-e78915480b052259baea.js
+  Cache-Control: public, max-age=31536000, immutable
+/faa814c7da0ef0ba638baf884204d8066312e4e2-c17d703892280ad41312.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/faa814c7da0ef0ba638baf884204d8066312e4e2-c17d703892280ad41312.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/8.gtfb-regulamin-maj-2024-87e1e96130972b4f1f34526c702bbd74.pdf
+  Cache-Control: public, max-age=31536000, immutable
+/static/koszulka-przod-2a2cb743c2eeb9c2af2ce1759f448aec.png
+  Cache-Control: public, max-age=31536000, immutable
+/static/koszulka-tyl-57d3064ed1c162a0dff20bcc26342fac.png
+  Cache-Control: public, max-age=31536000, immutable
+/static/medal-1-440a7cf6877b7cd8fba4333ff2c7f994.png
+  Cache-Control: public, max-age=31536000, immutable
+/static/medal-2-4c28ea5071af6fb8a74445b87aaa94c7.png
+  Cache-Control: public, max-age=31536000, immutable
+/static/medal-3-70e7c4c25889ca20113071dcde83f915.png
+  Cache-Control: public, max-age=31536000, immutable
+/static/medal-4-9068b60027bb470753bad9be57b91502.png
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-1-ed166165e05df9f1960145f3ee2a6e3d.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-2-e1a81d741d785f6875cdcef7067611f9.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-3-e05eb3e9a10ee09c0a89aa07adc35bf7.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-4-271018c344db700e1df71548889676e9.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-5-ee56cc4b13d4c2c2c54367f411f50660.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-6-d162b6c4ab45173a1db46df589dfc723.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-7-a71710c8493a22d4d53fdb5089cb1a51.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-8-d79076a5c627b151611090f72ec1af4e.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/npd-6-9-a66b5fc968052dbbb99fceb979a044aa.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-1-0c55b81b70ddf13441a227384cc39383.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-2-20d03d3a0ee8d1d71574f52609e63c41.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-3-ac9c3726e6de84b741760134ffe159f0.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-4-e87d047ff7b3c8d14db38ce5c00c96be.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-5-fddfd80dc0d39e35bb06327444000879.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-6-761a3b1bffe23b6f2b3d306c67987ab6.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-7-a6b3c95dee24e79e4583da7859062296.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-8-3ff241d7c6b2076e334237ae74554686.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/trans-8-9-e510820e15f0b004e9014c977a7ade40.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/static/transgraniczny-mapa-p-c2529bf761c7c113e8ac17d1df387a7b.png
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-2e462a4619ee6c9a7961.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-5e79c82c054e5b667038.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-9e3e5ab1c204a060cbd5.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-f5967366999765a24457.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
