@@ -55,7 +55,6 @@ export const RewardsSection: React.FC<RewardsSectionProps> = (
                 images={images}
                 eventTheme={theme}
                 columns={images.length}
-                isImageContain
               />
             </ImageWrapper>
           )}
