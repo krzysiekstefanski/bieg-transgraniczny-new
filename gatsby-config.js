@@ -1,3 +1,7 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -9,17 +13,6 @@ module.exports = {
     author: `krzysztofstefanski`,
     siteUrl: `https://gryfinobiega.pl/`,
   },
-  headers: [
-    {
-      source: `/slug`,
-      headers: [
-        {
-          key: `X-Frame-Options`,
-          value: `SAMEORIGIN`,
-        },
-      ],
-    },
-  ],
   plugins: [
     `gatsby-plugin-image`,
     {

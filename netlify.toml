@@ -1,21 +1,9 @@
-[[plugins]]
-  package = "@netlify/plugin-gatsby"
-
-[[headers]]
-  for = "/*"  # Match all paths
-  [headers.values]
-    Access-Control-Allow-Origin = "*"  # or specify your allowed domains here
-    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
-    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
-
 [[redirects]]
-  force = true
   from = "/api/*"
   to = "https://api.dostartu.pl/:splat"
   status = 200
 
 [[redirects]]
-  force = true
-  from = "/pdf/*"
-  to = "https://kstefanski.pl/gryfinobiega/wp-content/uploads/2024/10/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
