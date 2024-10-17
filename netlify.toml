@@ -2,20 +2,23 @@
   package = "@netlify/plugin-gatsby"
 
 [[redirects]]
+  force = true
   from = "/api/*"
   to = "https://api.dostartu.pl/:splat"
   status = 200
 
 [[redirects]]
+  force = true
   from = "/pdf/*"
   to = "https://gryfinobiega.pl/pdf/:splat"
   status = 200
 
 [[redirects]]
+  force = true
   from = "/*"
   [headers.values]
 		X-Frame-Options = "SAMEORIGIN"
-    Content-Security-Policy = "frame-ancestors 'self' https://www.duxiana.com"
+    Content-Security-Policy = "frame-ancestors 'self' https://www.gryfinobiega.pl"
 		X-XSS-Protection = "1; mode=block"
 		X-Robots-Tag = "index"
 		cache-control = "public, max-age=0, no-cache, no-store, must-revalidate"
