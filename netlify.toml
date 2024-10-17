@@ -1,5 +1,15 @@
+[[build]]
+  functions = "netlify_functions"
+
 [[plugins]]
   package = "@netlify/plugin-gatsby"
+
+[[headers]]
+  for = "/*"  # Match all paths
+  [headers.values]
+    Access-Control-Allow-Origin = "*"  # or specify your allowed domains here
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
 
 [[redirects]]
   force = true
@@ -12,14 +22,3 @@
   from = "/pdf/*"
   to = "https://gryfinobiega.netlify.app/pdf/:splat"
   status = 200
-
-[[redirects]]
-  force = true
-  from = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-		X-Frame-Options = "SAMEORIGIN"
-    Content-Security-Policy = "frame-ancestors 'self' https://www.gryfinobiega.pl"
-		X-XSS-Protection = "1; mode=block"
-		X-Robots-Tag = "index"
-		cache-control = "public, max-age=0, no-cache, no-store, must-revalidate"
