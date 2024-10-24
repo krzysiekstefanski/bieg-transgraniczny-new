@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react"
 import { Layout } from "../layout/layout.component"
 import { PlayersListProps } from "./playersList.types"
 import { EventTheme } from "../../../enums-gb"
-import { Container } from "../../single"
+import { Container, Title } from "../../single"
 import {
   Component,
+  ListWrapper,
   Table,
   TableData,
   TableHeading,
@@ -43,7 +44,8 @@ export const PlayersList: React.FC<PlayersListProps> = (
       {isPlayersLoad && !isPlayersLoadFailed && (
         <>
           {players?.length > 0 ? (
-            <div width="100%" overflow="auto">
+            <ListWrapper>
+              <Title text={"Lista startowa"} eventTheme={eventTheme} />
               <Table>
                 <thead>
                   <TableRowHeading>
@@ -90,7 +92,7 @@ export const PlayersList: React.FC<PlayersListProps> = (
                   ))}
                 </tbody>
               </Table>
-            </div>
+            </ListWrapper>
           ) : (
             <p size="contentM" margin="16px 0 8px" marginMD="24px 0 16px">
               Jeszcze nikt się nie zapisał na ten bieg.
