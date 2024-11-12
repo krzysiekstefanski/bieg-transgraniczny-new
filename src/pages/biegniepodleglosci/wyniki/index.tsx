@@ -123,11 +123,11 @@ const WynikiNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
           </SelectionWrapper>
           Wybrana kategoria: {pdf}
           <DocumentWrapper>
-            {/* <div
+            <div
               className="webviewer"
               ref={viewer}
               style={{ width: "100%" }}
-            ></div> */}
+            ></div>
           </DocumentWrapper>
         </ContentWrapper>
       </Container>
