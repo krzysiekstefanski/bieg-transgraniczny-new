@@ -69,17 +69,24 @@ const WynikiNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
       <Container>
         <ContentWrapper>
           <ButtonsWrapper>
-            <Button label={"10km-open"} onClick={() => setPdf("10km-open")} />
+            <Button
+              label={"10km-open"}
+              eventTheme={theme}
+              onClick={() => setPdf("10km-open")}
+            />
             <Button
               label={"10km-kategorie"}
+              eventTheme={theme}
               onClick={() => setPdf("10km-kategorie")}
             />
             <Button
               label={"5km-nw-open"}
+              eventTheme={theme}
               onClick={() => setPdf("5km-nw-open")}
             />
             <Button
               label={"5km-nw-kategorie"}
+              eventTheme={theme}
               onClick={() => setPdf("5km-nw-kategorie")}
             />
           </ButtonsWrapper>
