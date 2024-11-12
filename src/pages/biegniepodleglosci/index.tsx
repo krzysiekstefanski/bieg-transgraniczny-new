@@ -8,22 +8,32 @@ import {
   VerificationSection,
   RewardsSection,
   GallerySection,
+  Sections,
 } from "../../components-gb"
 import { graphql } from "gatsby"
 import { EventTheme } from "../../enums-gb"
 
 const NiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
   const { host, events, partners } = data.mainPage
-  const { pageCore, logo, top, banner, verification, rewards, gallery } =
-    data.niepodleglosciPage
+  const {
+    pageCore,
+    logo,
+    top,
+    banner,
+    verification,
+    rewards,
+    gallery,
+    sections,
+  } = data.niepodleglosciPage
   const theme = EventTheme.Niepodleglosci
 
   return (
     <Layout data={{ pageCore, partners, logo }} eventTheme={theme}>
       <TopSection theme={theme} data={top} />
-      <BannerSection theme={theme} data={banner} />
+      <Sections theme={theme} data={sections} />
+      {/* <BannerSection theme={theme} data={banner} />
       <VerificationSection theme={theme} data={verification} />
-      <RewardsSection theme={theme} data={rewards} />
+      <RewardsSection theme={theme} data={rewards} /> */}
       <GallerySection theme={theme} data={gallery} />
     </Layout>
   )
@@ -111,6 +121,68 @@ export const data = graphql`
           localFile {
             childImageSharp {
               gatsbyImageData
+            }
+          }
+        }
+      }
+      sections {
+        single {
+          sectionconfig {
+            sectioncolumns
+            sectiondisable
+            sectionframe
+            sectionwidth
+          }
+          sectionfield {
+            ... on WpPage_Sections_single_Sectionfield_Sectiontitle {
+              sectiontitleinput
+            }
+            ... on WpPage_Sections_single_Sectionfield_Sectiontext {
+              sectiontextinput
+            }
+            ... on WpPage_Sections_single_Sectionfield_Sectionimage {
+              sectionimageinput {
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
+            }
+            ... on WpPage_Sections_single_Sectionfield_Sectiongallery {
+              sectiongalleryinput {
+                localFile {
+                  childrenImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
+            }
+          }
+          sectionfield2 {
+            ... on WpPage_Sections_single_Sectionfield2_Sectiontitle2 {
+              sectiontitleinput2
+            }
+            ... on WpPage_Sections_single_Sectionfield2_Sectiontext2 {
+              sectiontextinput2
+            }
+            ... on WpPage_Sections_single_Sectionfield2_Sectionimage2 {
+              sectionimageinput2 {
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
+            }
+            ... on WpPage_Sections_single_Sectionfield2_Sectiongallery2 {
+              sectiongalleryinput2 {
+                localFile {
+                  childrenImageSharp {
+                    gatsbyImageData
+                  }
+                }
+              }
             }
           }
         }
