@@ -4,7 +4,7 @@ import WebViewer from "@pdftron/pdfjs-express-viewer"
 
 import { Layout, Seo, Container, Link, Button } from "../../../components-gb"
 import { graphql } from "gatsby"
-import { EventTheme } from "../../../enums-gb"
+import { Breakpoint, Color, EventTheme } from "../../../enums-gb"
 import { StyledComponent } from "../../../interfaces"
 
 const ContentWrapper: StyledComponent<"div"> = styled.div`
@@ -15,11 +15,34 @@ const ContentWrapper: StyledComponent<"div"> = styled.div`
 `
 
 const ButtonsWrapper: StyledComponent<"div"> = styled.div`
-  display: flex;
+  display: none;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
+
+  @media ${Breakpoint.Small} {
+    display: flex;
+  }
+`
+
+const SelectionWrapper: StyledComponent<"div"> = styled.div`
+  width: 100%;
+  margin-bottom: 48px;
+
+  @media ${Breakpoint.Small} {
+    display: none;
+  }
+
+  select {
+    font-family: "Bai Jamjuree", sans-serif;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    border-bottom: 1px solid ${Color.Niepodleglosci};
+    cursor: pointer;
+  }
 `
 
 const DocumentWrapper: StyledComponent<"div"> = styled.div`
@@ -37,7 +60,7 @@ const WynikiNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
     data.niepodleglosciPage
   const theme = EventTheme.Niepodleglosci
   const viewer = useRef(null)
-  const [pdf, setPdf] = useState(undefined)
+  const [pdf, setPdf] = useState("10km-open")
   const [instance, setInstance] = useState(null)
 
   useEffect(() => {
@@ -90,13 +113,21 @@ const WynikiNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
               onClick={() => setPdf("5km-nw-kategorie")}
             />
           </ButtonsWrapper>
-          {pdf}
+          <SelectionWrapper>
+            <select value={pdf} onChange={e => setPdf(e.target.value)}>
+              <option value="10km-open">10km-open</option>
+              <option value="10km-kategorie">10km-kategorie</option>
+              <option value="5km-nw-open">5km-nw-open</option>
+              <option value="5km-nw-kategorie">5km-nw-kategorie</option>
+            </select>
+          </SelectionWrapper>
+          Wybrana kategoria: {pdf}
           <DocumentWrapper>
-            <div
+            {/* <div
               className="webviewer"
               ref={viewer}
               style={{ width: "100%" }}
-            ></div>
+            ></div> */}
           </DocumentWrapper>
         </ContentWrapper>
       </Container>
