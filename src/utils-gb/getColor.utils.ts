@@ -57,6 +57,10 @@ export const getColor: (hexColor: string, level: number) => string = (
       s = 90
       l = 85
       break
+    case 90:
+      s = 70
+      l = 91
+      break
     case 100:
       s = 92
       l = 95

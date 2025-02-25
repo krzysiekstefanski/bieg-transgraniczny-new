@@ -12,6 +12,7 @@ const Wrapper: StyledComponent<"div"> = styled.div`
   width: 100%;
   height: 130vw;
   max-height: 1200px;
+  padding: 40px 0;
   margin-bottom: 24px;
 `
 

@@ -10,6 +10,8 @@ import {
 export const Component: StyledComponent<"div"> = styled.div`
   display: flex;
   width: 100%;
+  padding: 40px 0;
+  margin-bottom: 24px;
 `
 
 export const ListWrapper: StyledComponent<"div"> = styled.div`
