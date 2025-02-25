@@ -25,23 +25,23 @@ export const PlayersList: React.FC<PlayersListProps> = (
   const [isPlayersLoad, setIsPlayersLoad] = useState(false)
   const [players, setPlayers] = useState([])
 
-  useEffect(() => {
-    console.log(process.env.GATSBY_API_DOSTARTU)
-    fetch(`${process.env.GATSBY_API_DOSTARTU}competitions/${api}/players`)
-      .then(response => response.json())
-      .then(resultData => {
-        setPlayers(resultData)
-        setIsPlayersLoad(true)
-      })
-      .catch(error => {
-        setIsPlayersLoadFailed(true)
-        console.log(error)
-      })
-  }, [])
+  // useEffect(() => {
+  //   console.log(process.env.GATSBY_API_DOSTARTU)
+  //   fetch(`${process.env.GATSBY_API_DOSTARTU}competitions/${api}/players`)
+  //     .then(response => response.json())
+  //     .then(resultData => {
+  //       setPlayers(resultData)
+  //       setIsPlayersLoad(true)
+  //     })
+  //     .catch(error => {
+  //       setIsPlayersLoadFailed(true)
+  //       console.log(error)
+  //     })
+  // }, [])
 
   return (
     <Component className={className}>
-      {isPlayersLoad && !isPlayersLoadFailed && (
+      {/* {isPlayersLoad && !isPlayersLoadFailed && (
         <>
           {players?.length > 0 ? (
             <ListWrapper>
@@ -113,7 +113,7 @@ export const PlayersList: React.FC<PlayersListProps> = (
             Nie udało się załadować listy zawodników. Spróbuj ponownie później.
           </p>
         </>
-      )}
+      )} */}
     </Component>
   )
 }
