@@ -9,7 +9,7 @@ import { TextAlign } from "../../../enums-gb"
 export const TimeCounter: React.FC<TimeCounterProps> = (
   props: TimeCounterProps
 ): JSX.Element => {
-  const { className, targetDate, eventTheme }: TimeCounterProps = props
+  const { className, targetDate }: TimeCounterProps = props
 
   const calculateTimeLeft = () => {
     const now = new Date()

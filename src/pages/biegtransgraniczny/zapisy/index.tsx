@@ -22,16 +22,6 @@ const ZapisyTransgranicznyPage: React.FC = ({ data }): JSX.Element => {
     <Layout data={{ pageCore, partners, logo }}>
       <Overlay>
         <Container>
-          {/* <Wrapper>
-          <iframe
-            id="zapisy-ramka"
-            title="Zapisy na bieg"
-            width="100%"
-            height="100%"
-            src="https://zapisy.domtel-sport.pl/9-gryfinski-transgraniczny-festiwal-biegowy-v13665"
-            style={{ border: "none" }}
-          ></iframe>
-        </Wrapper> */}
           <Register api={api} />
         </Container>
       </Overlay>
