@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { RegisterProps } from "./register.types"
 import { EventTheme, TextAlign } from "../../../enums-gb"
-import { Button, Container, Text, TimeCounter, Title } from "../../single"
+import { Button, Text, TimeCounter, Title } from "../../single"
 import {
   Component,
   ContentWrapper,
@@ -116,6 +116,18 @@ export const Register: React.FC<RegisterProps> = (
                     eventTheme={eventTheme}
                   />
                   <Text text={players.competition.descriptionPl} />
+                  <Text
+                    text={`Start <b>${new Date(
+                      players.competition.startedTime
+                    ).toLocaleDateString("pl-PL")}</b> godz. <b>${new Date(
+                      players.competition.startedTime
+                    ).toLocaleTimeString("pl-PL", {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      hour12: false,
+                    })}</b>`}
+                    eventTheme={eventTheme}
+                  />
                 </div>
               </MainContent>
               <AdditionalContent>
