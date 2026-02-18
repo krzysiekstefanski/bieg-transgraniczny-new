@@ -7,52 +7,60 @@ import { StyledComponent } from "../../../interfaces"
 
 const Wrapper: StyledComponent<"div"> = styled.div`
   display: flex;
-  height: 3930px;
+  height: 4310px;
   width: 100%;
   margin-bottom: 24px;
 
   @media (min-width: 400px) {
-    height: 4010px;
+    height: 4280px;
   }
 
   @media (min-width: 446px) {
-    height: 4100px;
+    height: 4450px;
   }
 
   @media (min-width: 500px) {
-    height: 4140px;
+    height: 4450px;
   }
 
   @media (min-width: 525px) {
-    height: 4160px;
+    height: 4600px;
   }
 
   @media (min-width: 550px) {
-    height: 4180px;
+    height: 4600px;
   }
 
   @media (min-width: 576px) {
-    height: 3800px;
+    height: 4600px;
   }
 
-  @media (min-width: 654px) {
-    height: 3750px;
+  @media (min-width: 608px) {
+    height: 4100px;
   }
 
   @media (min-width: 768px) {
-    height: 2650px;
+    height: 4150px;
+  }
+
+  @media (min-width: 800px) {
+    height: 3000px;
   }
 
   @media (min-width: 992px) {
-    height: 2200px;
+    height: 3000px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 2550px;
   }
 
   @media (min-width: 1152px) {
-    height: 2100px;
+    height: 2500px;
   }
 
   @media (min-width: 1200px) {
-    height: 2060px;
+    height: 2500px;
   }
 `
 
@@ -78,7 +86,7 @@ const ZapisyTransgranicznyPage: React.FC = ({ data }): JSX.Element => {
               title="Zapisy na bieg"
               width="100%"
               height="100%"
-              src="https://zapisy.domtel-sport.pl/9-gryfinski-transgraniczny-festiwal-biegowy-v13665"
+              src="https://dostartu.pl/10-gryfinski-transgraniczny-festiwal-biegowy-v15743"
               style={{ border: "none" }}
             ></iframe>
           </Wrapper>

@@ -22,8 +22,8 @@ export const Layout: React.FC<LayoutProps> = (
   const links: LinkData[] = [
     { text: "Home", to: "/", icon: "home" },
     {
-      text: eventTheme === EventTheme.Transgraniczny ? "Wyniki" : "Zapisy",
-      to: eventTheme === EventTheme.Transgraniczny ? "/wyniki" : "/zapisy",
+      text: eventTheme === EventTheme.Transgraniczny ? "Zapisy" : "Wyniki",
+      to: eventTheme === EventTheme.Transgraniczny ? "/zapisy" : "/wyniki",
       icon: "registration",
     },
     { text: "Lista Startowa", to: "/lista-startowa", icon: "list" },

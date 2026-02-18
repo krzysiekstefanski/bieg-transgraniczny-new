@@ -44,7 +44,7 @@ const RegulaminTransgranicznyPage: React.FC = ({ data }): JSX.Element => {
 
   useEffect(() => {
     if (instance) {
-      instance.loadDocument(`/pdf/regulamin-transgraniczny-2025.pdf`)
+      instance.loadDocument(`/pdf/reg-10BT.pdf`)
     }
   }, [instance])
 
