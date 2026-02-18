@@ -18,7 +18,7 @@ const ListaStartowaTransgranicznyPage: React.FC = ({ data }): JSX.Element => {
   const { pageCore, logo, top, banner, verification, gallery } =
     data.transgranicznyPage
   const theme = EventTheme.Transgraniczny
-  const api = 13665
+  const api = 15743
 
   return (
     <Layout data={{ pageCore, partners, logo }}>
