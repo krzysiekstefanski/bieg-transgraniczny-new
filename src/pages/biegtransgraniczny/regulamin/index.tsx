@@ -29,7 +29,7 @@ const RegulaminTransgranicznyPage: React.FC = ({ data }): JSX.Element => {
       WebViewer(
         {
           path: "/webviewer/lib",
-          initialDoc: "/pdf/regulamin-transgraniczny-2025.pdf",
+          initialDoc: "/pdf/reg-10BT.pdf",
           licenseKey: "5MH0z4wBBOEfB48yb31C",
           css: "/webviewer/style.css",
         },
