@@ -7,52 +7,48 @@ import { StyledComponent } from "../../../interfaces"
 
 const Wrapper: StyledComponent<"div"> = styled.div`
   display: flex;
-  height: 3930px;
+  height: 4050px;
   width: 100%;
   margin-bottom: 24px;
 
   @media (min-width: 400px) {
-    height: 4010px;
+    height: 4090px;
   }
 
   @media (min-width: 446px) {
-    height: 4100px;
+    height: 4170px;
   }
 
   @media (min-width: 500px) {
-    height: 4140px;
+    height: 4250px;
   }
 
   @media (min-width: 525px) {
-    height: 4160px;
+    height: 4250px;
   }
 
   @media (min-width: 550px) {
-    height: 4180px;
+    height: 4330px;
   }
 
-  @media (min-width: 576px) {
-    height: 3800px;
+  @media (min-width: 608px) {
+    height: 3870px;
   }
 
-  @media (min-width: 654px) {
-    height: 3750px;
+  @media (min-width: 800px) {
+    height: 2780px;
   }
 
-  @media (min-width: 768px) {
-    height: 2650px;
+  @media (min-width: 900px) {
+    height: 2860px;
   }
 
   @media (min-width: 992px) {
-    height: 2200px;
+    height: 2860px;
   }
 
-  @media (min-width: 1152px) {
-    height: 2100px;
-  }
-
-  @media (min-width: 1200px) {
-    height: 2060px;
+  @media (min-width: 1024px) {
+    height: 2360px;
   }
 `
 
