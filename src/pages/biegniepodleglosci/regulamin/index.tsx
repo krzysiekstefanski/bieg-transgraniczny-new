@@ -30,7 +30,7 @@ const RegulaminNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
       WebViewer(
         {
           path: "/webviewer/lib",
-          initialDoc: "/pdf/regulamin-bieg-niepodleglosci-2024.pdf",
+          initialDoc: "/pdf/regulamin_bieg_niepodleglosci2026.pdf",
           licenseKey: "5MH0z4wBBOEfB48yb31C",
           css: "/webviewer/style.css",
         },
