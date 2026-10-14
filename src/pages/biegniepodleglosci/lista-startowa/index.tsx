@@ -18,7 +18,7 @@ const ListaStartowaNiepodleglosciPage: React.FC = ({ data }): JSX.Element => {
   const { pageCore, logo, top, banner, verification, gallery } =
     data.niepodleglosciPage
   const theme = EventTheme.Niepodleglosci
-  const api = 15086
+  const api = 17268
 
   return (
     <Layout data={{ pageCore, partners, logo }} eventTheme={theme}>
